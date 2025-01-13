@@ -1,0 +1,30 @@
+import SectionWithContainer from "./SectionComponents/SectionWithContainer";
+import Link from "next/link";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-Primary max-w-[1600px] mx-auto w-full ">
+      <SectionWithContainer sectionClassName="bg-primary text-white !pt-10 !pb-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-16 gap-8">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-lg font-semibold tracking-wide underline">
+              Follow Us
+            </h3>
+          </div>
+        </div>
+        <hr className="flex w-full mt-5" />
+        <div className="flex justify-center text-base gap-1 pt-5">
+          <span>Copyright &copy; {currentYear}</span>
+          Design and developed by{" "}
+          <Link href="https://eazotel.com/" target="_blank">
+            {" Eazotel"}
+          </Link>
+        </div>
+      </SectionWithContainer>
+    </footer>
+  );
+};
+
+export default Footer;
