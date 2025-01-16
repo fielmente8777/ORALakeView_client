@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {
   FreeMode,
   Navigation,
+  Pagination,
   Thumbs,
   //   Swiper as SwiperType,
 } from "swiper/modules";
@@ -14,46 +15,30 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import Image from "next/image";
+import { NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 
-const ThumbsCardsSlider = ({ images }) => {
+const ThumbsCardsSlider = ({ images, index }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div>
+    <div className="w-full relative">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          "--swiper-pagination-color": "#000",
         }}
         spaceBetween={10}
-        navigation={true}
+        navigation={{
+          nextEl: ".thumbs-next" + index,
+          prevEl: ".thumbs-prev" + index,
+        }}
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode, Navigation, Thumbs, Pagination]}
+        pagination={{ type: "fraction" }}
         className="mySwiper2"
       >
-        {images?.map((image, index) => (
-          <SwiperSlide key={index}>
-            <Image
-              src={image?.src}
-              alt={image?.alt}
-              fill
-              className="object-cover"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      {/* <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-      >
-        {images?.map((image, index) => (
-          <SwiperSlide key={index}>
+        {images.map((image, index) => (
+          <SwiperSlide key={index} className="relative aspect-[4/3]">
             <Image
               src={image.src}
               alt={image.alt}
@@ -62,7 +47,40 @@ const ThumbsCardsSlider = ({ images }) => {
             />
           </SwiperSlide>
         ))}
-      </Swiper> */}
+      </Swiper>
+
+      <div className="flex mt-6">
+        <button
+          className={`disabled:opacity-50 disabled:cursor-not-allowed disabled:scale-100 disabled:active:scale-100 thumbs-prev${index} text-primary hover:scale-105 active:scale-95 w-8 aspect-square flex items-center justify-center`}
+        >
+          <PrevBtnIcon />
+        </button>
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          spaceBetween={10}
+          slidesPerView={5}
+          freeMode={true}
+          watchSlidesProgress={true}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className="!max-w-sm !ml-0"
+        >
+          {images?.map((image, index) => (
+            <SwiperSlide key={index} className="relative aspect-[4/2.5] border w-50">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <button
+          className={`disabled:opacity-50 thumbs-next${index} text-primary hover:scale-105 w-8 aspect-square active:scale-95 flex items-center justify-center`}
+        >
+          <NextBtnIcon />
+        </button>
+      </div>
     </div>
   );
 };

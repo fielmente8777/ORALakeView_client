@@ -92,7 +92,7 @@
   }
 
   .heading2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.2;
 
     @media screen and (min-width: 640px) {
@@ -138,7 +138,7 @@
 
   .description {
     font-size: 1rem;
-    line-height: 1.2;
+    line-height: 1.5;
 
     @media screen and (min-width: 640px) {
       font-size: 1.25rem;
@@ -214,6 +214,11 @@
   flex-direction: column;
   gap: 1.8rem;
   cursor: pointer;
+
+  @media (width <= 640px) {
+    padding: 1rem;
+    gap: .5rem;
+  }
   .accordion-header {
     display: flex;
     align-items: center;
@@ -277,4 +282,25 @@
 }
 .banner-prev:active {
   color: #c6a445;
+}
+
+/* Ensures smooth rotation animation for the orbit */
+.orbit {
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-animate {
+  cursor: pointer;
+  &:active {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

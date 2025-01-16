@@ -27,7 +27,7 @@ const ReachUs: React.FC<Props> = ({ title, description, items, src }) => {
         <Paragraph className="text-center description1 !text-primary">
           {description}
         </Paragraph>
-        <div className="grid grid-cols-2 gap-4 w-full mt-8">
+        <div className="lg:grid flex flex-col-reverse grid-cols-2 gap-12 w-full mt-8">
           <div className="flex flex-col gap-8">
             {items.map((item, index) => (
               <div key={index} className="flex  gap-3">
@@ -45,7 +45,7 @@ const ReachUs: React.FC<Props> = ({ title, description, items, src }) => {
                 </div>
               </div>
             ))}
-            <div className="relative aspect-[4/1.8] -bottom-10 -left-36 w-full">
+            <div className="relative aspect-[4/1.8] lg:-bottom-10 lg:-left-36 w-full">
               <Image
                 src={src}
                 alt={title}

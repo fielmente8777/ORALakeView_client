@@ -7,10 +7,10 @@ interface BannerProps {
 }
 const Banner: React.FC<BannerProps> = ({ title, description, link }) => {
   return (
-    <SectionWithContainer sectionClassName="bg-primary">
-      <div className="flex flex-col items-center justify-center gap-4 max-w-xl mx-auto">
+    <SectionWithContainer sectionClassName="bg-primary py-[4rem]">
+      <div className="flex flex-col items-center justify-center gap-6 lg:max-w-xl w-full mx-auto">
         <Heading
-          className="text-center text-[#FFCD42] capitalize font-montaga heading2 px-20"
+          className="text-center text-[#FFCD42] capitalize font-montaga heading2 lg:px-20"
         >
           {title}
         </Heading>

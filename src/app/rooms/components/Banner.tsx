@@ -11,12 +11,12 @@ const Banner: React.FC<BannerProps> = ({ title, description, src }) => {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
         <div className="flex flex-col justify-center gap-4 max-w-xl w-full">
           <Heading
-            level={2}
-            className="text-[#FFCD42] capitalize font-montaga heading2 max-w-xs w-full"
+            level={1}
+            className="text-[#FFCD42] max-md:!text-center capitalize font-montaga heading2 lg:max-w-xs w-full"
           >
             {title}
           </Heading>
-          <Paragraph className="description1">
+          <Paragraph className="max-md:text-center description tracking-wider">
             {description}
           </Paragraph>
         </div>

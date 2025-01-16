@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 70) {
+      if (window.scrollY > 250) {
         setNavbar(true);
       } else {
         setNavbar(false);
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
             {navButtons.map((button) => (
               <button
                 key={button.id}
-                className={`uppercase lg:flex hidden ${button.class} items-center transition-all duration-0 ease-in-out gap-2 border ${navbar || pathname !== "/" ? "border-primary hover:bg-primary/10" : "border-white hover:bg-primary"} lg:px-4 p-1 lg:py-2`}
+                className={`uppercase lg:flex hidden ${button.class}  disabled:border-opacity-100 items-center transition-all duration-500 ease-linear gap-2 border border-opacity-0  ${navbar || pathname !== "/" ? " disabled:border-primary" : "disabled:border-white "} border-transparent lg:px-4 p-1 lg:py-2`}
               >
                 {button.icon}{" "}
                 <span

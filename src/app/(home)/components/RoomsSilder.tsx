@@ -25,14 +25,14 @@ const RoomsSilder: React.FC<{
         <Paragraph className="text-center !text-primary description1">
           {description}
         </Paragraph>
-        <div className="grid grid-cols-3 gap-4 mt-4">
-          <div className="flex flex-col col-span-1 justify-center gap-4">
+        <div className="grid lg:grid-cols-3 grid-cols-1  gap-4 mt-4">
+          <div className="flex flex-col col-span-1 max-md:order-2 justify-center gap-4">
             <Paragraph className="description1 !text-primary">
               {subDescription}
             </Paragraph>
             <Link
               href="/rooms"
-              className="text-quaternary font-medium  py-3 px-6 flex items-center justify-center gap-2 hover:text-white hover:bg-quaternary hover:scale-x-105 active:scale-x-95
+              className="text-quaternary font-medium capitalize  py-3 px-6 flex items-center justify-center gap-2 hover:text-white hover:bg-quaternary hover:scale-x-105 active:scale-x-95
               transition-all duration-300 ease-in-out border border-quaternary  w-fit description1 "
             >
               View overview{" "}
@@ -41,7 +41,7 @@ const RoomsSilder: React.FC<{
               </span>
             </Link>
           </div>
-          <div className="col-span-2 w-full relative">
+          <div className="col-span-2 max-md:order-1 w-full relative">
             <SliderSwip
               data={images}
               modules={[Pagination, Navigation]}
@@ -59,14 +59,14 @@ const RoomsSilder: React.FC<{
             >
               {(item) => <HomeRoomCard {...item} />}
             </SliderSwip>
-            <div className="flex items-center justify-center gap-4 absolute bottom-2 right-28 z-10">
+            <div className="flex items-center justify-center gap-4 absolute bottom-2 lg:right-28 z-10">
               <button
-                className={`text-primary hover:scale-105 active:scale-95 rotate-180 hover:text-secondary home-room-prev`}
+                className={` hover:scale-105 disabled:text-primary active:scale-95 rotate-180 text-secondary home-room-prev`}
               >
                 <ButtonNext />
               </button>
               <button
-                className={`text-primary hover:scale-105 active:scale-95 hover:text-secondary home-room-next`}
+                className={`hover:scale-105 active:scale-95 disabled:text-primary text-secondary home-room-next`}
               >
                 <ButtonNext />
               </button>

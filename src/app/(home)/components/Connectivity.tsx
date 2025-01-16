@@ -31,7 +31,7 @@ const Connectivity: React.FC<IConnectivity> = ({
         <Paragraph className="text-center !text-primary description1">
           {description}
         </Paragraph>
-        <div className="grid grid-cols-2 gap-4 w-full mt-8">
+        <div className="lg:grid grid-cols-2 flex flex-col-reverse gap-8 w-full mt-8">
           <div className="flex flex-col gap-8">
             {items?.map((item, index) => (
               <div key={index} className="flex gap-3">

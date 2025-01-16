@@ -14,11 +14,11 @@ const OurJourneyCard: React.FC<OurJourneyCardProps> = ({
   year,
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-4 bg-primary">
+    <div className="lg:grid flex-col-reverse flex grid-cols-2 gap-4 bg-primary">
       <div className="flex flex-col gap-4 max-w-md">
         <Heading
           level={4}
-          className="text-white capitalize font-montaga lg:text-5xl text-2xl mb-8"
+          className="text-white capitalize font-montaga lg:text-5xl lg:block hidden text-2xl mb-8"
         >
           {year}
         </Heading>

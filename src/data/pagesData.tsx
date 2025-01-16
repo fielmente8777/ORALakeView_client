@@ -18,7 +18,10 @@ export const homePageData = {
   bannerData: {
     title: "the best lakeview",
     description: "Unwind with Stunning Views and Warm Hospitality",
-    images: [homeImages + "/img1.webp", homeImages + "/gallery/img4.webp"],
+    images: [
+      homeImages + "/img1.webp",
+       homeImages + "/gallery/img4.webp"
+      ],
   },
   galleryData: {
     title: "Gallery",
@@ -93,6 +96,68 @@ export const homePageData = {
       //   src: "",
       //   alt: "",
       // },
+    ],
+  },
+  amenitiesData: {
+    title: "Amenities",
+    description: "Comfort and Convenience at Your Fingertips",
+    items: [
+      {
+        icon: homeImages + "/amenities/CarProfile.png",
+        title: "Free Parking",
+        description:
+          "Enjoy the convenience of free parking during your stay at Hotel Lakeview. Our spacious and secure parking area is designed to accommodate all guests, ensuring a stress-free experience from the moment you arrive",
+        src: aboutImages + "/img2.webp",
+        color: "#FAE3AF",
+      },
+      {
+        icon: homeImages+"/amenities/PicnicTable.png",
+        title: "Breakfast",
+        description:
+          "Savor delicious meals at our on-site dining options. Start your day with a hearty continental breakfast buffet featuring fresh, locally sourced ingredients. For lunch and dinner, explore nearby restaurants or enjoy a meal in the comfort of your room.",
+        src: homeImages+"/amenities/img1.webp",
+        color: "#D8D6D7",
+      },
+      {
+        icon: homeImages+"/amenities/SmileyWink.png",
+        title: "Entertainment Lounge",
+        description:
+          "Unwind in our entertainment zone, designed for relaxation and fun. Enjoy games, books, and cozy seating areas where you can gather with friends or family for a delightful evening of laughter and entertainment.",
+        src: homeImages+"/gallery/img2.webp",
+        color: "#E7CBCE",
+      },
+      {
+        icon: homeImages+"/amenities/Eye.png",
+        title: "Private Balcony/Terrace",
+        description:
+          "Many of our rooms come with private balconies or terraces, offering stunning views of Lake Brienz and the surrounding mountains. Relax with a book or enjoy a glass of wine while taking in the serene beauty of nature right outside your door.",
+        src: homeImages+"/gallery/img1.webp",
+        color: "#CE905F",
+      },
+      {
+        icon: homeImages+"/amenities/Confetti.png",
+        title: "Private Gatherings (replacement)",
+        description:
+          "For special occasions or events, we offer spaces suitable for private gatherings. Whether it's a family reunion, birthday celebration, or corporate meeting, our dedicated team is here to help you create memorable experiences tailored to your needs.",
+        src: galleryImages+"/slider/img1.webp",
+        color: "#CFC4B1",
+      },
+      {
+        icon: homeImages+"/amenities/WifiHigh.png",
+        title: "Free WiFi",
+        description:
+          "Stay connected with our complimentary high-speed WiFi available throughout the hotel. Whether you're working remotely, streaming your favorite shows, or sharing your travel experiences on social media, our reliable internet ensures you can stay in touch with the world.",
+        src: homeImages+"/amenities/img2.webp",
+        color: "#E0E7E9",
+      },
+      {
+        icon: homeImages+"/amenities/ChefHat.png",
+        title: "Common Kitchen",
+        description:
+          "Our inviting restaurant provides a cozy atmosphere for dining, with both indoor and outdoor seating options. For those who prefer to cook, select accommodations feature kitchen facilities, allowing you to prepare your own meals using fresh local ingredients.",
+        src: homeImages+"/amenities/img3.webp",
+        color: "#B9BDA7",
+      },
     ],
   },
   nearbyattractions: {
@@ -345,6 +410,7 @@ export const aboutPageData = {
   },
 };
 
+const roomCard = roomImages + "/card/img";
 export const roomsPageData = {
   bannerData: {
     title: "Find Your Ideal Retreat",
@@ -360,19 +426,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"2.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"3.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"4.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard+"5.webp",
           alt: "dsdsd",
         },
       ],
@@ -394,19 +464,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
       ],
@@ -428,19 +498,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
       ],
@@ -462,19 +532,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
       ],
@@ -496,19 +566,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
       ],
@@ -530,19 +600,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
       ],
@@ -564,19 +634,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
         {
-          src: "/homeBanner1.jpg",
+          src: roomCard+"1.webp",
           alt: "dsdsd",
         },
       ],
@@ -601,6 +671,40 @@ export const galleryPageData = {
       "Step into the tranquil elegance of Hotel Lakeview with stunning visuals that showcase its breathtaking views and warm hospitality",
     src: galleryImages + "/img1.webp",
   },
+  galleryData: [
+    {
+      title: "Bar Lounge",
+      images: [
+        galleryImages + "/slider/img1.webp",
+        galleryImages + "/slider/img2.webp",
+        galleryImages + "/slider/img1.webp",
+      ],
+    },
+    {
+      title: "Facade",
+      images: [
+        galleryImages + "/slider/img1.webp",
+        galleryImages + "/slider/img1.webp",
+        galleryImages + "/slider/img1.webp",
+      ],
+    },
+    {
+      title: "Reception",
+      images: [
+        galleryImages + "/slider/img4.webp",
+        galleryImages + "/slider/img5.webp",
+        galleryImages + "/slider/img6.webp",
+      ],
+    },
+    {
+      title: "Restaurant",
+      images: [
+        galleryImages + "/slider/img9.webp",
+        galleryImages + "/slider/img8.webp",
+        galleryImages + "/slider/img7.webp",
+      ],
+    },
+  ],
 };
 
 export const contactPageData = {

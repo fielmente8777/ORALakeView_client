@@ -7,7 +7,7 @@ const FindUsEasily = () => {
       <div className="flex flex-col items-center justify-center gap-4 pb-8">
         <Heading
           level={2}
-          className="text-center text-secondary capitalize font-montaga heading3"
+          className="text-center text-secondary capitalize font-montaga heading2"
         >
           Find us easily
         </Heading>

@@ -1,6 +1,7 @@
 import { Faq, GuestReviews } from "@/components";
 import { homePageData } from "../../data/pagesData";
 import {
+  Amenities,
   Connectivity,
   DoAtHotel,
   Gallery,
@@ -17,6 +18,7 @@ export default function Home() {
       <WhoWeAre />
       <Gallery {...homePageData.galleryData} />
       <RoomsSilder {...homePageData.roomsData} />
+      <Amenities {...homePageData.amenitiesData} />
       <NearbyAttractions {...homePageData.nearbyattractions} />
       <DoAtHotel {...homePageData.DoAtHotel} />
       <div className="w-full h-[14rem] bg-white relative -top-[14rem]"></div>

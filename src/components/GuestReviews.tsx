@@ -29,7 +29,7 @@ const GuestReviews: React.FC<GuestReviewsProps> = ({
           </Paragraph>
         </div>
         <div className="w-full flex items-center justify-center gap-4 lg:max-width max-md:px-2">
-          <button className="button-prev text-white rotate-180 hover:scale-105 active:scale-95 hover:text-tertiary">
+          <button className="button-prev text-white lg:block hidden rotate-180 hover:scale-105 active:scale-95 disabled:text-tertiary">
             <ButtonNext />
           </button>
           <SliderSwip
@@ -41,22 +41,23 @@ const GuestReviews: React.FC<GuestReviewsProps> = ({
               nextEl: ".button-next",
               prevEl: ".button-prev",
             }}
-            centerSlides={true}
+            centeredSlides={true}
             autoplay={{ delay: 2500 }}
-            slidesPerView={2.6}
-            spaceBetween={10}
+            slidesPerView={1.3}
+            spaceBetween={15}
             breakpoints={{
               720: {
                 slidesPerView: 3,
                 spaceBetween: 20,
-                centerSlides: false,
+                centeredSlides: false,
+                loop: false,
               },
             }}
             classNameSwiperSlide="w-full min-h-[22.5rem] bg-white rounded overflow-hidden"
           >
             {(item) => <GuestReviewCard {...item} />}
           </SliderSwip>
-          <button className="button-next text-white hover:scale-105 active:scale-95 hover:text-tertiary">
+          <button className="button-next text-white lg:block hidden hover:scale-105 active:scale-95 disabled:text-tertiary">
             <ButtonNext />
           </button>
         </div>

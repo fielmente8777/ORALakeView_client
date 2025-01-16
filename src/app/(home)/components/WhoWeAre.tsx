@@ -12,24 +12,24 @@ const WhoWeAre = () => {
   ];
   return (
     <SectionWithContainer sectionClassName="bg-primary">
-      <div className="flex flex-col items-center justify-center gap-14">
+      <div className="flex flex-col items-center justify-center lg:gap-14 gap-7">
         <Heading
           level={2}
-          className="text-center text-secondary capitalize font-montaga heading3"
+          className="text-center text-secondary capitalize font-montaga heading2"
         >
           Who We Are
         </Heading>
-        <div className="w-full grid grid-cols-3 items-center justify-center gap-4">
-          <div className="w-full h-1 bg-white" />
+        <div className="w-full lg:grid grid-cols-3 flex items-center justify-center gap-4">
+          <div className="w-full h-1 bg-white/50" />
           <span className="flex items-center justify-center">
             <MountainIcon />
           </span>
-          <div className="w-full h-1 bg-white" />
+          <div className="w-full h-1 bg-white/50" />
         </div>
         {description.map((item, index) => (
           <Paragraph
             key={index}
-            className="text-white text-center description1"
+            className="text-white text-center description tracking-wider"
           >
             {item}
           </Paragraph>

@@ -9,9 +9,9 @@ interface TwoColGridCardProps {
   description?: string;
   price: string;
   list?: string[];
-  images?: {
-    src?: string | StaticImageData;
-    alt?: string;
+  images: {
+    src: string | StaticImageData;
+    alt: string;
   }[];
   index?: number;
   arrImages?: string[];
@@ -32,11 +32,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
         <div
           className={`col-span-1 mb-5 w-full h-full ${index % 2 === 0 ? "order-1 max-md:mt-4" : "order-2 max-md:mb-4"}`}
         >
-          {images && (
-            <ThumbsCardsSlider
-              images={images as { src: string; alt: string }[]}
-            />
-          )}
+          <ThumbsCardsSlider images={images} index={index} />
         </div>
         <div
           className={` flex flex-col justify-between gap-4 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}

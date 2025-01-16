@@ -1,7 +1,7 @@
 "use client";
 import { Heading, OurJourneyCard, SectionWithContainer } from "@/components";
 import SliderSwip from "@/components/SliderSwip";
-import { ButtonNext } from "@/icons/icons";
+// import { ButtonNext } from "@/icons/icons";
 import { Navigation, Pagination } from "swiper/modules";
 
 interface OurJourneyProps {
@@ -58,7 +58,7 @@ const OurJourney: React.FC<OurJourneyProps> = ({ title, cards }) => {
             )}
           </SliderSwip>
         </div>
-        <div className="flex items-center justify-center gap-4 absolute bottom-8 left-2 z-10">
+        {/* <div className="flex items-center justify-center gap-4 absolute bottom-8 left-2 z-10">
           <button
             className={`text-white hover:scale-105 active:scale-95 rotate-180 hover:text-tertiary ${btn}-pre ${cards.length <= 0 ? "opacity-5 hidden" : "opacity-100"}`}
           >
@@ -69,7 +69,7 @@ const OurJourney: React.FC<OurJourneyProps> = ({ title, cards }) => {
           >
             <ButtonNext />
           </button>
-        </div>
+        </div> */}
       </div>
     </SectionWithContainer>
   );
