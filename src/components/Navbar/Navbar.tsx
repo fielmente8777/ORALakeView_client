@@ -1,15 +1,18 @@
 "use client";
 import Link from "next/link";
 import Container from "../SectionComponents/Container";
-import { NavLink } from "@/data/navData";
-// import Image from "next/image";
+import { navButtons, NavLink } from "@/data/navData";
+import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { MobileNavbar } from "./MobileNavbar";
+import Button from "../Button";
+import { bookingUrl } from "@/data/links";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -23,12 +26,50 @@ const Navbar: React.FC = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 70) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-transparent fixed top-0 left-0 w-full z-50 pb-2">
+    <header
+      className={
+        pathname !== "/"
+          ? "py-3 fixed top-0 left-0 w-full z-50 max-md:py-4 bg-white"
+          : `transition-all duration-500 ease-in-out  fixed top-0 left-0 w-full z-50 max-md:py-4 ${navbar ? "sticky  bg-white text-primary" : "bg-transparent text-white "}`
+      }
+    >
       <Container>
-        <nav className="flex justify-end items-center">
-          {/* <Link href="/" className="flex flex-col ">
-            <span className="relative lg:h-28 h-14 lg:aspect-[4/2] aspect-[4/1.35]">
+        <nav className="flex justify-between items-center uppercase gap-2">
+          <div className="lg:hidden block">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className={`${navbar ? "text-primary" : pathname === "/" ? "text-white" : "text-primary"} text-3xl ${isOpen ? "rotate-180" : ""} transition duration-300 ease-in-out`}
+            >
+              {isOpen ? <IoMdClose /> : <CiMenuBurger />}
+            </button>
+
+            <div
+              className={`fixed top-16 left-0 w-full h-full bg-white/95 border-r border-primary/90  z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+            >
+              <MobileNavbar setIsOpen={setIsOpen} />
+            </div>
+          </div>
+          <Link href="/" className="flex flex-col">
+            <span
+              className={`relative lg:block hidden lg:h-28 h-14 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : pathname === "/" ? "lg:opacity-0" : "lg:opacity-100"}`}
+            >
               <Image
                 src="/logo.png"
                 alt="ora lake view"
@@ -36,37 +77,54 @@ const Navbar: React.FC = () => {
                 className="object-contain"
               />
             </span>
-          </Link> */}
+            <span
+              className={`relative block lg:hidden lg:h-28 h-14 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : "lg:opacity-0"}`}
+            >
+              <Image
+                src={`/logosm${navbar || pathname !== "/" ? "2" : "1"}.png`}
+                alt="ora lake view"
+                fill
+                className="object-contain"
+              />
+            </span>
+          </Link>
           <div className="lg:flex hidden items-center justify-center gap-4 text-base">
-            <ul className="flex items-center gap-4 text-base relative">
+            <ul className="flex items-center gap-4">
               {NavLink.map((link) => (
-                <li className="" key={link.id}>
-                  <Link href={link.href} className={`${pathname} capitalize `}>
+                <li className="relative group" key={link.id}>
+                  <Link
+                    href={link.href}
+                    className={`transition-all font-medium duration-100 ease-linear py-2 px-4 group flex flex-col items-center justify-center`}
+                  >
                     {link.name}
+                    <span
+                      className={`block w-0 h-[2px] absolute bottom-0 ${pathname === link.href && "w-full"} ${navbar || pathname !== "/" ? "bg-primary" : "bg-white"} mt-1 transition-all duration-300 ease-in-out group-hover:w-full`}
+                    ></span>
                   </Link>
                 </li>
               ))}
             </ul>
-            <Link
-              href="/contact-us"
-              className="bg-primary text-white px-6 py-5"
-            >
-              Contact Us
-            </Link>
           </div>
-          <div className="lg:hidden block">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className={`text-primary text-3xl ${isOpen ? "rotate-180" : ""} transition duration-300 ease-in-out`}
-            >
-              {isOpen ? <IoMdClose /> : <CiMenuBurger />}
-            </button>
-
-            <div
-              className={`fixed top-24 left-0 w-full h-full bg-white z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
-            >
-              <MobileNavbar setIsOpen={setIsOpen} />
-            </div>
+          <div className="flex items-center gap-4">
+            {navButtons.map((button) => (
+              <button
+                key={button.id}
+                className={`uppercase lg:flex hidden ${button.class} items-center transition-all duration-0 ease-in-out gap-2 border ${navbar || pathname !== "/" ? "border-primary hover:bg-primary/10" : "border-white hover:bg-primary"} lg:px-4 p-1 lg:py-2`}
+              >
+                {button.icon}{" "}
+                <span
+                  className={navbar || pathname !== "/" ? "hidden" : "lg:block"}
+                >
+                  {button.name}
+                </span>
+              </button>
+            ))}
+            <Button
+              href={bookingUrl}
+              label="Book Now"
+              className={`${navbar || pathname !== "/" ? "block border border-primary" : "hidden"} transition-all duration-75 ease-in-out`}
+              newTabe={true}
+            />
           </div>
         </nav>
       </Container>

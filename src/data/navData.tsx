@@ -1,4 +1,5 @@
 import { navLinks } from "@/@types/types";
+import { SummerIcon, WinterIcon } from "@/icons/icons";
 
 export const NavLink: navLinks[] = [
   {
@@ -28,4 +29,18 @@ export const NavLink: navLinks[] = [
   },
 ];
 
-export const bookingUrl = "";
+export const navButtons = [
+  {
+    id: 1,
+    name: "winter",
+    icon: <WinterIcon />,
+    class:"banner-prev"
+  },
+  {
+    id: 2,
+    name: "summer",
+    icon: <SummerIcon />,
+    class:"banner-next"
+  },
+];
+

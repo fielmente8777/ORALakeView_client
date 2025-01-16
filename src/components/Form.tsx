@@ -3,13 +3,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-// import {
-//   CallOrange,
-//   MailOrange,
-//   MessageOrange,
-//   UserOrange,
-// } from "@/icons/icons";
-// import { countries } from "@/db/countryCode";
+import { countries } from "@/data/countryCode";
 
 const Form = () => {
   const router = useRouter();
@@ -17,7 +11,7 @@ const Form = () => {
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const [userPhone, setUserPhone] = useState("");
-  // const [countryCode, setCountryCode] = useState("+91"); // Default country code
+  const [countryCode, setCountryCode] = useState("+91"); // Default country code
   const [formRes, setFormRes] = useState(false);
   const [emailErrorMessage, setEmailErrorMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -57,11 +51,11 @@ const Form = () => {
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "abhijeet", // Replace with your actual domain value
-          // Domain: "",
+          // Domain: 'abhijeet',
+          Domain: "chefkenzo", // Replace with your actual domain value
           email: userEmail,
           Name: userName,
-          Contact: `${userPhone}`, // Combine country code and phone number
+          Contact: `${countryCode} ${userPhone}`, // Combine country code and phone number
           Description: userMessage,
         },
         {
@@ -71,14 +65,13 @@ const Form = () => {
         }
       );
 
-      console.log(data);
       if (data.Status) {
         setFormRes(true);
         setUserName("");
         setUserEmail("");
         setUserMessage("");
         setUserPhone("");
-        // setCountryCode("+91"); // Reset country code
+        setCountryCode("+91"); // Reset country code
         setFormRes(false);
         router.push("/thank-you/");
       } else {
@@ -90,90 +83,120 @@ const Form = () => {
     }
   };
 
+  const formData = [
+    {
+      tag: "input",
+      type: "text",
+      name: "name",
+      placeholder: "Enter your name",
+      required: true,
+      value: userName,
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        setUserName(e.target.value);
+      },
+    },
+    {
+      tag: "input",
+      type: "email",
+      name: "email",
+      placeholder: "Enter your Email",
+      required: true,
+      value: userEmail,
+      onChange: handleEmailChange,
+    },
+    {
+      tag: "div", // Use div to wrap select and input for phone number
+      name: "contact",
+      // placeholder: "Enter your phone number",
+      // required: true,
+      content: (
+        <div className="flex gap-2 text-sm border-b p-2 border-[#B4B4B4]">
+          <select
+            id="countryCode"
+            name="countryCode"
+            value={countryCode}
+            onChange={(e) => setCountryCode(e.target.value)}
+            className="bg-transparent rounded-lg text-[#333333] focus:outline-none"
+            style={{ width: `${countryCode.length + 2}ch` }}
+          >
+            {countries.map((country, index) => (
+              <option
+                key={index}
+                value={country.code}
+                className="text-[#b4b4b4]  bg-gray-100"
+              >
+                {` ${country.code}`}
+              </option>
+            ))}
+          </select>
+          <input
+            type="number"
+            id="phone"
+            name="contact"
+            placeholder="Enter your phone number"
+            value={userPhone}
+            onChange={handlePhoneChange}
+            className="w-full bg-transparent no-spinner text-clr5 placeholder:uppercase text-sm  placeholder:text-[#B4B4B4] focus:outline-none"
+          />
+        </div>
+      ),
+    },
+    {
+      tag: "textarea",
+      type: "text",
+      name: "enter your message",
+      placeholder: "type here",
+      required: true,
+      value: userMessage,
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        setUserMessage(e.target.value);
+      },
+    },
+  ];
+
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 max-md:mt-6 text-base w-full bg-bgclr text-white"
+      className="flex flex-col gap-4 h-full max-md:mt-6 text-base w-full"
       id="contact"
     >
-      <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <UserOrange /> */}
-          </label>
-          <input
-            id="Name"
-            type="text"
-            placeholder="Name"
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-            required
-            className="w-full h-max p-2 outline-none bg-transparent"
-          />
-        </div>
-        <div className="flex items-center gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <CallOrange /> */}
-          </label>
-          {/* <select
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
-            required
-            className="text-sm text-[#222] outline-none p-2 rounded-sm"
-          >
-            {countries.map((country) => (
-              <option key={country.code} value={country.code}>
-                {country.code}
-              </option>
-            ))}
-          </select> */}
-          <input
-            type="text"
-            placeholder="Phone"
-            value={userPhone}
-            onChange={handlePhoneChange}
-            required
-            maxLength={10}
-            className="w-full  p-2 rounded-sm outline-none"
-          />
-        </div>
-        <div className="flex items-center gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <MailOrange /> */}
-          </label>
-          <input
-            type="text"
-            placeholder="Email"
-            value={userEmail}
-            onChange={handleEmailChange}
-            required
-            className="w-full p-2 rounded-sm outline-none"
-          />
-          {emailErrorMessage && (
-            <p className="text-red-500">{emailErrorMessage}</p>
+      {formData.map((data, index) => (
+        <div key={index} className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3 bg-white">
+            <label
+              htmlFor={data.name}
+              className={`${data.tag === "textarea" && ""} uppercase heading4 text-[#333333]`}
+            >
+              {data.name}
+            </label>
+            {data.tag === "div"
+              ? data.content
+              : React.createElement(data.tag, {
+                  id: data.name,
+                  type: data.type,
+                  name: data.name,
+                  value: data.value,
+                  onChange: data.onChange,
+                  placeholder: data.placeholder,
+                  required: data.required,
+                  autoComplete: "off",
+                  spellCheck: "false",
+                  rows: "5",
+                  className:
+                    "w-full bg-transparent no-spinner text-clr5 py-2 placeholder:uppercase border-b border-[#B4B4B4] text-sm  placeholder:text-[#B4B4B4] focus:outline-none",
+                })}
+          </div>
+          {data.name === "phone" && errorMessage && (
+            <p className="text-sm text-red-500 mt-2 ">{errorMessage}</p>
+          )}
+          {data.name === "email" && emailErrorMessage && (
+            <p className="text-sm text-red-500 mt-2">{emailErrorMessage}</p>
           )}
         </div>
+      ))}
 
-        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-        <div className="flex gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <MessageOrange /> */}
-          </label>
-          <textarea
-            placeholder="Message"
-            value={userMessage}
-            onChange={(e) => setUserMessage(e.target.value)}
-            rows={5}
-            className="w-full p-2 rounded-sm resize-none outline-none"
-          />
-        </div>
-      </div>
-
-      <button
-        type="submit"
-        className="bg-primary w-max mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-primary/80 duration-500 rounded-sm border"
-      >
-        {formRes ? "Loading...." : "Contact us"}
+      <button className="w-full text-center text-white bg-quaternary ease-in-out transition-all justify-center self-center text-md px-8 py-3 font-semibold duration-300 active:scale-75 hover:scale-105">
+        {formRes ? "Loading...." : "Submit"}
       </button>
     </form>
   );

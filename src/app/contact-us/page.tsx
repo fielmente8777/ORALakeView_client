@@ -1,8 +1,13 @@
+import { contactPageData } from "@/data/pagesData";
+import { Banner, ReachUs } from "./components";
+import FindUsEasily from "./components/FindUsEasily";
 
-export default function Home() {
+export default function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      
-    </div>
+    <main className="margin">
+      <Banner {...contactPageData.bannerData}/>
+      <ReachUs {...contactPageData.reachUsDate}/>
+      <FindUsEasily />
+    </main>
   );
 }

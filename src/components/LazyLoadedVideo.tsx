@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-const LazyLoadedVideo = dynamic(() => import("./SEOVideo"), {
+const LazyLoadedVideo = dynamic(() => import("./video/SEOVideo"), {
   loading: () => (
     <Image
       src="/images/banner.webp"

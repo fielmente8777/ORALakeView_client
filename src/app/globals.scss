@@ -2,44 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
   font-family: "NexaScript_regular";
   src: url(/font/nexascript_regular.ttf) format("truetype");
 }
 
-
-
 * {
-  // font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  // background-color: #262626;
 }
 
 ::-webkit-scrollbar {
   width: 0.48rem;
 }
 ::-webkit-scrollbar-button {
-  background-color: #18685c;
-  border-radius: 0.7rem  ;
-  border: 1px solid #ffefe3;
+  background-color: #262626;
+  border-radius: 0.7rem;
+  border: 1px solid #fff;
 }
 ::-webkit-scrollbar-corner {
   border-radius: 50%;
 }
 ::-webkit-scrollbar-track {
-  background-color: #c17362;
+  background-color: #fff;
   margin-block: 0.1rem;
   border-radius: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #18685c;
+  background-color: #262626;
   border-radius: 1rem;
 }
 
+// .header {
+//   background-color: #FFF;
+//   padding: 1rem 0;
+//   color: #FFF;
+//   position: ;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 1000;
+//   transition: background-color 0.3s ease-in-out;
+//   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+// }
+
 @layer utilities {
+  .margin {
+    margin-top: 5.5rem;
+    @media screen and (min-width: 640px) {
+      margin-top: 8rem;
+    }
+  }
+  .font-montaga {
+    font-family: "Montaga", serif;
+  }
   .text-balance {
     text-wrap: balance;
   }
@@ -53,7 +75,7 @@
   .no-spinner {
     @apply appearance-none;
   }
- 
+
   .heading1 {
     font-size: 2rem;
     line-height: 1.2;
@@ -104,12 +126,12 @@
     line-height: 1.2;
 
     @media screen and (min-width: 640px) {
-      font-size: 1.25rem;
+      font-size: 1rem;
       line-height: 1.2;
     }
 
     @media screen and (min-width: 1024px) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       line-height: 1.2;
     }
   }
@@ -150,11 +172,10 @@
     padding: 0 0.4rem;
     width: 100%;
 
-    @media screen and (max-width: 640px) {
+    @media (width <= 770px) {
       padding: 0 1.2rem;
     }
   }
-
 }
 .slider {
   .pagination_0,
@@ -184,3 +205,76 @@
   }
 }
 
+.accordion {
+  padding: 1.8rem;
+  width: 100%;
+  border: 1px solid #b4b4b4;
+  box-shadow: 2px 2px 4px 1px #b4b4b440;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  cursor: pointer;
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    border: 1px solid #c6a445;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.pagination {
+  .swiper-pagination-bullet {
+    background-color: #404040;
+    width: 0.65rem;
+    height: 0.65rem;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #c6a445;
+
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+
+#custom-pagination-fraction {
+  .swiper-pagination-fraction {
+    width: fit-content;
+    padding: 0 1rem;
+    left: 7rem;
+    // border: 1px solid #c6a445;
+  }
+  .swiper-pagination {
+    text-align: start;
+  }
+}
+
+.roomsSilder {
+  .swiper-pagination-fraction {
+    width: fit-content;
+    padding: 0 1rem;
+    left: 90%;
+  }
+  .swiper-pagination-fraction {
+    color: #c6a445;
+  }
+  .swiper-pagination {
+    text-align: end;
+  }
+}
+.banner-next:active {
+  color: #c6a445;
+}
+.banner-prev:active {
+  color: #c6a445;
+}

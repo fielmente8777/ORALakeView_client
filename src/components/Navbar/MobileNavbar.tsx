@@ -3,6 +3,8 @@ import { NavLink } from "@/data/navData";
 import Container from "../SectionComponents/Container";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Button from "../Button";
+import { bookingUrl } from "@/data/links";
 // import { useState } from "react";
 
 export const MobileNavbar = ({
@@ -15,15 +17,15 @@ export const MobileNavbar = ({
   return (
     <header>
       <Container>
-        <nav className="flex flex-col gap-4 w-full h-full">
-          <ul>
+        <nav className="flex flex-col gap-4 w-full h-full py-4">
+          <ul className="flex flex-col gap-2">
             {NavLink.map((link, index) => (
               <li
                 key={index}
-                className={`${
+                className={`px-3 ${
                   link.href === pathname
-                    ? "text-primary"
-                    : "text-white hover:text-primary"
+                    ? "text-tertiary border-primary border-l-2"
+                    : "text-primary "
                 }`}
               >
                 <Link
@@ -36,9 +38,7 @@ export const MobileNavbar = ({
               </li>
             ))}
           </ul>
-          <button className="bg-primary text-white px-6 py-3 w-fit">
-            Contact Us
-          </button>
+          <Button href={bookingUrl} label="Book Now" className="w-fit mx-2 py-3 px-6" />
         </nav>
       </Container>
     </header>
