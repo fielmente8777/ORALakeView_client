@@ -16,7 +16,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content, id }) => {
 
   return (
     <div
-      className={`accordion overflow-hidden h-max transition-all ease-linear mt-6 duration-500 ${isOpen === id ? "bg-white" : ""}`}
+      className={`accordion overflow-hidden h-max group group-opacity-100 ease-linear transition-all duration-700 ${isOpen === id ? "bg-white" : "bg-primary"}  mt-6 `}
       onClick={() => toggleAccordion(id)}
       onMouseEnter={() => setIsOpen(id)}
       onMouseLeave={() => setIsOpen(null)}
@@ -29,9 +29,10 @@ const Accordion: React.FC<AccordionProps> = ({ title, content, id }) => {
           {title}
         </Heading>
         <span
-          className={`${isOpen === id ? "text-white bg-[#c6a445]" : "text-[#c6a445]"}`}
+          className={`${isOpen === id ? "text-white bg-[#c6a445] rotate-180" : "text-[#c6a445]"} transition-all duration-300 ease-linear flex items-center justify-center w-8 h-8 rounded-full`}
         >
           {isOpen === id ? <Remove /> : <Add />}
+
         </span>
       </div>
       <div

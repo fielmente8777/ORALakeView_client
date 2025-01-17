@@ -17,39 +17,37 @@ interface IAmenities {
 }
 
 const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
-  const [item, setItem] = useState(items[0]);
-  // const [rotation, setRotation] = useState(0); // Controls rotation of the icon orbit
-
-  const handlePrev = () => {
-    const currentIndex = items.findIndex((i) => i === item);
-    if (currentIndex > 0) {
-      setItem(items[currentIndex - 1]);
-      // setRotation((prev) => prev - 45); // Adjust rotation angle
-    } else {
-      setItem(items[0]);
-    }
-  };
-
-  const handleNext = () => {
-    if (item === items[items.length - 1]) {
-      setItem(items[0]);
-      // setRotation((prev) => prev + 45); // Adjust rotation angle
-    } else {
-      const currentIndex = items.findIndex((i) => i === item);
-      setItem(items[(currentIndex + 1) % items.length]);
-      // setRotation((prev) => prev + 45); // Adjust rotation angle
-    }
-  };
-
   const positions = [
     "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
-    "top-[70%] left-4 -translate-x-1/2 -translate-y-1/2 scale-[0.8]",
-    "top-[85%] left-[4rem] -translate-x-1/2 -translate-y-1/2 scale-[0.7]",
-    "top-[95%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6]",
-    "top-[30%] right-[29rem] translate-x-1/2 -translate-y-1/2 scale-[0.8]",
-    "top-[15%] right-[26rem] translate-x-1/2 -translate-y-1/2 scale-[0.7]",
-    "top-[7.5%] right-[22.5rem] translate-x-1/2 -translate-y-1/2 scale-[0.6]",
+    "top-[70%] lg:left-4 left-3 -translate-x-1/2 -translate-y-1/2 scale-[0.8]",
+    "lg:top-[85%] top-[88%] lg:left-[4rem] left-[3rem] -translate-x-1/2 -translate-y-1/2 scale-[0.7]",
+    "lg:top-[95%] top-[98%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6]",
+    "lg:top-[6%] top-[0.74rem] left-[4.2rem] lg:right-[22.5rem]  translate-x-1/2 -translate-y-1/2 scale-[0.6]",
+    "top-[15%] lg:right-[26rem] left-0 translate-x-1/2 -translate-y-1/2 scale-[0.7]",
+    "lg:top-[30%] top-[30.5%] lg:-left-[3rem] -left-[2rem] translate-x-1/2 -translate-y-1/2 scale-[0.8]",
   ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [iconPositions, setIconPositions] = useState(
+    items.map((_, index) => positions[index % positions.length])
+  );
+  const handleNext = () => {
+    if (currentIndex < items.length - 1) {
+      const newPositions = [...iconPositions];
+      newPositions.unshift(newPositions.pop()!); // Rotate positions forward
+      setIconPositions(newPositions);
+      setCurrentIndex((prev) => prev + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      const newPositions = [...iconPositions];
+      newPositions.push(newPositions.shift()!); // Rotate positions backward
+      setIconPositions(newPositions);
+      setCurrentIndex((prev) => prev - 1);
+    }
+  };
 
   return (
     <SectionWithContainer sectionClassName="bg-primary lg:pb-28">
@@ -71,58 +69,60 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
                 level={2}
                 className="text-white capitalize font-montaga text-2xl"
               >
-                {item.title}
+                {items[currentIndex].title}
               </Heading>
-              <Paragraph className="description1">{item.description}</Paragraph>
+              <Paragraph className="description1">
+                {items[currentIndex].description}
+              </Paragraph>
             </div>
             <div className="flex gap-1 items-center">
               <button
-                disabled={item === items[0]}
                 onClick={handlePrev}
-                className={`disabled:opacity-50 text-white hover:scale-105 active:scale-95 w-8 aspect-square flex items-center justify-center`}
+                className="text-white hover:scale-105 active:scale-95 w-8 aspect-square flex items-center justify-center"
               >
                 <PrevBtnIcon />
               </button>
               <button
                 onClick={handleNext}
-                disabled={item === items[items.length - 1]}
-                className={`disabled:opacity-50 text-white hover:scale-105 w-8 aspect-square active:scale-95 flex items-center justify-center`}
+                className="text-white hover:scale-105 w-8 aspect-square active:scale-95 flex items-center justify-center"
               >
                 <NextBtnIcon />
               </button>
               <div className="text-white heading4 flex gap-1">
-                <span className="w-3">{items.indexOf(item) + 1}</span>/
+                <span className="w-3">{currentIndex + 1}</span>/
                 <span className="w-3">{items.length}</span>
               </div>
             </div>
           </div>
           {/* Right Content */}
-          <div className="w-full flex items-center justify-center overflow-hidden ps-8">
+          <div className="w-full flex items-center justify-center overflow-hidden ps-8 py-6">
             {/* Main Image */}
-            <div className="p-11 relative flex items-center justify-center border-l-2 border-[#A0A0A0] rounded-full">
-              <Image
-                src={item.src}
-                alt={item.title}
-                width={400}
-                height={400}
-                className="object-cover aspect-square rounded-full"
-              />
+            <div className="lg:p-11 p-9 relative flex items-center justify-center border-l-2 border-[#A0A0A0] rounded-full">
+              <div className="w-full flex items-center bg-primary rounded-full p-2 z-10 justify-center overflow-hidden">
+                <div className="relative flex items-center justify-center lg:w-[400px] lg:h-[400px] w-[240px] h-[240px] aspect-square rounded-full overflow-hidden z-20">
+                  <Image
+                    src={items[currentIndex]?.src}
+                    alt={items[currentIndex]?.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
               {/* Rotating Icons */}
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className={` w-16 border-2 border-white aspect-square absolute ${positions[index]} flex items-center justify-center rounded-full ${
-                    index === items.indexOf(item) ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`lg:w-16 w-11 border-2 border-white aspect-square absolute ${iconPositions[index]}  flex items-center justify-center rounded-full transition-all duration-500 ease-linear`}
                   style={{ backgroundColor: item.color }}
                 >
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={40}
-                    height={40}
-                    className="object-cover aspect-square"
-                  />
+                  <div className="relative lg:w-8 w-6 aspect-square">
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               ))}
             </div>

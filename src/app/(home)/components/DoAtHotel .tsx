@@ -1,9 +1,10 @@
 "use client";
 import {
+  Container,
   DoAtHotelCard,
   Heading,
   Paragraph,
-  SectionWithContainer,
+  Section,
 } from "@/components";
 import SliderSwip from "@/components/SliderSwip";
 import { ButtonNext } from "@/icons/icons";
@@ -24,8 +25,8 @@ const DoAtHotel: React.FC<IDoAtHotelProps> = ({
   items,
 }) => {
   return (
-    <SectionWithContainer sectionClassName="bg-primary !pb-0">
-      <div className="flex flex-col items-center justify-center gap-4">
+    <Section className="bg-primary">
+      <div className="flex flex-col max-width items-center justify-center gap-4 ">
         <Heading
           level={2}
           className="text-center text-[#FFCD42] capitalize font-montaga heading2"
@@ -35,41 +36,49 @@ const DoAtHotel: React.FC<IDoAtHotelProps> = ({
         <Paragraph className="text-center description1">
           {description}
         </Paragraph>
-        <div
-          className="w-full block mt-4 shadow-md relative"
-          id="custom-pagination-fraction"
-        >
-          <SliderSwip
-            data={items}
-            modules={[Pagination, Navigation]}
-            autoplay={{ delay: 2500 }}
-            pagination={{
-              type: "fraction",
-            }}
-            navigation={{
-              nextEl: ".next",
-              prevEl: ".prev",
-            }}
-            slidesPerView={1}
-            spaceBetween={0}
-          >
-            {(item) => <DoAtHotelCard {...item} />}
-          </SliderSwip>
-          <div className="flex items-center justify-center gap-4 absolute bottom-2 left-3 z-10">
-            <button
-              className={`text-primary hover:scale-105 active:scale-95 rotate-180 hover:text-tertiary prev`}
+      </div>
+      <div className="lg:mt-8 mt-2 relative w-full">
+        <div className="lg:h-[29rem] h-[16.5rem]"></div>
+        <div className="bg-white lg:h-[18rem] h-[20rem]"></div>
+        <div className="absolute top-0 left-0  w-full">
+          <Container>
+            <div
+              className="w-full block mt-4 shadow-md "
+              id="custom-pagination-fraction relative overflow-hidden"
             >
-              <ButtonNext />
-            </button>
-            <button
-              className={`text-primary hover:scale-105 active:scale-95 hover:text-tertiary next`}
-            >
-              <ButtonNext />
-            </button>
-          </div>
+              <SliderSwip
+                data={items}
+                modules={[Pagination, Navigation]}
+                autoplay={{ delay: 2500 }}
+                pagination={{
+                  type: "fraction",
+                }}
+                navigation={{
+                  nextEl: ".next",
+                  prevEl: ".prev",
+                }}
+                slidesPerView={1}
+                spaceBetween={0}
+              >
+                {(item) => <DoAtHotelCard {...item} />}
+              </SliderSwip>
+              <div className="flex items-center justify-center gap-4 absolute lg:bottom-2 bottom-3 lg:left-32 left-8 z-10">
+                <button
+                  className={`text-primary hover:scale-105 active:scale-95 rotate-180 hover:text-tertiary prev`}
+                >
+                  <ButtonNext />
+                </button>
+                <button
+                  className={`text-primary hover:scale-105 active:scale-95 hover:text-tertiary next`}
+                >
+                  <ButtonNext />
+                </button>
+              </div>
+            </div>
+          </Container>
         </div>
       </div>
-    </SectionWithContainer>
+    </Section>
   );
 };
 

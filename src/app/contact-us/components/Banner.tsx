@@ -22,13 +22,13 @@ const Banner: React.FC<BannerProps> = ({ title, description, link }) => {
             href={link[0].href}
             label={link[0].label}
             className="capitalize border-quaternary bg-quaternary 
-           border py-3 px-6"
+           border py-3 px-6 max-md:text-[0.75rem]"
           />
           <Button
             href={link[1].href}
             label={link[1].label}
             className="capitalize border-quaternary hover:bg-quaternary 
-           border py-3 px-6"
+           border py-3 px-6 max-md:text-[0.75rem]"
           />
         </div>
       </div>

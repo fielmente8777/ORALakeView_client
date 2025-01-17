@@ -18,7 +18,7 @@ interface ImageSliderProps {
 }
 const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="lg:py-32 py-16">
       <div className="flex  items-center justify-center gap-4">
         <button className="bg-primary text-white py-2 px-4 button-prev rotate-180">
           <ButtonNext />

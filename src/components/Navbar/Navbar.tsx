@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
             </button>
 
             <div
-              className={`fixed top-[4.5rem] right-0 w-[90%] h-full filter backdrop-blur-sm  border-r border-primary/90  z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+              className={`fixed top-[4.5rem] right-0 w-[90%] h-full bg-primary/95 backdrop-brightness-75  border-r border-primary/90  z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
             >
               <MobileNavbar setIsOpen={setIsOpen} />
             </div>

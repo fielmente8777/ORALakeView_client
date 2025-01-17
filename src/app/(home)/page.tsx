@@ -23,7 +23,6 @@ export default function Home() {
       <div id="nearby" />
       <NearbyAttractions {...homePageData.nearbyattractions} />
       <DoAtHotel {...homePageData.DoAtHotel} />
-      <div className="w-full h-[14rem] bg-white relative -top-[14rem]"></div>
       <GuestReviews {...homePageData.guestreviews} />
       <Connectivity {...homePageData.connectivity} />
       <Faq {...homePageData.faq} />

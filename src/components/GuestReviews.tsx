@@ -51,9 +51,10 @@ const GuestReviews: React.FC<GuestReviewsProps> = ({
                 spaceBetween: 20,
                 centeredSlides: false,
                 loop: false,
+                autoplay: false,
               },
             }}
-            classNameSwiperSlide="w-full min-h-[22.5rem] bg-white rounded overflow-hidden"
+            classNameSwiperSlide="w-full lg:min-h-[22.5rem] min-h-[26rem] bg-white rounded overflow-hidden"
           >
             {(item) => <GuestReviewCard {...item} />}
           </SliderSwip>

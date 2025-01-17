@@ -7,7 +7,7 @@ const GreetingCard = () => {
   return (
     <Section className="!pb-0">
       {/* <Image src="/bgimage.png" alt="Greeting" className="object-contain" fill /> */}
-      <div className="lg:h-[14rem] h-28 pt-5 bg-no-repeat bg-cover bg-center lg:bg-[url('https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/Group.webp')] bg-[url('https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/bgimage.webp')]">
+      <div className="lg:h-[14rem] h-28 lg:pt-5 bg-no-repeat bg-cover bg-center lg:bg-[url('https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/Group.webp')] bg-[url('https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/bgimage.webp')]">
         <Container className="">
           <Heading
             level={2}
