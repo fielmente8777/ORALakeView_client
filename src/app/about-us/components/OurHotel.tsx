@@ -15,14 +15,14 @@ const OurHotel = ({
       <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto">
         <Heading
           level={2}
-          className="text-center text-secondary capitalize font-montaga heading3"
+          className="text-center text-secondary capitalize font-montaga heading2"
         >
           {title}
         </Heading>
         <Paragraph className="text-center description1 !text-primary">
           {description}
         </Paragraph>
-        <div className="relative lg:aspect-[4/2] rounded-sm overflow-hidden aspect-square top-16 w-full">
+        <div className="relative lg:aspect-[4/2] rounded-sm overflow-hidden aspect-square lg:top-16 top-6 w-full">
           <Image src={src} alt={title} fill className="object-cover" />
         </div>
       </div>

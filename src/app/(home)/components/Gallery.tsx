@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import { SectionWithContainer } from "@/components";
 import { Heading, Paragraph } from "@/components/TextAndInputComponents";
 import { Arrow1 } from "@/icons/icons";
@@ -19,6 +21,9 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
     "lg:col-span-2 col-span-4 lg:row-span-4 row-span-3",
     "lg:col-span-2 col-span-3 row-span-3 ",
   ];
+
+  const [isHovered, setIsHovered] = useState<null | number>(null);
+
   return (
     <SectionWithContainer sectionClassName="bg-primary">
       <div className="flex flex-col items-center justify-center gap-14">
@@ -41,16 +46,18 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
             <div
               className={`${
                 gridPattern[index % gridPattern.length]
-              } relative w-full aspect-auto rounded-sm  transition-all duration-500 ease-in-out`}
+              } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "hover:scale-100 filter brightness-100 blur-0" : "group-hover:scale-[0.99] group-hover:filter group-hover:brightness-90 group-hover:blur-sm"}`}
               key={index}
+              onMouseEnter={() => setIsHovered(index)}
+              onMouseLeave={() => setIsHovered(null)}
             >
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-48 object-cover hover:scale-[1.05] scale-100  transition-all duration-500 ease-in-out"
+                className="w-full object-cover "
                 fill
               />
-              <div className="absolute top-0 left-0 z-10 w-full h-full  bg-black/30 transition-all duration-300">
+              <div className="absolute top-0 left-0 z-10 w-full h-full  bg-gradient-to-b from-white/10 to-black/70">
                 <Heading
                   level={3}
                   className="text-white text-center capitalize text-base w-full absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -61,16 +68,19 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
             </div>
           ))}
         </div>
-        <Link href="/gallery" className="text-white lg:text-center description1 flex max-md:flex-col flex-wrap items-center gap-2">
+        <Link
+          href="/gallery"
+          className="text-white lg:text-center description1 flex max-md:flex-col flex-wrap items-center gap-2"
+        >
           Explore the Beauty of Lakeview Hotel Through Our Gallery.{" "}
           <span className="inline border-white border-b-2 capitalize">
             {/* <span className="border-white border-b-2 capitalize"> */}
-              See all photos
+            See all photos
             {/* </span>
             <span className="text-white">
             </span> */}
           </span>
-              <Arrow1 />
+          <Arrow1 />
         </Link>
       </div>
     </SectionWithContainer>

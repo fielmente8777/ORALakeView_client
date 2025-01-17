@@ -61,14 +61,14 @@ const Navbar: React.FC = () => {
             </button>
 
             <div
-              className={`fixed top-16 left-0 w-full h-full bg-white/95 border-r border-primary/90  z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+              className={`fixed top-[4.5rem] right-0 w-[90%] h-full filter backdrop-blur-sm  border-r border-primary/90  z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
             >
               <MobileNavbar setIsOpen={setIsOpen} />
             </div>
           </div>
           <Link href="/" className="flex flex-col">
             <span
-              className={`relative lg:block hidden lg:h-28 h-14 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : pathname === "/" ? "lg:opacity-0" : "lg:opacity-100"}`}
+              className={`relative lg:block hidden lg:h-[6.2rem] h-14 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : pathname === "/" ? "lg:opacity-0" : "lg:opacity-100"}`}
             >
               <Image
                 src="/logo.png"
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
               />
             </span>
             <span
-              className={`relative block lg:hidden lg:h-28 h-14 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : "lg:opacity-0"}`}
+              className={`relative block lg:hidden h-9 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : "lg:opacity-0"}`}
             >
               <Image
                 src={`/logosm${navbar || pathname !== "/" ? "2" : "1"}.png`}
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
             <Button
               href={bookingUrl}
               label="Book Now"
-              className={`${navbar || pathname !== "/" ? "block border border-primary" : "hidden"} transition-all duration-75 ease-in-out`}
+              className={`${navbar || pathname !== "/" ? "block border border-primary" : "hidden"} max-md:text-[0.78rem] transition-all duration-75 ease-in-out`}
               newTabe={true}
             />
           </div>

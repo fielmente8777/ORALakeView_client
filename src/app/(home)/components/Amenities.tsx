@@ -41,7 +41,15 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
     }
   };
 
-  // const itemIndex = items.findIndex((i) => i === item);
+  const positions = [
+    "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
+    "top-[70%] left-4 -translate-x-1/2 -translate-y-1/2 scale-[0.8]",
+    "top-[85%] left-[4rem] -translate-x-1/2 -translate-y-1/2 scale-[0.7]",
+    "top-[95%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6]",
+    "top-[30%] right-[29rem] translate-x-1/2 -translate-y-1/2 scale-[0.8]",
+    "top-[15%] right-[26rem] translate-x-1/2 -translate-y-1/2 scale-[0.7]",
+    "top-[7.5%] right-[22.5rem] translate-x-1/2 -translate-y-1/2 scale-[0.6]",
+  ];
 
   return (
     <SectionWithContainer sectionClassName="bg-primary lg:pb-28">
@@ -89,9 +97,9 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
             </div>
           </div>
           {/* Right Content */}
-          <div className="w-full relative flex items-center justify-center overflow-hidden">
+          <div className="w-full flex items-center justify-center overflow-hidden ps-8">
             {/* Main Image */}
-            <div>
+            <div className="p-11 relative flex items-center justify-center border-l-2 border-[#A0A0A0] rounded-full">
               <Image
                 src={item.src}
                 alt={item.title}
@@ -99,36 +107,25 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
                 height={400}
                 className="object-cover aspect-square rounded-full"
               />
-            </div>
-
-            {/* Rotating Icons */}
-            {/* <div
-              style={{ transform: `rotate(${rotation}deg)` }}
-              className="absolute w-[500px] h-[500px] flex items-center justify-center"
-            >
-              {items.map((iconItem, index) => (
+              {/* Rotating Icons */}
+              {items.map((item, index) => (
                 <div
                   key={index}
-                  style={{
-                    transform: `rotate(${(160 / items.length) * index}deg) translate(290px) rotate(-${(160 / items.length) * index}deg)`,
-                  }}
-                  className="absolute"
+                  className={` w-16 border-2 border-white aspect-square absolute ${positions[index]} flex items-center justify-center rounded-full ${
+                    index === items.indexOf(item) ? "opacity-100" : "opacity-0"
+                  }`}
+                  style={{ backgroundColor: item.color }}
                 >
-                  <div
-                    className={`flex items-center justify-center w-12 h-12 border-2 border-white aspect-square rounded-full ${index === itemIndex ? "scale-125" : "scale-100"}`}
-                    style={{ backgroundColor: iconItem.color }}
-                  >
-                    <Image
-                      src={iconItem.icon}
-                      alt={iconItem.title}
-                      width={30}
-                      height={30}
-                      className={`object-contain `}
-                    />
-                  </div>
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={40}
+                    height={40}
+                    className="object-cover aspect-square"
+                  />
                 </div>
               ))}
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

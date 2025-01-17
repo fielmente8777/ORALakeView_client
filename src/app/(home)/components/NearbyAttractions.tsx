@@ -23,7 +23,7 @@ const NearbyAttractions: React.FC<NearbyAttractionsProps> = ({
   images,
 }) => {
   return (
-    <Section className="lg:!pb-0">
+    <Section className="lg:!pb-0" >
       <Container>
         <div className="flex flex-col items-center justify-center gap-4 lg:mb-16 mb-8">
           <Heading

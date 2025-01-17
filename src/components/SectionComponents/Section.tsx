@@ -10,7 +10,7 @@ const Section: React.FC<SectionProps> = ({
   className = "",
   lgpy,
   py,
-  id,
+  id="",
   children,
 }) => {
   return (

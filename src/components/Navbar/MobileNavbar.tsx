@@ -17,28 +17,28 @@ export const MobileNavbar = ({
   return (
     <header>
       <Container>
-        <nav className="flex flex-col gap-4 w-full h-full py-4">
+        <nav className="flex flex-col gap-4 w-full h-full py-8">
           <ul className="flex flex-col gap-2">
             {NavLink.map((link, index) => (
               <li
                 key={index}
                 className={`px-3 ${
                   link.href === pathname
-                    ? "text-tertiary border-primary border-l-2"
-                    : "text-primary "
+                    ? "text-white/90 border-primary border-l-2"
+                    : "text-white "
                 }`}
               >
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-2 py-2"
+                  className="flex items-center font-semibold gap-2 py-2"
                 >
                   <span>{link.name}</span>
                 </Link>
               </li>
             ))}
           </ul>
-          <Button href={bookingUrl} label="Book Now" className="w-fit mx-2 py-3 px-6" />
+          <Button href={bookingUrl} label="Book Now" newTabe className="w-fit mx-2 py-3 px-6 bg-white !text-primary max-md:hover:bg-white max-md:hover:text-primary" />
         </nav>
       </Container>
     </header>

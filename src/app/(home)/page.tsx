@@ -18,7 +18,9 @@ export default function Home() {
       <WhoWeAre />
       <Gallery {...homePageData.galleryData} />
       <RoomsSilder {...homePageData.roomsData} />
+      <div id="amenities" />
       <Amenities {...homePageData.amenitiesData} />
+      <div id="nearby" />
       <NearbyAttractions {...homePageData.nearbyattractions} />
       <DoAtHotel {...homePageData.DoAtHotel} />
       <div className="w-full h-[14rem] bg-white relative -top-[14rem]"></div>

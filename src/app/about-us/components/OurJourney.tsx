@@ -1,7 +1,7 @@
 "use client";
 import { Heading, OurJourneyCard, SectionWithContainer } from "@/components";
 import SliderSwip from "@/components/SliderSwip";
-// import { ButtonNext } from "@/icons/icons";
+import { NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 import { Navigation, Pagination } from "swiper/modules";
 
 interface OurJourneyProps {
@@ -19,11 +19,11 @@ const OurJourney: React.FC<OurJourneyProps> = ({ title, cards }) => {
   console.log(cards[cards.length - 1].year);
 
   return (
-    <SectionWithContainer sectionClassName="bg-primary lg:pt-32 lg:pb-20">
+    <SectionWithContainer sectionClassName="bg-primary lg:pt-32 pt-16 lg:pb-20">
       <div className="journey relative">
         <Heading
           level={2}
-          className="text-center text-secondary capitalize font-montaga heading3"
+          className="text-center text-secondary capitalize font-montaga heading2"
         >
           {title}
         </Heading>
@@ -58,18 +58,18 @@ const OurJourney: React.FC<OurJourneyProps> = ({ title, cards }) => {
             )}
           </SliderSwip>
         </div>
-        {/* <div className="flex items-center justify-center gap-4 absolute bottom-8 left-2 z-10">
+        <div className="flex lg:items-center max-md:mt-8 lg:justify-center gap-4 lg:absolute bottom-8 left-2 z-10">
           <button
-            className={`text-white hover:scale-105 active:scale-95 rotate-180 hover:text-tertiary ${btn}-pre ${cards.length <= 0 ? "opacity-5 hidden" : "opacity-100"}`}
+            className={`text-white hover:scale-105 active:scale-95 desabled:text-tertiary  ${btn}-pre`}
           >
-            <ButtonNext />
+            <PrevBtnIcon />
           </button>
           <button
-            className={`text-white hover:scale-105 active:scale-95 hover:text-tertiary ${btn}-next`}
+            className={`text-white hover:scale-105 active:scale-95  ${btn}-next`}
           >
-            <ButtonNext />
+            <NextBtnIcon />
           </button>
-        </div> */}
+        </div>
       </div>
     </SectionWithContainer>
   );
