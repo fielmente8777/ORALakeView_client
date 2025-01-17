@@ -18,13 +18,13 @@ interface IAmenities {
 
 const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
   const [item, setItem] = useState(items[0]);
-  const [rotation, setRotation] = useState(0); // Controls rotation of the icon orbit
+  // const [rotation, setRotation] = useState(0); // Controls rotation of the icon orbit
 
   const handlePrev = () => {
     const currentIndex = items.findIndex((i) => i === item);
     if (currentIndex > 0) {
       setItem(items[currentIndex - 1]);
-      setRotation((prev) => prev - 45); // Adjust rotation angle
+      // setRotation((prev) => prev - 45); // Adjust rotation angle
     } else {
       setItem(items[0]);
     }
@@ -33,15 +33,15 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
   const handleNext = () => {
     if (item === items[items.length - 1]) {
       setItem(items[0]);
-      setRotation((prev) => prev + 45); // Adjust rotation angle
+      // setRotation((prev) => prev + 45); // Adjust rotation angle
     } else {
       const currentIndex = items.findIndex((i) => i === item);
       setItem(items[(currentIndex + 1) % items.length]);
-      setRotation((prev) => prev + 45); // Adjust rotation angle
+      // setRotation((prev) => prev + 45); // Adjust rotation angle
     }
   };
 
-  const itemIndex = items.findIndex((i) => i === item);
+  // const itemIndex = items.findIndex((i) => i === item);
 
   return (
     <SectionWithContainer sectionClassName="bg-primary lg:pb-28">
@@ -102,7 +102,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
             </div>
 
             {/* Rotating Icons */}
-            <div
+            {/* <div
               style={{ transform: `rotate(${rotation}deg)` }}
               className="absolute w-[500px] h-[500px] flex items-center justify-center"
             >
@@ -128,7 +128,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

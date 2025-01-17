@@ -464,19 +464,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"6.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"7.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"8.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"9.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard+"10.webp",
           alt: "dsdsd",
         },
       ],
@@ -498,19 +502,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"11.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"13.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"4.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"12.webp",
           alt: "dsdsd",
         },
       ],
@@ -532,19 +536,27 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"12.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"13.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"14.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"5.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard+"4.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard+"15.webp",
           alt: "dsdsd",
         },
       ],
@@ -566,21 +578,18 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"17.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"18.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"19.webp",
           alt: "dsdsd",
         },
-        {
-          src: roomCard+"1.webp",
-          alt: "dsdsd",
-        },
+       
       ],
       list: [
         "FREE WIFI",
@@ -600,19 +609,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"20.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"21.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"22.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"23.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard+"24.webp",
           alt: "dsdsd",
         },
       ],
@@ -634,19 +647,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"25.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"26.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"27.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"1.webp",
+          src: roomCard+"28.webp",
           alt: "dsdsd",
         },
       ],

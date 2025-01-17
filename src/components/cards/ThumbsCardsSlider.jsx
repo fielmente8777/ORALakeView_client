@@ -20,8 +20,10 @@ import { NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 const ThumbsCardsSlider = ({ images, index }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
+  
+
   return (
-    <div className="w-full relative">
+    <div className="w-full relative thumbs">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -58,7 +60,8 @@ const ThumbsCardsSlider = ({ images, index }) => {
         <Swiper
           onSwiper={setThumbsSwiper}
           spaceBetween={10}
-          slidesPerView={5}
+          slidesPerView={images?.length}
+          // slidesPerView={5}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}

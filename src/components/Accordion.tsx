@@ -18,6 +18,8 @@ const Accordion: React.FC<AccordionProps> = ({ title, content, id }) => {
     <div
       className={`accordion overflow-hidden h-max transition-all ease-linear mt-6 duration-500 ${isOpen === id ? "bg-white" : ""}`}
       onClick={() => toggleAccordion(id)}
+      onMouseEnter={() => setIsOpen(id)}
+      onMouseLeave={() => setIsOpen(null)}
     >
       <div className="accordion-header">
         <Heading

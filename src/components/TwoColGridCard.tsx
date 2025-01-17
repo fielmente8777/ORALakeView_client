@@ -35,7 +35,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
           <ThumbsCardsSlider images={images} index={index} />
         </div>
         <div
-          className={` flex flex-col justify-between gap-4 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
+          className={` flex flex-col  lg:gap-32 gap-5 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
         >
           <div className="flex flex-col gap-5">
             {title && (
