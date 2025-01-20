@@ -18,13 +18,13 @@ interface IAmenities {
 
 const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
   const positions = [
-    "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
-    "top-[70%] lg:left-4 left-3 -translate-x-1/2 -translate-y-1/2 scale-[0.8]",
-    "lg:top-[85%] top-[88%] lg:left-[4rem] left-[3rem] -translate-x-1/2 -translate-y-1/2 scale-[0.7]",
-    "lg:top-[95%] top-[98%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6]",
-    "lg:top-[6%] top-[0.74rem] left-[4.2rem] lg:right-[22.5rem]  translate-x-1/2 -translate-y-1/2 scale-[0.6]",
-    "top-[15%] lg:right-[26rem] left-0 translate-x-1/2 -translate-y-1/2 scale-[0.7]",
-    "lg:top-[30%] top-[30.5%] lg:-left-[3rem] -left-[2rem] translate-x-1/2 -translate-y-1/2 scale-[0.8]",
+    "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-linear scale-100",
+    "top-[70%] lg:left-4 left-3 -translate-x-1/2 -translate-y-1/2 scale-[0.8] transition-all duration-700 ease-linear",
+    "lg:top-[85%] top-[88%] lg:left-[4rem] left-[3rem] -translate-x-1/2 -translate-y-1/2 scale-[0.7] transition-all duration-700 ease-linear",
+    "lg:top-[95%] top-[98%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6] transition-all duration-700 ease-linear",
+    "lg:top-[6%] top-[0.74rem] left-[4.2rem] lg:right-[22.5rem]  translate-x-1/2 -translate-y-1/2 scale-[0.6] transition-all duration-700 ease-linear",
+    "top-[15%] lg:right-[26rem] left-0 translate-x-1/2 -translate-y-1/2 scale-[0.7] transition-all duration-700 ease-linear",
+    "lg:top-[30%] top-[30.5%] lg:-left-[3rem] -left-[2rem] translate-x-1/2 -translate-y-1/2 scale-[0.8] transition-all duration-700 ease-linear",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +64,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
         <div className="w-full lg:grid grid-cols-2 gap-4 flex flex-col-reverse items-center mt-8">
           {/* Left Content */}
           <div className="w-full flex-col h-full justify-center flex gap-4">
-            <div className="flex flex-col gap-4 min-h-[10rem]">
+            <div className="flex flex-col lg:gap-4 gap-2 min-h-[10rem]">
               <Heading
                 level={2}
                 className="text-white capitalize font-montaga text-2xl"
@@ -95,10 +95,10 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
             </div>
           </div>
           {/* Right Content */}
-          <div className="w-full flex items-center justify-center overflow-hidden ps-8 py-6">
+          <div className="w-full flex items-center justify-center overflow-hidden ps-16 py-6">
             {/* Main Image */}
             <div className="lg:p-11 p-9 relative flex items-center justify-center border-l-2 border-[#A0A0A0] rounded-full">
-              <div className="w-full flex items-center bg-primary rounded-full p-2 z-10 justify-center overflow-hidden">
+              <div className="w-full flex items-center bg-primary rounded-full p-1 z-10 justify-center overflow-hidden">
                 <div className="relative flex items-center justify-center lg:w-[400px] lg:h-[400px] w-[240px] h-[240px] aspect-square rounded-full overflow-hidden z-20">
                   <Image
                     src={items[currentIndex]?.src}
@@ -112,7 +112,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className={`lg:w-16 w-11 border-2 border-white aspect-square absolute ${iconPositions[index]}  flex items-center justify-center rounded-full transition-all duration-500 ease-linear`}
+                  className={`lg:w-16 w-11 border-2 border-white aspect-square absolute ${iconPositions[index]}  flex items-center justify-center rounded-full transition-all duration-700 ease-linear`}
                   style={{ backgroundColor: item.color }}
                 >
                   <div className="relative lg:w-8 w-6 aspect-square">

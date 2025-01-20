@@ -6,7 +6,7 @@ import {
   SectionWithContainer,
 } from "@/components";
 import SliderSwip from "@/components/SliderSwip";
-import { ArrowRightIcon, ButtonNext } from "@/icons/icons";
+import { ArrowRightIcon, NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 import Link from "next/link";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -53,22 +53,32 @@ const RoomsSilder: React.FC<{
                 prevEl: ".home-room-prev",
               }}
               slidesPerView={1.3}
-              spaceBetween={35}
+              spaceBetween={5}
+              breakpoints={{
+                1024: {
+                  slidesPerView: 1.3,
+                  spaceBetween: 35,
+                },
+                768: {
+                  slidesPerView: 1.3,
+                  spaceBetween: 35,
+                },
+              }}
               classNameSwiper="h-full w-full roomsSilder"
               classNameSwiperSlide="h-full w-full pb-11"
             >
               {(item) => <HomeRoomCard {...item} />}
             </SliderSwip>
-            <div className="flex items-center justify-center gap-4 absolute bottom-2 lg:right-28 z-10">
+            <div className="flex items-center justify-center gap-4 absolute bottom-1 lg:right-28 z-10">
               <button
-                className={` hover:scale-105 disabled:text-primary active:scale-95 rotate-180 text-secondary home-room-prev`}
+                className={` hover:scale-105 w-[2rem] aspect-square flex items-center justify-center disabled:text-primary active:scale-95 text-secondary home-room-prev`}
               >
-                <ButtonNext />
+                <PrevBtnIcon />
               </button>
               <button
-                className={`hover:scale-105 active:scale-95 disabled:text-primary text-secondary home-room-next`}
+                className={`hover:scale-105 active:scale-95 w-[2rem] aspect-square flex items-center justify-center disabled:text-primary text-secondary home-room-next`}
               >
-                <ButtonNext />
+                <NextBtnIcon />
               </button>
             </div>
           </div>

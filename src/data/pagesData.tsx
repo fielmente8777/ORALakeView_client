@@ -18,10 +18,7 @@ export const homePageData = {
   bannerData: {
     title: "the best lakeview",
     description: "Unwind with Stunning Views and Warm Hospitality",
-    images: [
-      homeImages + "/img1.webp",
-       homeImages + "/gallery/img4.webp"
-      ],
+    images: [homeImages + "/img1.webp", homeImages + "/gallery/img4.webp"],
   },
   galleryData: {
     title: "Gallery",
@@ -111,51 +108,51 @@ export const homePageData = {
         color: "#FAE3AF",
       },
       {
-        icon: homeImages+"/amenities/PicnicTable.png",
+        icon: homeImages + "/amenities/PicnicTable.png",
         title: "Breakfast",
         description:
           "Savor delicious meals at our on-site dining options. Start your day with a hearty continental breakfast buffet featuring fresh, locally sourced ingredients. For lunch and dinner, explore nearby restaurants or enjoy a meal in the comfort of your room.",
-        src: homeImages+"/amenities/img1.webp",
+        src: homeImages + "/amenities/img1.webp",
         color: "#D8D6D7",
       },
       {
-        icon: homeImages+"/amenities/SmileyWink.png",
+        icon: homeImages + "/amenities/SmileyWink.png",
         title: "Entertainment Lounge",
         description:
           "Unwind in our entertainment zone, designed for relaxation and fun. Enjoy games, books, and cozy seating areas where you can gather with friends or family for a delightful evening of laughter and entertainment.",
-        src: homeImages+"/gallery/img2.webp",
+        src: homeImages + "/gallery/img2.webp",
         color: "#E7CBCE",
       },
       {
-        icon: homeImages+"/amenities/Eye.png",
+        icon: homeImages + "/amenities/Eye.png",
         title: "Private Balcony/Terrace",
         description:
           "Many of our rooms come with private balconies or terraces, offering stunning views of Lake Brienz and the surrounding mountains. Relax with a book or enjoy a glass of wine while taking in the serene beauty of nature right outside your door.",
-        src: homeImages+"/gallery/img1.webp",
+        src: homeImages + "/gallery/img1.webp",
         color: "#CE905F",
       },
       {
-        icon: homeImages+"/amenities/Confetti.png",
+        icon: homeImages + "/amenities/Confetti.png",
         title: "Private Gatherings (replacement)",
         description:
           "For special occasions or events, we offer spaces suitable for private gatherings. Whether it's a family reunion, birthday celebration, or corporate meeting, our dedicated team is here to help you create memorable experiences tailored to your needs.",
-        src: galleryImages+"/slider/img1.webp",
+        src: galleryImages + "/slider/img1.webp",
         color: "#CFC4B1",
       },
       {
-        icon: homeImages+"/amenities/WifiHigh.png",
+        icon: homeImages + "/amenities/WifiHigh.png",
         title: "Free WiFi",
         description:
           "Stay connected with our complimentary high-speed WiFi available throughout the hotel. Whether you're working remotely, streaming your favorite shows, or sharing your travel experiences on social media, our reliable internet ensures you can stay in touch with the world.",
-        src: homeImages+"/amenities/img2.webp",
+        src: homeImages + "/amenities/img2.webp",
         color: "#E0E7E9",
       },
       {
-        icon: homeImages+"/amenities/ChefHat.png",
+        icon: homeImages + "/amenities/ChefHat.png",
         title: "Common Kitchen",
         description:
           "Our inviting restaurant provides a cozy atmosphere for dining, with both indoor and outdoor seating options. For those who prefer to cook, select accommodations feature kitchen facilities, allowing you to prepare your own meals using fresh local ingredients.",
-        src: homeImages+"/amenities/img3.webp",
+        src: homeImages + "/amenities/img3.webp",
         color: "#B9BDA7",
       },
     ],
@@ -426,23 +423,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"1.webp",
+          src: roomCard + "1.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"2.webp",
+          src: roomCard + "2.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"3.webp",
+          src: roomCard + "3.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"4.webp",
+          src: roomCard + "4.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"5.webp",
+          src: roomCard + "5.webp",
           alt: "dsdsd",
         },
       ],
@@ -464,23 +461,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"6.webp",
+          src: roomCard + "6.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"7.webp",
+          src: roomCard + "7.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"8.webp",
+          src: roomCard + "8.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"9.webp",
+          src: roomCard + "9.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"10.webp",
+          src: roomCard + "10.webp",
           alt: "dsdsd",
         },
       ],
@@ -502,19 +499,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"11.webp",
+          src: roomCard + "11.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"13.webp",
+          src: roomCard + "13.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"4.webp",
+          src: roomCard + "4.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"12.webp",
+          src: roomCard + "12.webp",
           alt: "dsdsd",
         },
       ],
@@ -536,27 +533,27 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"12.webp",
+          src: roomCard + "12.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"13.webp",
+          src: roomCard + "13.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"14.webp",
+          src: roomCard + "14.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"5.webp",
+          src: roomCard + "5.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"4.webp",
+          src: roomCard + "4.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"15.webp",
+          src: roomCard + "15.webp",
           alt: "dsdsd",
         },
       ],
@@ -578,18 +575,17 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"17.webp",
+          src: roomCard + "17.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"18.webp",
+          src: roomCard + "18.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"19.webp",
+          src: roomCard + "19.webp",
           alt: "dsdsd",
         },
-       
       ],
       list: [
         "FREE WIFI",
@@ -609,23 +605,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"20.webp",
+          src: roomCard + "20.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"21.webp",
+          src: roomCard + "21.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"22.webp",
+          src: roomCard + "22.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"23.webp",
+          src: roomCard + "23.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"24.webp",
+          src: roomCard + "24.webp",
           alt: "dsdsd",
         },
       ],
@@ -647,19 +643,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard+"25.webp",
+          src: roomCard + "25.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"26.webp",
+          src: roomCard + "26.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"27.webp",
+          src: roomCard + "27.webp",
           alt: "dsdsd",
         },
         {
-          src: roomCard+"28.webp",
+          src: roomCard + "28.webp",
           alt: "dsdsd",
         },
       ],
@@ -688,25 +684,25 @@ export const galleryPageData = {
     {
       title: "Bar Lounge",
       images: [
-        galleryImages + "/slider/img1.webp",
         galleryImages + "/slider/img2.webp",
+        homeImages + "/gallery/img2.webp",
         galleryImages + "/slider/img1.webp",
       ],
     },
     {
       title: "Facade",
       images: [
-        galleryImages + "/slider/img1.webp",
-        galleryImages + "/slider/img1.webp",
-        galleryImages + "/slider/img1.webp",
+        aboutImages + "/img2.webp",
+        homeImages + "/gallery/img4.webp",
+        homeImages + "/img1.webp",
       ],
     },
     {
       title: "Reception",
       images: [
-        galleryImages + "/slider/img4.webp",
-        galleryImages + "/slider/img5.webp",
         galleryImages + "/slider/img6.webp",
+        galleryImages + "/slider/img5.webp",
+        galleryImages + "/slider/img4.webp",
       ],
     },
     {

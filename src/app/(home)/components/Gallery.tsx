@@ -26,7 +26,7 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
 
   return (
     <SectionWithContainer sectionClassName="bg-primary">
-      <div className="flex flex-col items-center justify-center gap-14">
+      <div className="flex flex-col items-center justify-center lg:gap-14 gap-4">
         <div className="flex flex-col items-center justify-center gap-4">
           <Heading
             level={2}
@@ -40,13 +40,13 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
           </Paragraph>
         </div>
         <div
-          className={`grid grid-cols-7  lg:auto-rows-[6rem] group auto-rows-[4rem] gap-3 w-full h-full rounded-sm`}
+          className={`grid grid-cols-7  lg:auto-rows-[6rem] group auto-rows-[3rem] lg:gap-3 gap-1 w-full h-full rounded-sm`}
         >
           {images.map((image, index) => (
             <div
               className={`${
                 gridPattern[index % gridPattern.length]
-              } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "hover:scale-100 filter brightness-100 blur-0" : "group-hover:scale-[0.99] group-hover:filter group-hover:brightness-90 group-hover:blur-sm"}`}
+              } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "lg:hover:scale-100 filter brightness-100 blur-0" : "lg:group-hover:scale-[0.99] lg:group-hover:filter lg:group-hover:brightness-90 lg:group-hover:blur-sm"}`}
               key={index}
               onMouseEnter={() => setIsHovered(index)}
               onMouseLeave={() => setIsHovered(null)}
@@ -60,7 +60,7 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
               <div className="absolute top-0 left-0 z-10 w-full h-full  bg-gradient-to-b from-white/10 to-black/70">
                 <Heading
                   level={3}
-                  className="text-white text-center capitalize text-base w-full absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  className="text-white text-center text-[0.75rem] capitalize lg:text-base w-full absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 >
                   {image.alt}
                 </Heading>
@@ -68,20 +68,20 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
             </div>
           ))}
         </div>
-        <Link
-          href="/gallery"
-          className="text-white lg:text-center description1 flex max-md:flex-col flex-wrap items-center gap-2"
-        >
-          Explore the Beauty of Lakeview Hotel Through Our Gallery.{" "}
-          <span className="inline border-white border-b-2 capitalize">
-            {/* <span className="border-white border-b-2 capitalize"> */}
-            See all photos
-            {/* </span>
-            <span className="text-white">
-            </span> */}
+        <p className="text-white lg:text-center lg:description1 text-[0.75rem] flex max-md:flex-col lg:items-center gap-2 ">
+          Explore the Beauty of Lakeview Hotel Through Our{" "}
+          <span className="inline-flex items-center gap-2">
+            Gallery .{" "}
+            <Link href="/gallery" className="inline-flex items-center gap-2">
+              <span className="border-white border-b-2 capitalize">
+                See all photos
+              </span>
+              <span className="text-white">
+                <Arrow1 />
+              </span>
+            </Link>
           </span>
-          <Arrow1 />
-        </Link>
+        </p>
       </div>
     </SectionWithContainer>
   );

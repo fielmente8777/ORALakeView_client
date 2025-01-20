@@ -24,7 +24,7 @@ export const MobileNavbar = ({
                 key={index}
                 className={`px-3 ${
                   link.href === pathname
-                    ? "text-white/90 border-primary border-l-2"
+                    ? "text-white/90 border-white border-l-2"
                     : "text-white "
                 }`}
               >

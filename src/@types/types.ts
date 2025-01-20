@@ -25,3 +25,14 @@ export interface GuestReviewsProps {
     description: string;
   }[];
 }
+
+
+
+// gallery page 
+export interface ImageSliderProps {
+  items: {
+    title: string;
+    images: string[];
+  }[];
+  index?: number;
+}

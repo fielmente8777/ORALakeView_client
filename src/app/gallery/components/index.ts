@@ -1,3 +1,4 @@
 import Banner from "./Banner";
 import ImageSlider from "./ImageSlider";
-export { Banner, ImageSlider };
+import CircleSlider from './CircleSlider';
+export { Banner, ImageSlider,CircleSlider };

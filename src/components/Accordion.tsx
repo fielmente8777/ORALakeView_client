@@ -29,7 +29,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content, id }) => {
           {title}
         </Heading>
         <span
-          className={`${isOpen === id ? "text-white bg-[#c6a445] rotate-180" : "text-[#c6a445]"} transition-all duration-300 ease-linear flex items-center justify-center w-8 h-8 rounded-full`}
+          className={`${isOpen === id ? "text-white bg-[#c6a445] rotate-180" : "text-[#c6a445]"} pointer-events-none transition-all duration-300 ease-linear flex items-center justify-center w-8 h-8 rounded-full`}
         >
           {isOpen === id ? <Remove /> : <Add />}
 
