@@ -1,9 +1,10 @@
 import { Heading } from "@/components";
 import Image from "next/image";
+import React from "react";
 interface ImageCardProps {
   images: string[];
   title: string;
-  handleModal: (image: string, images: string[]) => void;
+  handleModal: (image: string, images: string[], title: string) => void;
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({
@@ -15,11 +16,10 @@ const ImageCard: React.FC<ImageCardProps> = ({
     <div className="flex flex-col items-center justify-center gap-4 relative">
       <div className="w-full h-max flex gap-14 items-center justify-center">
         {images.map((image, index) => (
-          <>
+          <React.Fragment key={index}>
             <div
-              key={index}
               className={`w-[15rem] aspect-[4/6.5] shadow-lg h-full overflow-hidden relative ${index === 0 ? "rotate-[-25deg]" : index === 1 ? "rotate-[0 deg] mb-[15rem]" : index === 2 ? "rotate-[25deg]" : ""}`}
-              onClick={() => handleModal(image, images)}
+              onClick={() => handleModal(image, images, title)}
             >
               <Image
                 src={image}
@@ -31,7 +31,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
             {index < images.length - 1 && (
               <div className="w-2 h-2 aspect-square rounded-full bg-primary"></div>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
       <Heading

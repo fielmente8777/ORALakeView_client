@@ -65,6 +65,7 @@ const Footer = () => {
                     >
                       <Input
                         {...item}
+                        arial-label={item.name}
                         className="w-full bg-transparent placeholder:uppercase border-b text-start border-white outline-none py-2 description1 px-1 text-white placeholder:text-white"
                       />
                     </div>

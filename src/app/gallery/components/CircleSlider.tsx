@@ -10,11 +10,17 @@ const CircleSlider: React.FC<ImageSliderProps> = ({ items }) => {
   const [rotation, setRotation] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
+  const [title, setTitle] = useState("");
   const [imageArray, setImageArray] = useState<string[]>([]);
 
-  const handleModal = (image: string, imageArray: string[]) => {
+  const handleModal = (
+    image: string,
+    imageArray: string[],
+    title: string
+  ) => {
     setShowModal(true);
     setSelectedImage(image);
+    setTitle(title);
     setImageArray([...imageArray, image]);
   };
 
@@ -27,13 +33,13 @@ const CircleSlider: React.FC<ImageSliderProps> = ({ items }) => {
   };
 
   return (
-    <Section className="lg:block hidden">
-      <div className="h-[700px] relative z-20 overflow-hidden ">
-        <div className="w-full h-full relative top-[60rem]">
+    <Section className="lg:block hidden !pb-0">
+      <div className="h-[650px] relative z-20 overflow-hidden ">
+        <div className="w-full h-full relative top-[58rem]">
           <div
             style={{
               transform: `rotate(${rotation}deg)`,
-              transition: "transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1)", // Smooth animation
+              transition: "transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1)",
             }}
             className="absolute w-[10px] aspect-square flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2"
           >
@@ -42,7 +48,7 @@ const CircleSlider: React.FC<ImageSliderProps> = ({ items }) => {
                 key={index}
                 style={{
                   transform: `rotate(${(360 / items.length) * index}deg) translate(950px) rotate(-${(360 / items.length) * index}deg)`,
-                  transition: "transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1)", // Smooth transition for individual items
+                  transition: "transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1)",
                 }}
                 className="absolute"
               >
@@ -83,13 +89,14 @@ const CircleSlider: React.FC<ImageSliderProps> = ({ items }) => {
           </div>
         </div>
       </div>
-      
+
       {showModal && (
         <FullScreenImageViewPopUP
           setShowModal={setShowModal}
           src={selectedImage}
           showModal={showModal}
           imageArray={imageArray}
+          title={title}
         />
       )}
     </Section>
