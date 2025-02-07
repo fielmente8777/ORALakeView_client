@@ -16,13 +16,13 @@ import {
 } from "./links";
 export const homePageData = {
   bannerData: {
-    title: "the best lakeview",
-    description: "Unwind with Stunning Views and Warm Hospitality",
+    title: "Whispers of Brienz at the Best Lakeview Hotel",
+    description: "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
     images: [homeImages + "/img1.webp", homeImages + "/gallery/img4.webp"],
   },
   galleryData: {
     title: "Gallery",
-    description: "Experience the Stunning Views and Cozy Atmosphere",
+    description: "Every frame, a postcard-worthy view",
     images: [
       {
         src: homeImages + "/gallery/img1.webp",
@@ -57,9 +57,9 @@ export const homePageData = {
   roomsData: {
     title: "Rooms",
     description:
-      "Experience Comfort and Elegance in Our Beautifully Designed Rooms",
+      "Whether you’re a solo adventurer, a dreamy couple, or a happy family, we’ve got the perfect space for you to make memories that linger long after check-out",
     subDescription:
-      "Choose from a range of beautifully designed rooms and suites, each offering comfort, modern amenities, and breathtaking views of Lake Brienz.",
+      "Choose from a range of beautifully designed rooms and suites, each offering comfort, modern amenities, and breathtaking views of Lake Brienz",
     images: [
       {
         src: homeImages + "/rooms/img1.webp",
@@ -97,13 +97,13 @@ export const homePageData = {
   },
   amenitiesData: {
     title: "Amenities",
-    description: "Comfort and Convenience at Your Fingertips",
+    description: "Thoughtful touches, endless delight",
     items: [
       {
         icon: homeImages + "/amenities/CarProfile.png",
-        title: "Free Parking",
+        title: "Free Parking Without Reservation",
         description:
-          "Enjoy the convenience of free parking during your stay at Hotel Lakeview. Our spacious and secure parking area is designed to accommodate all guests, ensuring a stress-free experience from the moment you arrive",
+          "Arrive stress-free with spacious front and back parking areas, designed to accommodate every guest with ease and comfort.",
         src: aboutImages + "/img2.webp",
         color: "#FAE3AF",
       },
@@ -111,7 +111,7 @@ export const homePageData = {
         icon: homeImages + "/amenities/PicnicTable.png",
         title: "Breakfast",
         description:
-          "Savor delicious meals at our on-site dining options. Start your day with a hearty continental breakfast buffet featuring fresh, locally sourced ingredients. For lunch and dinner, explore nearby restaurants or enjoy a meal in the comfort of your room.",
+          "Start your day the right way. Our continental breakfast buffet is packed with fresh, locally-sourced flavors to fuel your adventures ahead",
         src: homeImages + "/amenities/img1.webp",
         color: "#D8D6D7",
       },
@@ -119,7 +119,7 @@ export const homePageData = {
         icon: homeImages + "/amenities/SmileyWink.png",
         title: "Entertainment Lounge",
         description:
-          "Unwind in our entertainment zone, designed for relaxation and fun. Enjoy games, books, and cozy seating areas where you can gather with friends or family for a delightful evening of laughter and entertainment.",
+          "Relax, recharge, and enjoy. Whether you’re into games, books, or just good conversations under the glow of Swiss hospitality",
         src: homeImages + "/gallery/img2.webp",
         color: "#E7CBCE",
       },
@@ -127,31 +127,31 @@ export const homePageData = {
         icon: homeImages + "/amenities/Eye.png",
         title: "Private Balcony/Terrace",
         description:
-          "Many of our rooms come with private balconies or terraces, offering stunning views of Lake Brienz and the surrounding mountains. Relax with a book or enjoy a glass of wine while taking in the serene beauty of nature right outside your door.",
+          "Take in the views—Lake Brienz, the Swiss Alps, and a whole lot of serenity. Unwind with a book, or sip your favorite drink while nature does the rest",
         src: homeImages + "/gallery/img1.webp",
         color: "#CE905F",
-      },
-      {
-        icon: homeImages + "/amenities/Confetti.png",
-        title: "Private Gatherings (replacement)",
-        description:
-          "For special occasions or events, we offer spaces suitable for private gatherings. Whether it's a family reunion, birthday celebration, or corporate meeting, our dedicated team is here to help you create memorable experiences tailored to your needs.",
-        src: galleryImages + "/slider/img1.webp",
-        color: "#CFC4B1",
       },
       {
         icon: homeImages + "/amenities/WifiHigh.png",
         title: "Free WiFi",
         description:
-          "Stay connected with our complimentary high-speed WiFi available throughout the hotel. Whether you're working remotely, streaming your favorite shows, or sharing your travel experiences on social media, our reliable internet ensures you can stay in touch with the world.",
+          "Stay as connected as you want. Our high-speed WiFi ensures you can stay in touch with what matters, while you’re living your best Swiss life",
         src: homeImages + "/amenities/img2.webp",
         color: "#E0E7E9",
+      },
+      {
+        icon: homeImages + "/amenities/SmileyWink.png",
+        title: "Entertainment Lounge",
+        description:
+          "Relax, recharge, and enjoy. Whether you’re into games, books, or just good conversations under the glow of Swiss hospitality",
+        src: homeImages + "/gallery/img2.webp",
+        color: "#E7CBCE",
       },
       {
         icon: homeImages + "/amenities/ChefHat.png",
         title: "Common Kitchen",
         description:
-          "Our inviting restaurant provides a cozy atmosphere for dining, with both indoor and outdoor seating options. For those who prefer to cook, select accommodations feature kitchen facilities, allowing you to prepare your own meals using fresh local ingredients.",
+          "Feel at home with our fully-equipped common kitchen. Whether you’re cooking up a storm or just storing snacks, it’s your space to enjoy",
         src: homeImages + "/amenities/img3.webp",
         color: "#B9BDA7",
       },
@@ -165,42 +165,49 @@ export const homePageData = {
       {
         src: homeImages + "/nearby/img1.webp",
         alt: "Jangfrau",
+        des: "An alpine journey to towering peaks",
         description:
           "Jungfrau, renowned for its towering peaks and stunning vistas, features scenic train rides, hiking trails, and snow adventures. Ideal for explorers and nature lovers, it’s a must-visit alpine destination",
       },
       {
         src: homeImages + "/nearby/img2.webp",
         alt: "Harder Kulm",
+        des: "The roof of Interlaken with panoramic views.",
         description:
           "a short ride from Interlaken, offers sweeping views of Lake Thun, Lake Brienz, and the mountains from its 1,322-meter height. The glass-floored platform and on-site restaurant make it a memorable spot.",
       },
       {
         src: homeImages + "/nearby/img3.webp",
         alt: "Lake Thun",
+        des: "Tranquility on turquoise waters",
         description:
           "Lake Thun, known for its clear waters and mountain views, offers boat cruises, charming villages, and historic lakeside castles. Ideal for picnics, swimming, or relaxing, it's a perfect spot for families and couples.",
       },
       {
         src: homeImages + "/nearby/img4.webp",
         alt: "Schynige Platte",
+        des: "A floral paradise above the clouds",
         description:
           "Schynige Platte, accessible by cogwheel train, is known for its scenic hiking trails, alpine flora, and panoramic views of the Eiger, Mönch, and Jungfrau. It’s a perfect retreat for nature lovers and adventure seekers alike.",
       },
       {
         src: homeImages + "/nearby/img5.webp",
         alt: "St. Beatus Caves",
+        des: "Whispers of legends in limestone chambers",
         description:
           "The St. Beatus Caves near Lake Thun feature limestone formations and legends of St. Beatus. Guided tours along well-kept paths reveal their geological history and natural beauty.",
       },
       {
         src: homeImages + "/nearby/img6.webp",
         alt: "Giessbach Falls",
+        des: "Cascading beauty amidst lush forests",
         description:
           "Giessbach Falls, near Lake Brienz, cascades over 500 meters through lush forests. Scenic trails offer beautiful views, and the nearby historic Giessbach Hotel adds to its charm, making it ideal for a day in nature.",
       },
       {
         src: homeImages + "/nearby/img7.webp",
         alt: "Hohematte Park",
+        des: "A vibrant green canvas in Interlaken’s heart",
         description:
           "Located in central Interlaken, Hohematte Park is a lush green space with manicured gardens, playgrounds, and mountain views. Hosting events year-round, it’s perfect for picnics, strolls, or relaxation for all ages.",
       },
@@ -287,7 +294,7 @@ export const homePageData = {
   guestreviews: {
     title: "guest reviews",
     description:
-      "Discover What Makes Us a Favorite Through Our Guest Experiences",
+      "Don’t Take Our Word for It—Hear What Our Guests Have to Say!",
     items: [
       {
         title: "Exceptional Service and Comfort!",
@@ -309,37 +316,58 @@ export const homePageData = {
     item: [
       {
         id: 1,
-        title: "How do I make a reservation?",
+        title: "What time is check-in and check-out?",
         content: `
-                We offer flexible cancellation policies to help you plan your trip accordingly.
+                Check-in from 14:00 PM; check-out by 10:00 AM – we’ll be waiting with a smile!
                 `,
       },
       {
         id: 2,
-        title: "What is the check-in and check-out time?",
+        title: "Are pets allowed at ORA Lake View?",
         content: `
-                We offer flexible cancellation policies to help you plan your trip accordingly.
+               Furry friends are welcome! Just let us know before your arrival
                 `,
       },
       {
         id: 3,
-        title: "Is parking available?",
+        title: "How far is the hotel from Interlaken?",
         content: `
-                We offer flexible cancellation policies to help you plan your trip accordingly.
+                Only 7 km – close enough for adventure, far enough for tranquility
                 `,
       },
       {
         id: 4,
-        title: "What is the check-in and check-out time?",
+        title: "Do rooms include lake or mountain views?",
         content: `
-                We offer flexible cancellation policies to help you plan your trip accordingly.
+                Yes, all our rooms feature picturesque views of Lake Brienz except Alpine retreat they have partial lakeview and/or the Swiss Alps
                 `,
       },
       {
         id: 5,
-        title: "Is parking available?",
+        title: "Is there public transport nearby?",
         content: `
-                We offer flexible cancellation policies to help you plan your trip accordingly.
+                Yes, regular buses and trains connect you to Interlaken and beyond, just steps from the hotel
+                `,
+      },
+      {
+        id: 6,
+        title: "What’s the best way to reach ORA Lake View?",
+        content: `
+                Whether you’re arriving by car, train, or boat, we’re easy to find. And did we mention the journey itself is half the charm
+                `,
+      },
+      {
+        id: 7,
+        title: "Can I plan a romantic getaway at ORA Lake View?",
+        content: `
+                Oh, absolutely! Picture private balconies, candlelit dinners, and views that scream romance. Let us help you create those unforgettable moments
+                `,
+      },
+      {
+        id: 8,
+        title: "Can I cook my meals in the common kitchen?",
+        content: `
+                Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby
                 `,
       },
     ],
@@ -348,16 +376,16 @@ export const homePageData = {
 
 export const aboutPageData = {
   bannerData: {
-    title: "Experience Serenity by Lake Brienz",
+    title: "Timeless Swiss Charm, Lakeside Dreams",
     description:
-      "At Hotel Lakeview, we blend Swiss hospitality with breathtaking natural beauty for an unforgettable stay",
+      "Experience Swiss charm, lake views, and modern elegance— with every dawn and dusk",
     src: homeImages + "/gallery/img1.webp",
     videoSrc: "",
   },
   section2: {
-    title: "Our hotel",
+    title: "Know Your Hotel",
     description:
-      "Founded in [year], Hotel Lakeview has been a sanctuary for travelers seeking tranquility and adventure in the heart of Switzerland. Nestled on the shores of Lake Brienz, our hotel is built on a legacy of warm hospitality and exceptional service. We strive to create a home-away-from-home for our guests while immersing them in the awe-inspiring beauty of the Swiss Alps",
+      "Almost half a century ago, inspired by the shimmering Lake Brienz and cradled by the majestic Swiss Alps, a Swiss couple envisioned a haven that mirrored their deep love for the land and its timeless beauty. ORA Lake View became their labor of love—The couple, whose hearts are firmly anchored in Swiss tradition, brought their love for their native country into every area of the hotel, providing visitors with a genuine experience of Swiss friendliness and warmth. Today, their legacy endures in every corner of the hotel, where history embraces the present, and guests are welcomed like cherished friends into a tale of romance, heritage, and elegance",
     src: aboutImages + "/img2.webp",
   },
   ourJourney: {
@@ -365,44 +393,44 @@ export const aboutPageData = {
     cards: [
       {
         id: 1,
-        title: "Where it all began",
+        title: "1974 – The Beginning of Something Special",
         description:
-          "Hotel Lakeview opened its doors on the shores of Lake Brienz, offering guests a perfect blend of comfort and Swiss hospitality. From day one, we aimed to create unforgettable experiences surrounded by the beauty of the Swiss Alps.",
-        year: "1999",
+          "By the peaceful shores of Interlaken, a hidden gem was born in 1974. From the moment the first guests arrived, the property offered more than just a stay - it offered a feeling. A feeling of calm, of being connected to nature, and of escaping to a place where the beauty of the Swiss Alps and the tranquil lake were always just outside your window",
+        year: "1974",
         src: aboutImages + "/img3.webp",
       },
       {
         id: 2,
-        title: "Expansion and Upgrades",
+        title: "1988 – A Heartfelt Transformation",
         description:
-          "We expanded our accommodations to include luxurious family rooms and lake-view apartments. Major renovations brought modern amenities while preserving our classic Alpine charm.",
-        year: "2004",
+          "In 1988, a renovation breathed new life into the hotel, blending modern comfort with the stunning surroundings. This wasn’t just about upgrading a building - it was about deepening the connection between the space and the landscape. Guests now found even more ways to relax, reflect, and indulge in the breathtaking views, making every stay unforgettable",
+        year: "1988",
         src: homeImages + "/gallery/img4.webp",
       },
       {
         id: 3,
-        title: "Sustainability Initiatives",
+        title: "2015 – A Vision Realized",
         description:
-          "In our commitment to nature, we adopted eco-friendly practices, including energy-efficient systems, waste reduction, and sourcing locally produced goods to support the community.",
-        year: "2010",
+          "When new owners took the reins in 2015, they infused the hotel with a new energy - one that honored its roots while embracing the needs of the modern traveler. The aim was simple: to create not just a hotel, but a sanctuary. Here, the spirit of Interlaken - raw, beautiful, and tranquil - was brought into every corner of the experience, creating a place where guests felt at home and at peace",
+        year: "2015",
         src: homeImages + "/img1.webp",
       },
       {
         id: 4,
-        title: "Digital Transformation",
+        title: "2019 – A Rebirth of Elegance",
         description:
-          "We launched a revamped website and introduced an easy online booking system. A live chat feature and virtual concierge service ensured seamless communication for our guests.",
-        year: "2016",
+          "In 2019, the hotel underwent a complete reimagining. The addition of a spacious terrace, luxurious living areas, and three (Four )new apartment rooms elevated the experience to new heights. It became a place to truly live the moment, savor the lake views, and enjoy the perfect blend of nature and luxury. It was no longer just a hotel - it was an experience, carefully crafted for those seeking something extraordinary",
+        year: "2019",
         src: aboutImages + "/img4.webp",
       },
-      {
-        id: 5,
-        title: "Award-Winning Excellence",
-        description:
-          "Recognized as one of the top boutique hotels in Switzerland, Hotel Lakeview earned accolades for its outstanding service, prime location, and unforgettable guest experiences.",
-        year: "2024",
-        src: aboutImages + "/img5.webp",
-      },
+      // {
+      //   id: 5,
+      //   title: "Award-Winning Excellence",
+      //   description:
+      //     "Recognized as one of the top boutique hotels in Switzerland, Hotel Lakeview earned accolades for its outstanding service, prime location, and unforgettable guest experiences.",
+      //   year: "2024",
+      //   src: aboutImages + "/img5.webp",
+      // },
     ],
   },
 };
@@ -417,9 +445,9 @@ export const roomsPageData = {
   },
   roomcard: [
     {
-      title: "Majestic lakeview king",
+      title: "Majestic Lakeview King-33sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "With a sprawling king-size bed and sweeping views of Lake Brienz and the Swiss Alps, this room invites you to unwind and indulge in the luxury of space. Perfect for those who crave a balance of comfort and nature",
       price: "$200/Day",
       images: [
         {
@@ -444,20 +472,18 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+        "Free wifi",
+        "Terrace access with Lakeview",
+        "Bathtub for ultimate relaxation",
+        "1 king-size bed",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
     {
-      title: "lakeview Trio",
+      title: "Lakeview Trio-28 sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "For those who enjoy the company of loved ones or seek extra space, the Lakeview Trio room is designed just for you. With a cozy king-size bed and a versatile, chic layout, this room offers comfort and style in equal measure",
       price: "$200/Day",
       images: [
         {
@@ -482,20 +508,19 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+
+        "Free wifi",
+        "Balcony with panoramic",
+        "lake views",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
     {
-      title: "lakeview studio",
+      title: "Lakeview Studio-22 sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "Sleek and stylish, the Lakeview Studio room offers the ideal balance between contemporary design and Swiss natural beauty. Perfect for solo travelers or couples looking for a simple yet luxurious stay",
       price: "$200/Day",
       images: [
         {
@@ -516,20 +541,17 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+        "free wifi",
+        "Balcony with stunning lake view",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
     {
-      title: "classic lakeview",
+      title: "Classic Lakeview-22 sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "The Classic Lakeview room invites you to experience the timeless beauty of Lake Brienz in a cozy, stylish setting. Designed for those who appreciate the finer things in life, this room is a peaceful haven to recharge",
       price: "$200/Day",
       images: [
         {
@@ -558,20 +580,18 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+        "free wifi",
+        "Balcony with lake view",
+        "02 Single beds attached",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
     {
-      title: "Signature lakeview",
+      title: "Signature Lakeview-28 sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "The Signature Lakeview room epitomizes understated luxury and Swiss charm. With its elegant design and breathtaking views of Lake Brienz, this room is perfect for those who want to experience the finest that ORA Lake View has to offer",
       price: "$200/Day",
       images: [
         {
@@ -588,20 +608,18 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+        "free wifi",
+        "Balcony with spectacular lake views",
+        "03 Single beds & can be attached for Double occupancy as per request",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
     {
-      title: "Queen’s vista",
+      title: "Queen’s Vista-40 sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "Treat yourself to a royal stay at Queen’s Vista, where sweeping views of the Swiss Alps and Lake Brienz set the stage for an unforgettable getaway. Designed with elegance and comfort in mind, this room combines traditional Swiss luxury with modern amenities",
       price: "$200/Day",
       images: [
         {
@@ -626,20 +644,18 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+        "Free wifi",
+        "Terrace access with lake view",
+        "Bathtub",
+        "1 king-size bed",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
     {
-      title: "alpine retreat",
+      title: "Alpine Retreat-33 sq metres",
       description:
-        "Welcome to Lakeview Hotel, your serene retreat in the picturesque Niederried bei Interlaken, just 7 km from the vibrant heart of Interlaken. Our hotel boasts",
+        "For those who seek peace, privacy, and unmatched mountain beauty, the Alpine Retreat is the ideal choice. After a day of hiking or exploring Interlaken, return to your sanctuary to relax in comfort and style",
       price: "$200/Day",
       images: [
         {
@@ -660,14 +676,12 @@ export const roomsPageData = {
         },
       ],
       list: [
-        "FREE WIFI",
-        "BALCONY",
-        "LAKE VIEW",
-        "BATHTUB",
-        "1 KING-SIZE BED",
-        "CONDITIONER",
-        "MINI-BAR",
-        "FLAT-SCREEN TV",
+        "Balcony with stunning alpine views",
+        "External Terrace access for lakeview",
+        "Ensuite Bathroom",
+        "1 king-size bed",
+        "mini-bar",
+        "flat-screen TV",
       ],
     },
   ],
@@ -675,9 +689,9 @@ export const roomsPageData = {
 
 export const galleryPageData = {
   bannerData: {
-    title: "Explore the Beauty and Charm of Hotel Lakeview Through Our Gallery",
+    title: "No need to photoshop your way out of life!",
     description:
-      "Step into the tranquil elegance of Hotel Lakeview with stunning visuals that showcase its breathtaking views and warm hospitality",
+      "Let every image transport you to a world of elegance, where nature’s beauty and comfort meet in perfect harmony",
     src: galleryImages + "/img1.webp",
   },
   galleryData: [
@@ -723,7 +737,7 @@ export const contactPageData = {
       "Have questions or need assistance? Reach out to us for a seamless experience at Hotel Lakeview.",
     link: [
       {
-        label: "call us now",
+        label: "call us",
         href: "#",
       },
       {

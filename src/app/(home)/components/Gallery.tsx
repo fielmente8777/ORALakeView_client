@@ -44,9 +44,8 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
         >
           {images.map((image, index) => (
             <div
-              className={`${
-                gridPattern[index % gridPattern.length]
-              } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "lg:hover:scale-100 filter brightness-100 blur-0" : "lg:group-hover:scale-[0.99] lg:group-hover:filter lg:group-hover:brightness-90 lg:group-hover:blur-sm"}`}
+              className={`${gridPattern[index % gridPattern.length]
+                } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "lg:hover:scale-100 filter brightness-100 blur-0" : "lg:group-hover:scale-[0.99] lg:group-hover:filter lg:group-hover:brightness-90 lg:group-hover:blur-sm"}`}
               key={index}
               onMouseEnter={() => setIsHovered(index)}
               onMouseLeave={() => setIsHovered(null)}
@@ -69,9 +68,9 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
           ))}
         </div>
         <p className="text-white lg:text-center lg:description1 text-[0.75rem] flex max-md:flex-col lg:items-center gap-2 ">
-          Explore the Beauty of Lakeview Hotel Through Our{" "}
+          Beauty of Lakeview Hotel Through Our{" "}
           <span className="inline-flex items-center gap-2">
-            Gallery .{" "}
+            Gallery {" "}
             <Link href="/gallery" className="inline-flex items-center gap-2">
               <span className="border-white border-b-2 capitalize">
                 See all photos

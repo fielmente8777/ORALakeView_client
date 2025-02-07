@@ -65,13 +65,13 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
             <Container className="h-full">
               <div className="flex flex-col items-center justify-between w-full h-full">
                 <div
-                  className={`relative aspect-square h-[15rem] ${navbar ? "opacity-0" : "opacity-100"}`}
+                  className={` relative aspect-square h-[20rem] ${navbar ? "opacity-0" : "opacity-100"}`}
                 >
                   <Image
                     src="/logosm1.png"
                     alt="ora lake view"
                     fill
-                    className="object-contain"
+                    className="object-contain hidden lg:block z-10"
                   />
                 </div>
                 <div className="flex lg:hidden items-center gap-4">

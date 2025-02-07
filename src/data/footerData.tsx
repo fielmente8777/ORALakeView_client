@@ -20,8 +20,8 @@ export const footerLinks: IFooter[] = [
     links: [
       {
         id: 1,
-        name: "info@lakeviewhotel.ch",
-        href: "mailto:info@lakeviewhotel.ch",
+        name: "info@oralakeview.com",
+        href: "mailto:info@oralakeview.com",
         target: "_blank",
         icon: <MailIcon />,
       },

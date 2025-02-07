@@ -14,6 +14,7 @@ interface NearbyAttractionsProps {
     src: string;
     alt: string;
     description: string;
+    des: string;
   }[];
 }
 

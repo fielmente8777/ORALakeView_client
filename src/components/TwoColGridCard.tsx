@@ -35,13 +35,13 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
           <ThumbsCardsSlider images={images} index={index} />
         </div>
         <div
-          className={` flex flex-col  lg:gap-32 gap-5 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
+          className={` flex flex-col  lg:gap-12 gap-5 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
         >
           <div className="flex flex-col gap-5">
             {title && (
               <Heading
                 level={3}
-                className="text-primary capitalize font-montaga heading3 w-[15rem]"
+                className="text-primary capitalize font-montaga heading3 max-md:w-[15rem] w-[21rem]"
               >
                 {title}
               </Heading>
@@ -67,22 +67,22 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
           <div className="grid grid-cols-2 gap-3">
             <ul className="text-gray-600 list-disc pl-6 flex flex-col gap-2">
               {list
-                ?.slice(0, 4)
+                ?.slice(0, 3)
                 .map((item, index) => (
                   <li
                     key={index}
-                    className="description1 text-textdark"
+                    className="description1 capitalize text-textdark"
                     dangerouslySetInnerHTML={{ __html: item }}
                   ></li>
                 ))}
             </ul>
             <ul className="text-gray-600 list-disc pl-6 flex flex-col gap-2">
               {list
-                ?.slice(4, list.length)
+                ?.slice(3, list.length)
                 .map((item, index) => (
                   <li
                     key={index}
-                    className="description1 text-textdark"
+                    className="description1 capitalize text-textdark"
                     dangerouslySetInnerHTML={{ __html: item }}
                   ></li>
                 ))}
