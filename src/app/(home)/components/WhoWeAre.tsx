@@ -1,5 +1,5 @@
 import { SectionWithContainer } from "@/components";
-import { Heading, Paragraph } from "@/components/TextAndInputComponents";
+import { Paragraph } from "@/components/TextAndInputComponents";
 import { MountainIcon } from "@/icons/icons";
 
 const WhoWeAre = () => {
@@ -15,16 +15,10 @@ const WhoWeAre = () => {
   return (
     <SectionWithContainer sectionClassName="bg-primary">
       <div className="flex flex-col items-center justify-center lg:gap-14 ">
-        {/* <Heading
-          level={2}
-          className="text-center text-secondary capitalize font-montaga heading2"
-        >
-          Who We Are
-        </Heading> */}
 
         <div className="flex flex-col gap-1 justify-center">
           <p className="text-white text-center">ORA LAKEVIEW HOTEL</p>
-          <h1 className="text-secondary heading2 font-montaga  capitalize text-center">"A View Like No Other"</h1>
+          <h1 className="text-secondary heading2 font-montaga  capitalize text-center">&quot;A View Like No Other&quot;</h1>
           <div className="flex justify-center">
             <div className="w-[1px] h-8 bg-white/50 text-center" />
 
