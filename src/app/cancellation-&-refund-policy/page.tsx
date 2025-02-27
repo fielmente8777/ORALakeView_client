@@ -1,4 +1,4 @@
-import { Heading, Paragraph, SectionWithContainer } from '@/components'
+import { Heading, Paragraph, SectionWithContainer } from '@/components';
 import React from 'react'
 
 const page = () => {
@@ -14,7 +14,7 @@ const page = () => {
 
                     </Heading>
                     <Paragraph className="text-center description1">
-                        The guest can cancel free of charge until 14 days before arrival. The guest will be charged the total price of the reservation if they cancel within 14 days of arrival. If the guest doesn't show up, they'll be charged the total price of the reservation.
+                        The guest can cancel free of charge until 14 days before arrival. The guest will be charged the total price of the reservation if they cancel within 14 days of arrival. If the guest doesn&apos;t show up, they&apos;ll be charged the total price of the reservation.
 
 
                     </Paragraph>
