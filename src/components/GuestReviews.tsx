@@ -19,12 +19,12 @@ const GuestReviews: React.FC<GuestReviewsProps> = ({
         <div>
           <Heading
             level={2}
-            className="text-center text-secondary capitalize font-montaga heading3"
+            className="text-center text-secondary capitalize font-montaga heading2"
           >
             {title}
           </Heading>
 
-          <Paragraph className="text-white text-center description1">
+          <Paragraph className="text-white text-center description1 px-4 mt-3">
             {description}
           </Paragraph>
         </div>

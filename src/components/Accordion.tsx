@@ -31,7 +31,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content, id }) => {
         <span
           className={`${isOpen === id ? "text-white bg-[#c6a445] rotate-180" : "text-[#c6a445]"} pointer-events-none transition-all duration-300 ease-linear flex items-center justify-center w-8 h-8 rounded-full`}
         >
-          {isOpen === id ? <Remove /> : <Add />}
+          {isOpen === id ? <div className="h-10 w-10 flex justify-center items-center"><Remove /> </div> : <div className="h-10 w-10 flex justify-center items-center"><Add /> </div>}
 
         </span>
       </div>

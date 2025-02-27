@@ -18,7 +18,7 @@ const OurJourneyCard: React.FC<OurJourneyCardProps> = ({
       <div className="flex flex-col gap-4 max-w-md">
         <Heading
           level={4}
-          className="text-white capitalize font-montaga lg:text-5xl lg:block hidden text-2xl mb-8"
+          className="text-[#848484] capitalize font-montaga lg:text-5xl lg:block hidden text-2xl mb-8"
         >
           {year}
         </Heading>

@@ -61,33 +61,34 @@ export const homePageData = {
     subDescription:
       "Choose from a range of beautifully designed rooms and suites, each offering comfort, modern amenities, and breathtaking views of Lake Brienz",
     images: [
-      {
-        src: homeImages + "/rooms/img1.webp",
-        alt: "Signature Lake View",
-      },
-      {
-        src: homeImages + "/rooms/img2.webp",
-        alt: "Classic Lake View",
-      },
+
       {
         src: homeImages + "/rooms/img3.webp",
         alt: "Majestic lakeview king",
-      },
-      {
-        src: homeImages + "/rooms/img4.webp",
-        alt: "Alpine retreat",
       },
       {
         src: homeImages + "/rooms/img5.webp",
         alt: "Queen’s vista",
       },
       {
-        src: homeImages + "/rooms/img6.webp",
-        alt: "Lakeview trio",
+        src: homeImages + "/rooms/img4.webp",
+        alt: "Alpine retreat",
       },
       {
         src: homeImages + "/rooms/img7.webp",
         alt: "Lakeview studio",
+      },
+      {
+        src: homeImages + "/rooms/img1.webp",
+        alt: "Signature Lake View",
+      },
+      {
+        src: homeImages + "/rooms/img6.webp",
+        alt: "Lakeview trio",
+      },
+      {
+        src: homeImages + "/rooms/img2.webp",
+        alt: "Classic Lake View",
       },
       // {
       //   src: "",
@@ -272,22 +273,22 @@ export const homePageData = {
       {
         icon: <BusIcon />,
         address: "Niederried b.I'laken, Dorf Bus Station",
-        distance: "20 meters",
+        distance: "20 meters ,🚶 1 min",
       },
       {
         icon: <BoatIcon />,
         address: "Niederried Ferry Terminal",
-        distance: "150 Meters",
+        distance: "300 Meters, 🚶 5 mins appr",
       },
       {
         icon: <TrainIcon />,
         address: "Niederried train Station",
-        distance: "170 meters",
+        distance: "170 meters, 🚶 2-3 mins appr",
       },
       {
         icon: <PlainIcon />,
-        address: "Sion Airport",
-        distance: "63 Kilometers",
+        address: "Zurich Airport / Bern Airport",
+        distance: "79 M, 🚗 1 hr 46 min / 36 M, 🚗 49 mins",
       },
     ],
   },
@@ -380,7 +381,7 @@ export const aboutPageData = {
     description:
       "Experience Swiss charm, lake views, and modern elegance— with every dawn and dusk",
     src: homeImages + "/gallery/img1.webp",
-    videoSrc: "",
+    videoSrc: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/videoplayback.mkv",
   },
   section2: {
     title: "Know Your Hotel",
@@ -393,7 +394,7 @@ export const aboutPageData = {
     cards: [
       {
         id: 1,
-        title: "1974 – The Beginning of Something Special",
+        title: "The Beginning of Something Special",
         description:
           "By the peaceful shores of Interlaken, a hidden gem was born in 1974. From the moment the first guests arrived, the property offered more than just a stay - it offered a feeling. A feeling of calm, of being connected to nature, and of escaping to a place where the beauty of the Swiss Alps and the tranquil lake were always just outside your window",
         year: "1974",
@@ -401,7 +402,7 @@ export const aboutPageData = {
       },
       {
         id: 2,
-        title: "1988 – A Heartfelt Transformation",
+        title: "A Heartfelt Transformation",
         description:
           "In 1988, a renovation breathed new life into the hotel, blending modern comfort with the stunning surroundings. This wasn’t just about upgrading a building - it was about deepening the connection between the space and the landscape. Guests now found even more ways to relax, reflect, and indulge in the breathtaking views, making every stay unforgettable",
         year: "1988",
@@ -409,7 +410,7 @@ export const aboutPageData = {
       },
       {
         id: 3,
-        title: "2015 – A Vision Realized",
+        title: "A Vision Realized",
         description:
           "When new owners took the reins in 2015, they infused the hotel with a new energy - one that honored its roots while embracing the needs of the modern traveler. The aim was simple: to create not just a hotel, but a sanctuary. Here, the spirit of Interlaken - raw, beautiful, and tranquil - was brought into every corner of the experience, creating a place where guests felt at home and at peace",
         year: "2015",
@@ -417,7 +418,7 @@ export const aboutPageData = {
       },
       {
         id: 4,
-        title: "2019 – A Rebirth of Elegance",
+        title: "A Rebirth of Elegance",
         description:
           "In 2019, the hotel underwent a complete reimagining. The addition of a spacious terrace, luxurious living areas, and three (Four )new apartment rooms elevated the experience to new heights. It became a place to truly live the moment, savor the lake views, and enjoy the perfect blend of nature and luxury. It was no longer just a hotel - it was an experience, carefully crafted for those seeking something extraordinary",
         year: "2019",
@@ -476,142 +477,6 @@ export const roomsPageData = {
         "Terrace access with Lakeview",
         "Bathtub for ultimate relaxation",
         "1 king-size bed",
-        "mini-bar",
-        "flat-screen TV",
-      ],
-    },
-    {
-      title: "Lakeview Trio-28 sq metres",
-      description:
-        "For those who enjoy the company of loved ones or seek extra space, the Lakeview Trio room is designed just for you. With a cozy king-size bed and a versatile, chic layout, this room offers comfort and style in equal measure",
-      price: "$200/Day",
-      images: [
-        {
-          src: roomCard + "6.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "7.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "8.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "9.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "10.webp",
-          alt: "dsdsd",
-        },
-      ],
-      list: [
-
-        "Free wifi",
-        "Balcony with panoramic",
-        "lake views",
-        "Ensuite bathroom",
-        "mini-bar",
-        "flat-screen TV",
-      ],
-    },
-    {
-      title: "Lakeview Studio-22 sq metres",
-      description:
-        "Sleek and stylish, the Lakeview Studio room offers the ideal balance between contemporary design and Swiss natural beauty. Perfect for solo travelers or couples looking for a simple yet luxurious stay",
-      price: "$200/Day",
-      images: [
-        {
-          src: roomCard + "11.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "13.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "4.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "12.webp",
-          alt: "dsdsd",
-        },
-      ],
-      list: [
-        "free wifi",
-        "Balcony with stunning lake view",
-        "Ensuite bathroom",
-        "mini-bar",
-        "flat-screen TV",
-      ],
-    },
-    {
-      title: "Classic Lakeview-22 sq metres",
-      description:
-        "The Classic Lakeview room invites you to experience the timeless beauty of Lake Brienz in a cozy, stylish setting. Designed for those who appreciate the finer things in life, this room is a peaceful haven to recharge",
-      price: "$200/Day",
-      images: [
-        {
-          src: roomCard + "12.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "13.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "14.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "5.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "4.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "15.webp",
-          alt: "dsdsd",
-        },
-      ],
-      list: [
-        "free wifi",
-        "Balcony with lake view",
-        "02 Single beds attached",
-        "Ensuite bathroom",
-        "mini-bar",
-        "flat-screen TV",
-      ],
-    },
-    {
-      title: "Signature Lakeview-28 sq metres",
-      description:
-        "The Signature Lakeview room epitomizes understated luxury and Swiss charm. With its elegant design and breathtaking views of Lake Brienz, this room is perfect for those who want to experience the finest that ORA Lake View has to offer",
-      price: "$200/Day",
-      images: [
-        {
-          src: roomCard + "17.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "18.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "19.webp",
-          alt: "dsdsd",
-        },
-      ],
-      list: [
-        "free wifi",
-        "Balcony with spectacular lake views",
-        "03 Single beds & can be attached for Double occupancy as per request",
-        "Ensuite bathroom",
         "mini-bar",
         "flat-screen TV",
       ],
@@ -684,6 +549,146 @@ export const roomsPageData = {
         "flat-screen TV",
       ],
     },
+    {
+      title: "Lakeview Studio-22 sq metres",
+      description:
+        "Sleek and stylish, the Lakeview Studio room offers the ideal balance between contemporary design and Swiss natural beauty. Perfect for solo travelers or couples looking for a simple yet luxurious stay",
+      price: "$200/Day",
+      images: [
+        {
+          src: roomCard + "11.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "13.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "4.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "12.webp",
+          alt: "dsdsd",
+        },
+      ],
+      list: [
+        "free wifi",
+        "Balcony with stunning lake view",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
+      ],
+    },
+    {
+      title: "Signature Lakeview-28 sq metres",
+      description:
+        "The Signature Lakeview room epitomizes understated luxury and Swiss charm. With its elegant design and breathtaking views of Lake Brienz, this room is perfect for those who want to experience the finest that ORA Lake View has to offer",
+      price: "$200/Day",
+      images: [
+        {
+          src: roomCard + "17.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "18.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "19.webp",
+          alt: "dsdsd",
+        },
+      ],
+      list: [
+        "free wifi",
+        "Balcony with spectacular lake views",
+        "03 Single beds & can be attached for Double occupancy as per request",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
+      ],
+    },
+    {
+      title: "Lakeview Trio-28 sq metres",
+      description:
+        "For those who enjoy the company of loved ones or seek extra space, the Lakeview Trio room is designed just for you. With a cozy king-size bed and a versatile, chic layout, this room offers comfort and style in equal measure",
+      price: "$200/Day",
+      images: [
+        {
+          src: roomCard + "6.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "7.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "8.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "9.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "10.webp",
+          alt: "dsdsd",
+        },
+      ],
+      list: [
+
+        "Free wifi",
+        "Balcony with panoramic",
+        "lake views",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
+      ],
+    },
+
+    {
+      title: "Classic Lakeview-22 sq metres",
+      description:
+        "The Classic Lakeview room invites you to experience the timeless beauty of Lake Brienz in a cozy, stylish setting. Designed for those who appreciate the finer things in life, this room is a peaceful haven to recharge",
+      price: "$200/Day",
+      images: [
+        {
+          src: roomCard + "12.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "13.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "14.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "5.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "4.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCard + "15.webp",
+          alt: "dsdsd",
+        },
+      ],
+      list: [
+        "free wifi",
+        "Balcony with lake view",
+        "02 Single beds attached",
+        "Ensuite bathroom",
+        "mini-bar",
+        "flat-screen TV",
+      ],
+    },
+
+
+
   ],
 };
 

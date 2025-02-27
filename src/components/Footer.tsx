@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="lg:col-span-4 w-full">
           <div className="w-full relative lg:aspect-[4/2.8] aspect-[4/5]">
             <Image
-              src={homeImages+"/img2.webp"}
+              src={homeImages + "/img2.webp"}
               alt="alt"
               fill
               className="object-cover object-right-bottom scale-x-[-1]"
@@ -84,7 +84,7 @@ const Footer = () => {
         <div className="lg:col-span-3 max-width col-span-full flex flex-col h-full justify-center gap-6 lg:px-6 w-full uppercase">
           <div className="relative aspect-[4/2.5] h-[3rem]">
             <Image
-              src="/logo2.png"
+              src="/Lakeview.svg"
               alt="ora lake view"
               fill
               className="object-contain"

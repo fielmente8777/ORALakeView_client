@@ -7,7 +7,7 @@ import {
   Section,
 } from "@/components";
 import SliderSwip from "@/components/SliderSwip";
-import { ButtonNext } from "@/icons/icons";
+import { NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 import { Navigation, Pagination } from "swiper/modules";
 
 interface IDoAtHotelProps {
@@ -64,14 +64,17 @@ const DoAtHotel: React.FC<IDoAtHotelProps> = ({
               </SliderSwip>
               <div className="flex items-center justify-center gap-4 absolute lg:bottom-2 bottom-3 lg:left-32 left-8 z-10">
                 <button
-                  className={`text-primary hover:scale-105 active:scale-95 rotate-180 hover:text-tertiary prev`}
+                  className={`text-primary hover:scale-105 active:scale-95 hover:text-tertiary prev`}
                 >
-                  <ButtonNext />
+                  <PrevBtnIcon />
+
                 </button>
                 <button
                   className={`text-primary hover:scale-105 active:scale-95 hover:text-tertiary next`}
                 >
-                  <ButtonNext />
+                  {/* <ButtonNext /> */}
+                  <NextBtnIcon />
+
                 </button>
               </div>
             </div>

@@ -57,8 +57,8 @@ const Connectivity: React.FC<IConnectivity> = ({
               </span>
             </Link>
           </div>
-          <div className="relative lg:aspect-[4/2.5] rounded-sm overflow-hidden aspect-square  w-full">
-            <Image src={src} alt={title} fill className="object-cover" />
+          <div className="relative lg:aspect-[4/2.5] rounded-sm overflow-hidden aspect-[4/3]  w-full">
+            <Image src={src} alt={title} fill className="" />
           </div>
         </div>
       </div>

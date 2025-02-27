@@ -65,6 +65,7 @@ export const footerLinks: IFooter[] = [
 
 export const footerLink2 = [
   { id: 1, name: "Privacy Policy", href: "/privacy-policy/" },
-  { id: 2, name: "Terms & Conditions", href: "/terms-and-conditions/" },
+  // { id: 2, name: "Terms & Conditions", href: "/terms-and-conditions/" },
+  { id: 2, name: "Cancellation & Refund Policy", href: "/cancellation-&-refund-policy/" },
 ];
 

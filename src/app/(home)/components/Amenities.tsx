@@ -54,7 +54,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
       <div className="w-full flex flex-col items-center justify-center gap-4">
         <Heading
           level={2}
-          className="text-center text-secondary capitalize font-montaga heading3"
+          className="text-center text-secondary capitalize font-montaga heading2"
         >
           {title}
         </Heading>

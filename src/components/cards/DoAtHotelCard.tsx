@@ -31,7 +31,7 @@ const DoAtHotelCard: React.FC<DoAtHotelProps> = ({
         classNameSwiperSlide="w-full"
       >
         {(image) => (
-          <div className="relative lg:aspect-[4/1.55] aspect-[4/3.5] w-full">
+          <div className="relative lg:aspect-[4/1.55] aspect-[4/3.08] w-full">
             <Image src={image} alt={title} fill className="object-cover" />
           </div>
         )}

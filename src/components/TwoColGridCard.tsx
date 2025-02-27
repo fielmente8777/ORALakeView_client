@@ -27,7 +27,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
   return (
     <Section>
       <div
-        className={`lg:grid grid-cols-2 gap-4 lg:max-width  mx-auto ${index % 2 === 0 ? "lg:flex-col" : "lg:flex-col-reverse"}`}
+        className={` lg:grid grid-cols-2 gap-4 lg:max-width  mx-auto ${index % 2 === 0 ? "lg:flex-col" : "lg:flex-col-reverse"}`}
       >
         <div
           className={`col-span-1 mb-5 w-full h-full ${index % 2 === 0 ? "order-1 max-md:mt-4" : "order-2 max-md:mb-4"}`}
@@ -35,7 +35,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
           <ThumbsCardsSlider images={images} index={index} />
         </div>
         <div
-          className={` flex flex-col  lg:gap-12 gap-5 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
+          className={` flex flex-col  lg:gap-12 gap-5 col-span-1 md:max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
         >
           <div className="flex flex-col gap-5">
             {title && (
