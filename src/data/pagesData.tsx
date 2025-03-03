@@ -278,12 +278,12 @@ export const homePageData = {
       {
         icon: <BoatIcon />,
         address: "Niederried Ferry Terminal",
-        distance: "300 Meters, 🚶 5 mins appr",
+        distance: "300 Meters, 🚶 5 mins approx",
       },
       {
         icon: <TrainIcon />,
         address: "Niederried train Station",
-        distance: "170 meters, 🚶 2-3 mins appr",
+        distance: "170 meters, 🚶 2-3 mins approx",
       },
       {
         icon: <PlainIcon />,
