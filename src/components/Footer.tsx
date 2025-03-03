@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="lg:col-span-4 w-full">
           <div className="w-full relative lg:aspect-[4/2.8] aspect-[4/5]">
             <Image
-              src={homeImages + "/img2.webp"}
+              src={homeImages + "/Img2.png"}
               alt="alt"
               fill
               className="object-cover object-right-bottom scale-x-[-1]"
