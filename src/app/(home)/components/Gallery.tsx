@@ -2,8 +2,9 @@
 import { useState } from "react";
 import { SectionWithContainer } from "@/components";
 import { Heading, Paragraph } from "@/components/TextAndInputComponents";
-import { CloseIcon, NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
+import { Arrow1, CloseIcon, NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 interface GalleryProps {
   title: string;
@@ -79,7 +80,20 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
             </div>
           ))}
         </div>
-
+        <p className="text-white lg:text-center lg:description1 text-[0.85rem] flex max-md:flex-col lg:items-center gap-2 ">
+          Beauty of Lakeview Hotel Through Our{" "}
+          <span className="inline-flex max-sm:justify-center items-center gap-2">
+            Gallery {" "}
+            <Link href="/gallery" className="inline-flex items-center gap-2">
+              <span className="border-white border-b-2 capitalize">
+                See all photos
+              </span>
+              <span className="text-white">
+                <Arrow1 />
+              </span>
+            </Link>
+          </span>
+        </p>
         {/* Modal */}
         {showModal && selectedImageIndex !== null && (
           <div className="fixed top-0 left-0 w-full h-screen bg-black/90 z-50 flex items-center justify-center">
