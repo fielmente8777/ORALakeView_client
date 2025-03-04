@@ -18,38 +18,38 @@ export const homePageData = {
   bannerData: {
     title: "Whispers of Brienz at the Best Lakeview Hotel",
     description: "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
-    images: [homeImages + "/img1.webp", homeImages + "/gallery/img4.webp"],
+    images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
   },
   galleryData: {
     title: "Gallery",
     description: "Every frame, a postcard-worthy view",
     images: [
       {
-        src: homeImages + "/gallery/img1.webp",
+        src: homeImages + "/gallery/img1.png",
         alt: "stunning views",
       },
       {
-        src: homeImages + "/gallery/img2.webp",
+        src: homeImages + "/gallery/img2.png",
         alt: "stunning views",
       },
       {
-        src: homeImages + "/gallery/img3.webp",
+        src: homeImages + "/gallery/img3.png",
         alt: "stunning views",
       },
       {
-        src: homeImages + "/gallery/img4.webp",
+        src: homeImages + "/gallery/img4.png",
         alt: "stunning views",
       },
       {
-        src: homeImages + "/gallery/img5.webp",
+        src: homeImages + "/gallery/img5.png",
         alt: "stunning views",
       },
       {
-        src: homeImages + "/gallery/img7.webp",
+        src: homeImages + "/gallery/img7.png",
         alt: "stunning views",
       },
       {
-        src: homeImages + "/gallery/img6.webp",
+        src: homeImages + "/gallery/img6.png",
         alt: "stunning views",
       },
     ],
@@ -63,31 +63,31 @@ export const homePageData = {
     images: [
 
       {
-        src: homeImages + "/rooms/img3.webp",
+        src: homeImages + "/rooms/img3.png",
         alt: "Majestic lakeview king",
       },
       {
-        src: homeImages + "/rooms/img5.webp",
+        src: homeImages + "/rooms/img5.png",
         alt: "Queen’s vista",
       },
       {
-        src: homeImages + "/rooms/img4.webp",
+        src: homeImages + "/rooms/img4.png",
         alt: "Alpine retreat",
       },
       {
-        src: homeImages + "/rooms/img7.webp",
+        src: homeImages + "/rooms/img7.png",
         alt: "Lakeview studio",
       },
       {
-        src: homeImages + "/rooms/img1.webp",
+        src: homeImages + "/rooms/img1.png",
         alt: "Signature Lake View",
       },
       {
-        src: homeImages + "/rooms/img6.webp",
+        src: homeImages + "/rooms/img6.png",
         alt: "Lakeview trio",
       },
       {
-        src: homeImages + "/rooms/img2.webp",
+        src: homeImages + "/rooms/img2.png",
         alt: "Classic Lake View",
       },
       // {
@@ -113,7 +113,7 @@ export const homePageData = {
         title: "Breakfast",
         description:
           "Start your day the right way. Our continental breakfast buffet is packed with fresh, locally-sourced flavors to fuel your adventures ahead",
-        src: homeImages + "/amenities/img1.webp",
+        src: homeImages + "/amenities/IM1.png",
         color: "#D8D6D7",
       },
       {
@@ -137,7 +137,7 @@ export const homePageData = {
         title: "Free WiFi",
         description:
           "Stay as connected as you want. Our high-speed WiFi ensures you can stay in touch with what matters, while you’re living your best Swiss life",
-        src: homeImages + "/amenities/img2.webp",
+        src: homeImages + "/amenities/IM2.png",
         color: "#E0E7E9",
       },
       {
@@ -153,60 +153,60 @@ export const homePageData = {
         title: "Common Kitchen",
         description:
           "Feel at home with our fully-equipped common kitchen. Whether you’re cooking up a storm or just storing snacks, it’s your space to enjoy",
-        src: homeImages + "/amenities/img3.webp",
+        src: homeImages + "/amenities/IM3.png",
         color: "#B9BDA7",
       },
     ],
   },
-  nearbyattractions: {
+nearbyattractions: {
     title: "nearby attractions",
     description: "Explore Nearby Natural Wonders",
 
     images: [
       {
-        src: homeImages + "/nearby/img1.webp",
+        src: homeImages + "/nearby/IMG1.png",
         alt: "Jangfrau",
         des: "An alpine journey to towering peaks",
         description:
           "Jungfrau, renowned for its towering peaks and stunning vistas, features scenic train rides, hiking trails, and snow adventures. Ideal for explorers and nature lovers, it’s a must-visit alpine destination",
       },
       {
-        src: homeImages + "/nearby/img2.webp",
+        src: homeImages + "/nearby/IMG2.png",
         alt: "Harder Kulm",
         des: "The roof of Interlaken with panoramic views.",
         description:
           "a short ride from Interlaken, offers sweeping views of Lake Thun, Lake Brienz, and the mountains from its 1,322-meter height. The glass-floored platform and on-site restaurant make it a memorable spot.",
       },
       {
-        src: homeImages + "/nearby/img3.webp",
+        src: homeImages + "/nearby/IMG3.png",
         alt: "Lake Thun",
         des: "Tranquility on turquoise waters",
         description:
           "Lake Thun, known for its clear waters and mountain views, offers boat cruises, charming villages, and historic lakeside castles. Ideal for picnics, swimming, or relaxing, it's a perfect spot for families and couples.",
       },
       {
-        src: homeImages + "/nearby/img4.webp",
+        src: homeImages + "/nearby/IMG4.png",
         alt: "Schynige Platte",
         des: "A floral paradise above the clouds",
         description:
           "Schynige Platte, accessible by cogwheel train, is known for its scenic hiking trails, alpine flora, and panoramic views of the Eiger, Mönch, and Jungfrau. It’s a perfect retreat for nature lovers and adventure seekers alike.",
       },
       {
-        src: homeImages + "/nearby/img5.webp",
+        src: homeImages + "/nearby/IMG5.png",
         alt: "St. Beatus Caves",
         des: "Whispers of legends in limestone chambers",
         description:
           "The St. Beatus Caves near Lake Thun feature limestone formations and legends of St. Beatus. Guided tours along well-kept paths reveal their geological history and natural beauty.",
       },
       {
-        src: homeImages + "/nearby/img6.webp",
+        src: homeImages + "/nearby/IMG6.png",
         alt: "Giessbach Falls",
         des: "Cascading beauty amidst lush forests",
         description:
           "Giessbach Falls, near Lake Brienz, cascades over 500 meters through lush forests. Scenic trails offer beautiful views, and the nearby historic Giessbach Hotel adds to its charm, making it ideal for a day in nature.",
       },
       {
-        src: homeImages + "/nearby/img7.webp",
+        src: homeImages + "/nearby/IMG7.png",
         alt: "Hohematte Park",
         des: "A vibrant green canvas in Interlaken’s heart",
         description:
@@ -223,10 +223,10 @@ export const homePageData = {
         description:
           "Take a leisurely 3-4 km stroll around the pristine lake, where every step offers breathtaking views of the water and the majestic Alps. Perfect for unwinding or capturing the beauty of nature, this walk immerses you in tranquility",
         images: [
-          homeImages + "/doathotels/img1.webp",
-          homeImages + "/doathotels/img2.webp",
-          homeImages + "/doathotels/img3.webp",
-          homeImages + "/doathotels/img4.webp",
+          homeImages + "/doathotels/IMG1.png",
+          homeImages + "/doathotels/IMG2.png",
+          homeImages + "/doathotels/IMG3.png",
+          homeImages + "/doathotels/IMG4.png",
         ],
       },
       {
@@ -234,10 +234,10 @@ export const homePageData = {
         description:
           "Enjoy unparalleled views of the charming village of Iseltwald right from your balcony. Famous for its appearance in the Korean drama Crash Landing on You, this scenic spot blends natural beauty with cinematic magic",
         images: [
-          homeImages + "/doathotels/img5.webp",
-          homeImages + "/doathotels/img6.webp",
-          homeImages + "/doathotels/img7.webp",
-          homeImages + "/doathotels/img8.webp",
+          homeImages + "/doathotels/IMG5.png",
+          homeImages + "/doathotels/IMG6.png",
+          homeImages + "/doathotels/IMG7.png",
+          homeImages + "/doathotels/IMG8.png",
         ],
       },
       {
@@ -245,10 +245,10 @@ export const homePageData = {
         description:
           "Dive into relaxation at the swimming spot just below the hotel, open during the season. Whether you're taking a refreshing dip or lounging by the water, it's a perfect way to enjoy the lake",
         images: [
-          homeImages + "/doathotels/img9.webp",
-          homeImages + "/doathotels/img10.webp",
-          homeImages + "/doathotels/img11.webp",
-          homeImages + "/doathotels/img12.webp",
+          homeImages + "/doathotels/IMG9.png",
+          homeImages + "/doathotels/IMG10.png",
+          homeImages + "/doathotels/IMG11.png",
+          homeImages + "/doathotels/IMG12.png",
         ],
       },
       {
@@ -256,10 +256,10 @@ export const homePageData = {
         description:
           "A nearby children’s park ensures younger guests have their share of fun. Equipped with swings, slides, and a safe play area, it’s an ideal spot for families to create joyful memories together",
         images: [
-          homeImages + "/doathotels/img13.webp",
+          homeImages + "/doathotels/IMG13.png",
           homeImages + "/doathotels/img14.webp",
-          homeImages + "/doathotels/img15.webp",
-          homeImages + "/doathotels/img16.webp",
+          homeImages + "/doathotels/IMG15.png",
+          homeImages + "/doathotels/IMG16.png",
         ],
       },
     ],
@@ -278,12 +278,12 @@ export const homePageData = {
       {
         icon: <BoatIcon />,
         address: "Niederried Ferry Terminal",
-        distance: "300 Meters, 🚶 5 mins appr",
+        distance: "300 Meters, 🚶 5 mins approx",
       },
       {
         icon: <TrainIcon />,
         address: "Niederried train Station",
-        distance: "170 meters, 🚶 2-3 mins appr",
+        distance: "170 meters, 🚶 2-3 mins approx",
       },
       {
         icon: <PlainIcon />,
@@ -387,7 +387,7 @@ export const aboutPageData = {
     title: "Know Your Hotel",
     description:
       "Almost half a century ago, inspired by the shimmering Lake Brienz and cradled by the majestic Swiss Alps, a Swiss couple envisioned a haven that mirrored their deep love for the land and its timeless beauty. ORA Lake View became their labor of love—The couple, whose hearts are firmly anchored in Swiss tradition, brought their love for their native country into every area of the hotel, providing visitors with a genuine experience of Swiss friendliness and warmth. Today, their legacy endures in every corner of the hotel, where history embraces the present, and guests are welcomed like cherished friends into a tale of romance, heritage, and elegance",
-    src: aboutImages + "/img2.webp",
+    src: aboutImages + "/IMAGE2.png",
   },
   ourJourney: {
     title: "Our Journey",
@@ -398,7 +398,7 @@ export const aboutPageData = {
         description:
           "By the peaceful shores of Interlaken, a hidden gem was born in 1974. From the moment the first guests arrived, the property offered more than just a stay - it offered a feeling. A feeling of calm, of being connected to nature, and of escaping to a place where the beauty of the Swiss Alps and the tranquil lake were always just outside your window",
         year: "1974",
-        src: aboutImages + "/img3.webp",
+        src: aboutImages + "/IMAGE3.png",
       },
       {
         id: 2,
@@ -422,7 +422,7 @@ export const aboutPageData = {
         description:
           "In 2019, the hotel underwent a complete reimagining. The addition of a spacious terrace, luxurious living areas, and three (Four )new apartment rooms elevated the experience to new heights. It became a place to truly live the moment, savor the lake views, and enjoy the perfect blend of nature and luxury. It was no longer just a hotel - it was an experience, carefully crafted for those seeking something extraordinary",
         year: "2019",
-        src: aboutImages + "/img4.webp",
+        src: aboutImages + "/IMAGE4.png",
       },
       // {
       //   id: 5,
@@ -430,13 +430,14 @@ export const aboutPageData = {
       //   description:
       //     "Recognized as one of the top boutique hotels in Switzerland, Hotel Lakeview earned accolades for its outstanding service, prime location, and unforgettable guest experiences.",
       //   year: "2024",
-      //   src: aboutImages + "/img5.webp",
+      //   src: aboutImages + "/IMAGE5.png",
       // },
     ],
   },
 };
 
 const roomCard = roomImages + "/card/img";
+const roomCardNew = roomImages + "/card/Img";
 export const roomsPageData = {
   bannerData: {
     title: "Find Your Ideal Retreat",
@@ -452,23 +453,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "1.webp",
+          src: roomCardNew + "1.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "2.webp",
+          src: roomCardNew + "2.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "3.webp",
+          src: roomCardNew + "3.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "4.webp",
+          src: roomCardNew + "4.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "5.webp",
+          src: roomCardNew + "5.png",
           alt: "dsdsd",
         },
       ],
@@ -488,19 +489,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "20.webp",
+          src: roomCardNew + "20.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "21.webp",
+          src: roomCardNew + "21.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "22.webp",
+          src: roomCardNew + "22.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "23.webp",
+          src: roomCardNew + "23.png",
           alt: "dsdsd",
         },
         {
@@ -556,19 +557,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "11.webp",
+          src: roomCardNew + "11.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "13.webp",
+          src: roomCardNew + "13.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "4.webp",
+          src: roomCardNew + "4.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "12.webp",
+          src: roomCardNew + "12.png",
           alt: "dsdsd",
         },
       ],
@@ -587,15 +588,15 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "17.webp",
+          src: roomCardNew + "17.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "18.webp",
+          src: roomCardNew + "18.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "19.webp",
+          src: roomCardNew + "19.png",
           alt: "dsdsd",
         },
       ],
@@ -615,23 +616,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "6.webp",
+          src: roomCardNew + "6.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "7.webp",
+          src: roomCardNew + "7.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "8.webp",
+          src: roomCardNew + "8.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "9.webp",
+          src: roomCardNew + "9.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "10.webp",
+          src: roomCardNew + "10.png",
           alt: "dsdsd",
         },
       ],
@@ -653,27 +654,27 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "12.webp",
+          src: roomCardNew + "12.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "13.webp",
+          src: roomCardNew + "13.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "14.webp",
+          src: roomCardNew + "14.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "5.webp",
+          src: roomCardNew + "5.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "4.webp",
+          src: roomCardNew + "4.png",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "15.webp",
+          src: roomCardNew + "15.png",
           alt: "dsdsd",
         },
       ],
