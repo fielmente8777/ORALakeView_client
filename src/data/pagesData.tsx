@@ -26,31 +26,31 @@ export const homePageData = {
     images: [
       {
         src: homeImages + "/gallery/img1.png",
-        alt: "stunning views",
+        alt: "terrace",
       },
       {
         src: homeImages + "/gallery/img2.png",
-        alt: "stunning views",
+        alt: "lounge",
       },
       {
         src: homeImages + "/gallery/img3.png",
-        alt: "stunning views",
+        alt: "Restaurant",
       },
       {
         src: homeImages + "/gallery/img4.png",
-        alt: "stunning views",
+        alt: "facade",
       },
       {
         src: homeImages + "/gallery/img5.png",
-        alt: "stunning views",
+        alt: "lake view",
       },
       {
         src: homeImages + "/gallery/img7.png",
-        alt: "stunning views",
+        alt: "balcony",
       },
       {
         src: homeImages + "/gallery/img6.png",
-        alt: "stunning views",
+        alt: "bedroom",
       },
     ],
   },
