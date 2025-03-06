@@ -592,6 +592,10 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
+          src: roomCard + "30.jpg",
+          alt: "dsdsd",
+        },
+        {
           src: roomCardNew + "18.png",
           alt: "dsdsd",
         },
