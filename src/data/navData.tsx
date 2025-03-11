@@ -30,17 +30,20 @@ export const NavLink: navLinks[] = [
 ];
 
 export const navButtons = [
+
+
+
   {
     id: 1,
-    name: "winter",
-    icon: <WinterIcon />,
-    class:"banner-prev"
+    name: "summer",
+    icon: <SummerIcon />,
+    class: "banner-next"
   },
   {
     id: 2,
-    name: "summer",
-    icon: <SummerIcon />,
-    class:"banner-next"
+    name: "winter",
+    icon: <WinterIcon />,
+    class: "banner-prev"
   },
 ];
 

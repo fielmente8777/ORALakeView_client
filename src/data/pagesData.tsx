@@ -18,7 +18,8 @@ export const homePageData = {
   bannerData: {
     title: "Whispers of Brienz at the Best Lakeview Hotel",
     description: "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
-    images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
+    // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
+    images: [homeImages + "/Img1.png", "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/" + "banner (1).jpg",],
   },
   galleryData: {
     title: "Gallery",
@@ -29,11 +30,11 @@ export const homePageData = {
         alt: "terrace",
       },
       {
-        src: homeImages + "/gallery/img2.png",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rest2.jpg",
         alt: "lounge",
       },
       {
-        src: homeImages + "/gallery/img3.png",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/gallery/slider/res1.jpg",
         alt: "Restaurant",
       },
       {
@@ -158,7 +159,7 @@ export const homePageData = {
       },
     ],
   },
-nearbyattractions: {
+  nearbyattractions: {
     title: "nearby attractions",
     description: "Explore Nearby Natural Wonders",
 
@@ -457,19 +458,36 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej2.jpg",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej3.jpg",
+          alt: "dsdsd",
+        },
+        {
           src: roomCardNew + "2.png",
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "3.png",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "bath.jpg",
           alt: "dsdsd",
         },
+
+        // {
+        //   src: roomCardNew + "3.png",
+        //   alt: "dsdsd",
+        // },
         {
           src: roomCardNew + "4.png",
           alt: "dsdsd",
         },
+        // {
+        //   src: roomCardNew + "5.png",
+        //   alt: "dsdsd",
+        // },
         {
-          src: roomCardNew + "5.png",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej4.jpg",
           alt: "dsdsd",
         },
       ],
@@ -488,26 +506,41 @@ export const roomsPageData = {
         "Treat yourself to a royal stay at Queen’s Vista, where sweeping views of the Swiss Alps and Lake Brienz set the stage for an unforgettable getaway. Designed with elegance and comfort in mind, this room combines traditional Swiss luxury with modern amenities",
       price: "$200/Day",
       images: [
-        {
-          src: roomCardNew + "20.png",
-          alt: "dsdsd",
-        },
+        // {
+        //   src: roomCardNew + "20.png",
+        //   alt: "dsdsd",
+        // },
         {
           src: roomCardNew + "21.png",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCardNew + "22.png",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCardNew + "23.png",
           alt: "dsdsd",
         },
         {
           src: roomCard + "24.webp",
           alt: "dsdsd",
         },
+        // {
+        //   src: roomCardNew + "22.png",
+        //   alt: "dsdsd",
+        // },
+
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "queen1.jpg",
+          alt: "dsdsd",
+        },
+
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "queen.jpg",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "queen2.jpg",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCardNew + "23.png",
+          alt: "dsdsd",
+        },
+
       ],
       list: [
         "Free wifi",
@@ -537,7 +570,7 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: roomCard + "28.webp",
+          src: roomCardNew + "23.png",
           alt: "dsdsd",
         },
       ],
@@ -557,21 +590,27 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCardNew + "11.png",
+          src: roomCardNew + "12.png",
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "13.png",
+          src: roomCardNew + "11.png",
           alt: "dsdsd",
         },
+
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "std.jpg",
+          alt: "dsdsd",
+        },
+        // {
+        //   src: roomCardNew + "13.png",
+        //   alt: "dsdsd",
+        // },
         {
           src: roomCardNew + "4.png",
           alt: "dsdsd",
         },
-        {
-          src: roomCardNew + "12.png",
-          alt: "dsdsd",
-        },
+
       ],
       list: [
         "free wifi",
@@ -587,22 +626,35 @@ export const roomsPageData = {
         "The Signature Lakeview room epitomizes understated luxury and Swiss charm. With its elegant design and breathtaking views of Lake Brienz, this room is perfect for those who want to experience the finest that ORA Lake View has to offer",
       price: "$200/Day",
       images: [
-        {
-          src: roomCardNew + "17.png",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "30.jpg",
-          alt: "dsdsd",
-        },
+        // {
+        //   src: roomCardNew + "17.png",
+        //   alt: "dsdsd",
+        // },
+
         {
           src: roomCardNew + "18.png",
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "19.png",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "sig.jpg",
           alt: "dsdsd",
         },
+        {
+          src: roomCardNew + "5.png",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "bathSig.jpg",
+          alt: "dsdsd",
+        },
+        // {
+        //   src: roomCard + "30.jpg",
+        //   alt: "dsdsd",
+        // },
+        // {
+        //   src: roomCardNew + "19.png",
+        //   alt: "dsdsd",
+        // },
       ],
       list: [
         "free wifi",
@@ -661,14 +713,14 @@ export const roomsPageData = {
           src: roomCardNew + "12.png",
           alt: "dsdsd",
         },
-        {
-          src: roomCardNew + "13.png",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCardNew + "14.png",
-          alt: "dsdsd",
-        },
+        // {
+        //   src: roomCardNew + "13.png",
+        //   alt: "dsdsd",
+        // },
+        // {
+        //   src: roomCardNew + "14.png",
+        //   alt: "dsdsd",
+        // },
         {
           src: roomCardNew + "5.png",
           alt: "dsdsd",
@@ -708,7 +760,8 @@ export const galleryPageData = {
     {
       title: "Bar Lounge",
       images: [
-        galleryImages + "/slider/img2.webp",
+        // galleryImages + "/slider/img2.webp",
+        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rest2.jpg",
         homeImages + "/gallery/img2.webp",
         galleryImages + "/slider/img1.webp",
       ],
@@ -716,8 +769,9 @@ export const galleryPageData = {
     {
       title: "Facade",
       images: [
-        aboutImages + "/img2.webp",
-        homeImages + "/gallery/img4.webp",
+        // aboutImages + "/img2.webp",
+        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/FAC.jpg",
+        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/banner+(1).jpg",
         homeImages + "/img1.webp",
       ],
     },
@@ -726,14 +780,17 @@ export const galleryPageData = {
       images: [
         galleryImages + "/slider/img6.webp",
         galleryImages + "/slider/img5.webp",
-        galleryImages + "/slider/img4.webp",
+        // galleryImages + "/slider/img4.webp",
+        galleryImages + "/slider/174704837.jpg",
       ],
     },
     {
       title: "Restaurant",
       images: [
-        galleryImages + "/slider/img9.webp",
-        galleryImages + "/slider/img8.webp",
+        galleryImages + "/slider/res.jpg",
+        galleryImages + "/slider/res1.jpg",
+        // galleryImages + "/slider/img9.webp",
+        // galleryImages + "/slider/img8.webp",
         galleryImages + "/slider/img7.webp",
       ],
     },

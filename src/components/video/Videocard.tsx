@@ -28,7 +28,7 @@ const Videocard: React.FC<VideocardProps> = ({
       <div className="hidden max-md:block overflow-hidden">
         <SEOVideo src={src} poster={thumbnail} />
       </div>
-      
+
     </div>
   );
 };
