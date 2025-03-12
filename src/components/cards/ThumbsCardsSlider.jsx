@@ -7,7 +7,6 @@ import {
   Navigation,
   Pagination,
   Thumbs,
-  //   Swiper as SwiperType,
 } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
