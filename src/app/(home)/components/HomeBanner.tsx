@@ -65,14 +65,15 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
             <Container className="h-full">
               <div className="flex flex-col items-center justify-between w-full h-full">
                 <div
-                  className={`relative aspect-square h-[15rem] ${navbar ? "opacity-0" : "opacity-100"}`}
+                  className={` relative aspect-square h-[20rem] ${navbar ? "opacity-0" : "opacity-100"}`}
                 >
                   <Image
-                    src="/logosm1.png"
+                    src="/Lakeview.svg"
                     alt="ora lake view"
                     fill
-                    className="object-contain"
+                    className="object-contain hidden lg:block z-10"
                   />
+
                 </div>
                 <div className="flex lg:hidden items-center gap-4">
                   {navButtons.map((button) => (
@@ -84,10 +85,10 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
                     </button>
                   ))}
                 </div>
-                <div className="flex flex-col items-center justify-center gap-6">
+                <div className="flex flex-col items-center max-md:mt-1 justify-center gap-6">
                   <Heading
                     level={1}
-                    className="heading2 font-montaga text-white capitalize"
+                    className="heading2 font-montaga text-center text-white capitalize"
                   >
                     {title}
                   </Heading>

@@ -172,19 +172,19 @@ const Form = () => {
             {data.tag === "div"
               ? data.content
               : React.createElement(data.tag, {
-                  id: data.name,
-                  type: data.type,
-                  name: data.name,
-                  value: data.value,
-                  onChange: data.onChange,
-                  placeholder: data.placeholder,
-                  required: data.required,
-                  autoComplete: "off",
-                  spellCheck: "false",
-                  rows: "5",
-                  className:
-                    "w-full bg-transparent no-spinner text-clr5 py-2 placeholder:uppercase border-b border-[#B4B4B4] text-sm  placeholder:text-[#B4B4B4] focus:outline-none",
-                })}
+                id: data.name,
+                type: data.type,
+                name: data.name,
+                value: data.value,
+                onChange: data.onChange,
+                placeholder: data.placeholder,
+                required: data.required,
+                autoComplete: "off",
+                spellCheck: "false",
+                rows: "5",
+                className:
+                  "w-full bg-transparent no-spinner text-clr5 py-2 placeholder:uppercase border-b border-[#B4B4B4] text-sm  placeholder:text-[#B4B4B4] focus:outline-none",
+              })}
           </div>
           {data.name === "phone" && errorMessage && (
             <p className="text-sm text-red-500 mt-2 ">{errorMessage}</p>

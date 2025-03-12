@@ -35,7 +35,7 @@ const RoomsSilder: React.FC<{
               className="text-quaternary font-medium capitalize  py-3 px-6 flex items-center justify-center gap-2 hover:text-white hover:bg-quaternary hover:scale-x-105 active:scale-x-95
               transition-all duration-300 ease-in-out border border-quaternary  w-fit description1 "
             >
-              View overview{" "}
+              View Rooms{" "}
               <span>
                 <ArrowRightIcon />
               </span>

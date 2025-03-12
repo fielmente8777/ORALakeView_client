@@ -27,7 +27,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
   return (
     <Section>
       <div
-        className={`lg:grid grid-cols-2 gap-4 lg:max-width  mx-auto ${index % 2 === 0 ? "lg:flex-col" : "lg:flex-col-reverse"}`}
+        className={` lg:grid grid-cols-2 gap-4 lg:max-width  mx-auto ${index % 2 === 0 ? "lg:flex-col" : "lg:flex-col-reverse"}`}
       >
         <div
           className={`col-span-1 mb-5 w-full h-full ${index % 2 === 0 ? "order-1 max-md:mt-4" : "order-2 max-md:mb-4"}`}
@@ -35,13 +35,13 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
           <ThumbsCardsSlider images={images} index={index} />
         </div>
         <div
-          className={` flex flex-col  lg:gap-32 gap-5 col-span-1 max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
+          className={` flex flex-col  lg:gap-12 gap-5 col-span-1 md:max-width  ${index % 2 === 0 ? "order-2" : "order-1"}`}
         >
           <div className="flex flex-col gap-5">
             {title && (
               <Heading
                 level={3}
-                className="text-primary capitalize font-montaga heading3 w-[15rem]"
+                className="text-primary capitalize font-montaga heading3 max-md:w-[15rem] w-[21rem]"
               >
                 {title}
               </Heading>
@@ -59,7 +59,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
             </Paragraph>
 
             <Button
-              href="/contact-us"
+              href="https://direct-book.com/properties/lakeviewhotelrestaurant?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=CHF&checkInDate=2025-01-31&checkOutDate=2025-02-01&trackPage=yes"
               label="CHECK AVAILABILITY"
               className="mt-2 w-fit bg-quaternary hover:bg-quaternary/80"
             />
@@ -67,22 +67,22 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
           <div className="grid grid-cols-2 gap-3">
             <ul className="text-gray-600 list-disc pl-6 flex flex-col gap-2">
               {list
-                ?.slice(0, 4)
+                ?.slice(0, 3)
                 .map((item, index) => (
                   <li
                     key={index}
-                    className="description1 text-textdark"
+                    className="description1 capitalize text-textdark"
                     dangerouslySetInnerHTML={{ __html: item }}
                   ></li>
                 ))}
             </ul>
             <ul className="text-gray-600 list-disc pl-6 flex flex-col gap-2">
               {list
-                ?.slice(4, list.length)
+                ?.slice(3, list.length)
                 .map((item, index) => (
                   <li
                     key={index}
-                    className="description1 text-textdark"
+                    className="description1 capitalize text-textdark"
                     dangerouslySetInnerHTML={{ __html: item }}
                   ></li>
                 ))}

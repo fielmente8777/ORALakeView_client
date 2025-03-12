@@ -68,7 +68,7 @@ const YoutubePlayer = ({
         loop
         muted={!isPlaying}
         controls={isPlaying}
-        picture-in-picture={false}
+        // picture-in-picture={false}
         controlsList="nodownload noplaybackrate"
         poster={poster}
         className="w-full h-full object-cover"

@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
               className={`relative block lg:hidden h-9 lg:aspect-[4/2] aspect-[4/1.2] transition-all duration-300 ease-in-out ${navbar ? "opacity-100" : "lg:opacity-0"}`}
             >
               <Image
-                src={`/logosm${navbar || pathname !== "/" ? "2" : "1"}.png`}
+                src={`${navbar || pathname !== "/" ? "/logosm2.png" : "/Lakeview.svg"}`}
                 alt="ora lake view"
                 fill
                 className="object-contain"

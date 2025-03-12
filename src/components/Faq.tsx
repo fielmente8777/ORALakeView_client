@@ -9,7 +9,7 @@ const Faq: React.FC<FaqProps> = ({ title, description, item }) => {
       <div className="flex flex-col gap-4 items-center justify-center">
         <Heading
           level={2}
-          className="text-center text-secondary uppercase heading3"
+          className="text-center text-secondary font-montaga uppercase heading2"
         >
           {title}
         </Heading>

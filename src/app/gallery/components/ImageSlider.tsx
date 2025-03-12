@@ -1,6 +1,6 @@
 "use client";
 import { Heading, SectionWithContainer } from "@/components";
-import { NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
+import { CloseIcon, NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 import Image from "next/image";
 
 // Import Swiper React components
@@ -10,8 +10,20 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ImageSliderProps } from "@/@types/types";
+import { useState } from "react";
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [title, setTitle] = useState("");
+  const [imageArray, setImageArray] = useState<string[]>([]);
+
+  const handleModal = (image: string, imageArray: string[], title: string) => {
+    setShowModal(true);
+    setSelectedImage(image);
+    setTitle(title);
+    setImageArray([...imageArray, image]);
+  };
   return (
     <SectionWithContainer sectionClassName="lg:py-32 py-16 lg:hidden block">
       <div className="relative">
@@ -41,13 +53,15 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
                   >
                     {item.images.map((image, index) => (
                       <SwiperSlide key={index}>
-                        <div className="w-full aspect-[4/5]  relative">
+                        <div className="w-full aspect-[4/5]  relative" onClick={() => handleModal(image, imageArray, item.title)}>
                           <Image
                             src={image}
                             alt={item.title}
                             fill
                             className="object-cover bg-gradient-to-t from-inherit to-black"
+
                           />
+
                         </div>
                       </SwiperSlide>
                     ))}
@@ -70,6 +84,29 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
           <NextBtnIcon />
         </button>
       </div>
+      {showModal && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black/90 z-50 flex items-center justify-center">
+          <button
+            onClick={() => setShowModal(false)}
+            className="z-10 rounded-md p-2 absolute top-2 right-2"
+          >
+            <CloseIcon />
+          </button>
+          <div className="aspect-[4/5] w-full relative"
+            onClick={() => setShowModal(false)}>
+            <Image
+              src={selectedImage}
+              alt={title}
+              fill
+              className="object-contain bg-gradient-to-t from-inherit to-black"
+
+            />
+          </div>
+
+
+        </div>
+
+      )}
     </SectionWithContainer>
   );
 };

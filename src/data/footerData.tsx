@@ -20,8 +20,8 @@ export const footerLinks: IFooter[] = [
     links: [
       {
         id: 1,
-        name: "info@lakeviewhotel.ch",
-        href: "mailto:info@lakeviewhotel.ch",
+        name: "info@oralakeview.com",
+        href: "mailto:info@oralakeview.com",
         target: "_blank",
         icon: <MailIcon />,
       },
@@ -57,14 +57,15 @@ export const footerLinks: IFooter[] = [
     links: [
       { id: 1, name: "Instagram", href: "/", target: "_blank" },
       { id: 2, name: "Facebook", href: "/", target: "_blank" },
-      { id: 3, name: "Twitter", href: "/", target: "_blank" },
-      { id: 4, name: "Pinterest", href: "/", target: "_blank" },
+      // { id: 3, name: "Twitter", href: "/", target: "_blank" },
+      // { id: 4, name: "Pinterest", href: "/", target: "_blank" },
     ],
   },
 ];
 
 export const footerLink2 = [
   { id: 1, name: "Privacy Policy", href: "/privacy-policy/" },
-  { id: 2, name: "Terms & Conditions", href: "/terms-and-conditions/" },
+  // { id: 2, name: "Terms & Conditions", href: "/terms-and-conditions/" },
+  { id: 2, name: "Cancellation & Refund Policy", href: "/cancellation-&-refund-policy/" },
 ];
 
