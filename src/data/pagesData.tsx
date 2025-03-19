@@ -437,8 +437,8 @@ export const aboutPageData = {
   },
 };
 
-const roomCard = roomImages + "/card/img";
 const roomCardNew = roomImages + "/card/Img";
+const roomDirect = roomImages + "/card/";
 export const roomsPageData = {
   bannerData: {
     title: "Find Your Ideal Retreat",
@@ -466,7 +466,7 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "2.png",
+          src: roomDirect + "7STD4053.jpg",
           alt: "dsdsd",
         },
         {
@@ -479,7 +479,7 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
         {
-          src: roomCardNew + "4.png",
+          src: roomDirect + "7STD4054.jpg",
           alt: "dsdsd",
         },
         // {
@@ -487,7 +487,7 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej4.jpg",
+          src: roomDirect + "7STD4055.jpg",
           alt: "dsdsd",
         },
       ],
@@ -511,11 +511,7 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
         {
-          src: roomCardNew + "21.png",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCard + "24.webp",
+          src: roomDirect + "7STD4064.jpg",//
           alt: "dsdsd",
         },
         // {
@@ -537,16 +533,20 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "23.png",
+          src: roomDirect + "7STD4065.jpg",//
+          alt: "dsdsd",
+        },
+        {
+          src: roomDirect + "7STD4066.jpg",//
           alt: "dsdsd",
         },
 
       ],
       list: [
         "Free wifi",
-        "Terrace access with lake view",
+        "External Terrace access for lakeview",
         "Bathtub",
-        "1 king-size bed",
+        "1 queen-size bed",
         "mini-bar",
         "flat-screen TV",
       ],
@@ -558,19 +558,15 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCard + "25.webp",
+          src: roomDirect + "4E1A7889.JPG",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "26.webp",
+          src: roomDirect + "4E1A7893.JPG",
           alt: "dsdsd",
         },
         {
-          src: roomCard + "27.webp",
-          alt: "dsdsd",
-        },
-        {
-          src: roomCardNew + "23.png",
+          src: roomDirect + "4E1A7897.JPG",
           alt: "dsdsd",
         },
       ],
@@ -590,27 +586,21 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCardNew + "12.png",
+          src: roomDirect + "LS2.jpeg",
+          alt: "dsdsd",
+        }, {
+          src: roomDirect + "LS1.jpeg",
+          alt: "dsdsd",
+        }, {
+          src: roomDirect + "LS3.jpeg",
+          alt: "dsdsd",
+        }, {
+          src: roomDirect + "LS4.jpeg",
+          alt: "dsdsd",
+        }, {
+          src: roomDirect + "LS5.png",
           alt: "dsdsd",
         },
-        {
-          src: roomCardNew + "11.png",
-          alt: "dsdsd",
-        },
-
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "std.jpg",
-          alt: "dsdsd",
-        },
-        // {
-        //   src: roomCardNew + "13.png",
-        //   alt: "dsdsd",
-        // },
-        {
-          src: roomCardNew + "4.png",
-          alt: "dsdsd",
-        },
-
       ],
       list: [
         "free wifi",
@@ -618,6 +608,7 @@ export const roomsPageData = {
         "Ensuite bathroom",
         "mini-bar",
         "flat-screen TV",
+        "Kitchenette"
       ],
     },
     {
@@ -632,21 +623,22 @@ export const roomsPageData = {
         // },
 
         {
-          src: roomCardNew + "18.png",
+          src: roomDirect + "4E1A7998.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "sig.jpg",
+          src: roomDirect + "4E1A7903.JPG",
+          alt: "dsdsd",
+        },
+        {
+          src: roomCardNew + "18.png",
           alt: "dsdsd",
         },
         {
           src: roomCardNew + "5.png",
           alt: "dsdsd",
         },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "bathSig.jpg",
-          alt: "dsdsd",
-        },
+        
         // {
         //   src: roomCard + "30.jpg",
         //   alt: "dsdsd",
@@ -659,7 +651,7 @@ export const roomsPageData = {
       list: [
         "free wifi",
         "Balcony with spectacular lake views",
-        "03 Single beds & can be attached for Double occupancy as per request",
+        "02 Single beds & can be attached for Double occupancy as per request",
         "Ensuite bathroom",
         "mini-bar",
         "flat-screen TV",
@@ -668,7 +660,7 @@ export const roomsPageData = {
     {
       title: "Lakeview Trio-28 sq metres",
       description:
-        "For those who enjoy the company of loved ones or seek extra space, the Lakeview Trio room is designed just for you. With a cozy king-size bed and a versatile, chic layout, this room offers comfort and style in equal measure",
+        "For those who enjoy the company of loved ones or seek extra space, the Lakeview Trio room is designed just for you. With 3 single-beds and a versatile, chic layout, this room offers comfort and style in equal measure",
       price: "$200/Day",
       images: [
         {
@@ -676,19 +668,19 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "7.png",
+          src: roomCardNew + "7.png",//
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "8.png",
+          src: roomCardNew + "8.png",//
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "9.png",
+          src: roomCardNew + "9.png",//
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "10.png",
+          src: roomCardNew + "10.png",//
           alt: "dsdsd",
         },
       ],
@@ -710,7 +702,7 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: roomCardNew + "12.png",
+          src: roomDirect + "4E1A7841.JPG",
           alt: "dsdsd",
         },
         // {
@@ -722,15 +714,15 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
         {
-          src: roomCardNew + "5.png",
+          src: roomDirect + "4E1A7844.JPG",
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "4.png",
+          src: roomDirect + "4E1A7842.jpeg",
           alt: "dsdsd",
         },
         {
-          src: roomCardNew + "15.png",
+          src: roomDirect + "4E1A7843.jpeg",
           alt: "dsdsd",
         },
       ],
