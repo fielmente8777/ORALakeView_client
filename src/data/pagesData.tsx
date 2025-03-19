@@ -431,7 +431,7 @@ export const aboutPageData = {
       //   description:
       //     "Recognized as one of the top boutique hotels in Switzerland, Hotel Lakeview earned accolades for its outstanding service, prime location, and unforgettable guest experiences.",
       //   year: "2024",
-      //   src: aboutImages + "/IMAGE5.png",
+      //   src: aboutImages + "/IMAGE5.png",g
       // },
     ],
   },
