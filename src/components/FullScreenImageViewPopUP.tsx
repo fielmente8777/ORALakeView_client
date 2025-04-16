@@ -4,13 +4,12 @@ import {
   CloseIcon,
   NextBtnIcon,
   PrevBtnIcon,
-  ZoomInIcon,
-  ZoomOutIcon,
 } from "@/icons/icons";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { Heading } from "./TextAndInputComponents";
-
+import { BsFullscreen } from "react-icons/bs";
+import { BsFullscreenExit } from "react-icons/bs";
 interface FullScreenImageViewPopUPProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
   src: string;
@@ -118,7 +117,7 @@ const FullScreenImageViewPopUP: React.FC<FullScreenImageViewPopUPProps> = ({
             alt="Full screen view"
             fill
             priority={true}
-            className="object-resize cursor-pointer"
+            className="object-resize max-lg:object-contain cursor-pointer"
             onClick={toggleFullscreen}
           />
           <div className="absolute bottom-0 left-0">
@@ -126,13 +125,13 @@ const FullScreenImageViewPopUP: React.FC<FullScreenImageViewPopUPProps> = ({
               className="w-full h-full cursor-pointer flex items-end justify-end"
               onClick={toggleFullscreen}
             >
-              <span className="p-7 bg-tertiary/70 w-max rounded-md">
-                {isFullscreen ? <ZoomOutIcon /> : <ZoomInIcon />}
+              <span className="p-2 text-2xl bg-tertiary/70 w-max rounded-md">
+                {isFullscreen ? <BsFullscreen /> : <BsFullscreenExit />}
               </span>
             </button>
           </div>
 
-          <div className="absolute bottom-0 w-fit h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2">
+          <div className={`absolute bottom-0 w-fit h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2 ${imageArray.length > 2 ? "hidden" : ""}`}>
             {uniqueImageArray.map((image, index) => (
               <button
                 key={index}
