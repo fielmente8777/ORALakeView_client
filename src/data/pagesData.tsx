@@ -224,10 +224,13 @@ export const homePageData = {
         description:
           "Take a leisurely 3-4 km stroll around the pristine lake, where every step offers breathtaking views of the water and the majestic Alps. Perfect for unwinding or capturing the beauty of nature, this walk immerses you in tranquility",
         images: [
+          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Lakeside+Serenity/Jpg/IMG-+new.webp",
+          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Lakeside+Serenity/Jpg/IMG-1%2C2.webp",
+          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Lakeside+Serenity/PSD/IMG-3.webp",
           homeImages + "/doathotels/IMG1.png",
-          homeImages + "/doathotels/IMG2.png",
-          homeImages + "/doathotels/IMG3.png",
-          homeImages + "/doathotels/IMG4.png",
+          // homeImages + "/doathotels/IMG2.png",
+          // homeImages + "/doathotels/IMG3.png",
+          // homeImages + "/doathotels/IMG4.png",
         ],
       },
       {
@@ -235,10 +238,14 @@ export const homePageData = {
         description:
           "Enjoy unparalleled views of the charming village of Iseltwald right from your balcony. Famous for its appearance in the Korean drama Crash Landing on You, this scenic spot blends natural beauty with cinematic magic",
         images: [
-          homeImages + "/doathotels/IMG5.png",
-          homeImages + "/doathotels/IMG6.png",
-          homeImages + "/doathotels/IMG7.png",
-          homeImages + "/doathotels/IMG8.png",
+          newImageLinks + "Iseltwalt/I2.webp",
+          newImageLinks + "Iseltwalt/I3.webp",
+          newImageLinks + "Iseltwalt/I4.webp",
+          newImageLinks + "Iseltwalt/I5.webp",
+          // homeImages + "/doathotels/IMG5.png",
+          // homeImages + "/doathotels/IMG6.png",
+          // homeImages + "/doathotels/IMG7.png",
+          // homeImages + "/doathotels/IMG8.png",
         ],
       },
       {
@@ -246,10 +253,12 @@ export const homePageData = {
         description:
           "Dive into relaxation at the swimming spot just below the hotel, open during the season. Whether you're taking a refreshing dip or lounging by the water, it's a perfect way to enjoy the lake",
         images: [
-          homeImages + "/doathotels/IMG9.png",
-          homeImages + "/doathotels/IMG10.png",
-          homeImages + "/doathotels/IMG11.png",
-          homeImages + "/doathotels/IMG12.png",
+          newImageLinks + "Swimming+pool/img1.webp",
+          newImageLinks + "Swimming+pool/img2.webp",
+          // homeImages + "/doathotels/IMG9.png",
+          // homeImages + "/doathotels/IMG10.png",
+          // homeImages + "/doathotels/IMG11.png",
+          // homeImages + "/doathotels/IMG12.png",
         ],
       },
       {
@@ -788,10 +797,9 @@ export const galleryPageData = {
     {
       title: "Facade",
       images: [
-        // aboutImages + "/img2.webp",
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/FAC.jpg",
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/banner+(1).jpg",
-        homeImages + "/img1.webp",
+        newImageLinks + "Facade/4E1A7684.webp",
       ],
     },
     {

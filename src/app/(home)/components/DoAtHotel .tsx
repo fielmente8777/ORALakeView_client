@@ -43,7 +43,7 @@ const DoAtHotel: React.FC<IDoAtHotelProps> = ({
         <div className="absolute top-0 left-0  w-full">
           <Container>
             <div
-              className="w-full block mt-4 shadow-md "
+              className="w-full max-w-7xl mx-auto block mt-4 shadow-md "
               id="custom-pagination-fraction relative overflow-hidden"
             >
               <SliderSwip
