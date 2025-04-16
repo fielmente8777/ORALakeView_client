@@ -131,7 +131,7 @@ const FullScreenImageViewPopUP: React.FC<FullScreenImageViewPopUPProps> = ({
             </button>
           </div>
 
-          <div className={`absolute bottom-0 w-fit h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2 ${imageArray.length > 2 ? "hidden" : ""}`}>
+          <div className={`absolute bottom-0 w-fit h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2 ${imageArray.length > 3 ? "max-md:hidden" : "block"}`}>
             {uniqueImageArray.map((image, index) => (
               <button
                 key={index}
