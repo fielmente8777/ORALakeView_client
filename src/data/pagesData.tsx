@@ -23,7 +23,7 @@ export const homePageData = {
     // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
     images: [
       "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/banner+(1).jpg",
-      newImageLinks+"Facade/4E1A7684.webp"
+      newImageLinks + "Facade/4E1A7684.webp",
     ],
   },
   galleryData: {
@@ -95,10 +95,6 @@ export const homePageData = {
         src: homeImages + "/rooms/img2.png",
         alt: "Classic Lake View",
       },
-      // {
-      //   src: "",
-      //   alt: "",
-      // },
     ],
   },
   amenitiesData: {
