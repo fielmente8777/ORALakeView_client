@@ -12,6 +12,7 @@ import {
   contactImages,
   galleryImages,
   homeImages,
+  newImageLinks,
   roomImages,
 } from "./links";
 export const homePageData = {
@@ -22,7 +23,7 @@ export const homePageData = {
     // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
     images: [
       "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/banner+(1).jpg",
-      homeImages + "/Img1.png",
+      newImageLinks+"Facade/4E1A7684.webp"
     ],
   },
   galleryData: {
@@ -337,58 +338,47 @@ export const homePageData = {
       {
         id: 1,
         title: "What time is check-in and check-out?",
-        content: `
-                Check-in from 14:00 PM; check-out by 10:00 AM – we’ll be waiting with a smile!
-                `,
+        content: `Check-in from 14:00 PM; check-out by 10:00 AM – we’ll be waiting with a smile!`,
       },
       {
         id: 2,
         title: "Are pets allowed at ORA Lake View?",
-        content: `
-               Furry friends are welcome! Just let us know before your arrival
-                `,
+        content: `Furry friends are welcome! Just let us know before your arrival`,
       },
       {
         id: 3,
         title: "How far is the hotel from Interlaken?",
-        content: `
-                Only 7 km – close enough for adventure, far enough for tranquility
-                `,
+        content: `Only 7 km – close enough for adventure, far enough for tranquility `,
       },
       {
         id: 4,
         title: "Do rooms include lake or mountain views?",
-        content: `
-                Yes, all our rooms feature picturesque views of Lake Brienz except Alpine retreat they have partial lakeview and/or the Swiss Alps
-                `,
+        content: `Yes, all our rooms feature picturesque views of Lake Brienz except Alpine retreat they have partial lakeview and/or the Swiss Alps`,
       },
       {
         id: 5,
         title: "Is there public transport nearby?",
-        content: `
-                Yes, regular buses and trains connect you to Interlaken and beyond, just steps from the hotel
-                `,
+        content: ` Yes, regular buses and trains connect you to Interlaken and beyond, just steps from the hotel `,
       },
       {
         id: 6,
         title: "What’s the best way to reach ORA Lake View?",
-        content: `
-                Whether you’re arriving by car, train, or boat, we’re easy to find. And did we mention the journey itself is half the charm
-                `,
+        content: `Whether you’re arriving by car, train, or boat, we’re easy to find. And did we mention the journey itself is half the charm`,
       },
       {
         id: 7,
         title: "Can I plan a romantic getaway at ORA Lake View?",
-        content: `
-                Oh, absolutely! Picture private balconies, candlelit dinners, and views that scream romance. Let us help you create those unforgettable moments
-                `,
+        content: `Oh, absolutely! Picture private balconies, candlelit dinners, and views that scream romance. Let us help you create those unforgettable moments `,
       },
       {
         id: 8,
         title: "Can I cook my meals in the common kitchen?",
-        content: `
-                Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby
-                `,
+        content: `Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby`,
+      },
+      {
+        id: 9,
+        title: "How far is Interlaken from your hotel? ",
+        content: `Interlaken is just 7 km away—only 5–8 minutes by train or bus; with Dorf Bus Station (20m, 🚶1 min) and Niederried Train Station (170m, 🚶2–3 mins) right near the hotel, getting around is effortless.`,
       },
     ],
   },

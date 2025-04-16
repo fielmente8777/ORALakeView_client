@@ -9,3 +9,8 @@ export const galleryImages = "https://eazotel-client-webp-image.s3.ap-south-1.am
 export const aboutImages = "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/about";
 
 export const contactImages = "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/contact";
+
+
+
+
+export const newImageLinks = 'https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/'

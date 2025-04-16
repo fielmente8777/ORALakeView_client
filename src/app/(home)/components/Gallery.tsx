@@ -69,7 +69,7 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
               onMouseLeave={() => setIsHovered(null)}
             >
               <Image src={image.src} alt={image.alt} className="w-full object-cover" fill />
-              <div className="absolute top-0 left-0 z-10 w-full h-full bg-gradient-to-b from-white/10 to-black/70">
+              <div className="absolute inset-0 z-10 w-full h-full bg-gradient-to-b from-white/10 to-black/10">
                 <Heading
                   level={3}
                   className="text-white text-center text-[0.75rem] capitalize lg:text-base w-full absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
