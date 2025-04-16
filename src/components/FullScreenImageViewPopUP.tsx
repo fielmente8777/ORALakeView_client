@@ -16,7 +16,7 @@ interface FullScreenImageViewPopUPProps {
   src: string;
   showModal: boolean;
   imageArray: string[];
-  title: string;
+  title?: string;
 }
 
 const FullScreenImageViewPopUP: React.FC<FullScreenImageViewPopUPProps> = ({

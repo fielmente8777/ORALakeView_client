@@ -2,9 +2,10 @@
 import { useState } from "react";
 import { SectionWithContainer } from "@/components";
 import { Heading, Paragraph } from "@/components/TextAndInputComponents";
-import { Arrow1, CloseIcon, NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
+import { Arrow1 } from "@/icons/icons";
 import Image from "next/image";
 import Link from "next/link";
+import FullScreenImageViewPopUP from "@/components/FullScreenImageViewPopUP";
 
 interface GalleryProps {
   title: string;
@@ -15,7 +16,7 @@ interface GalleryProps {
 const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
   const [isHovered, setIsHovered] = useState<null | number>(null);
   const [showModal, setShowModal] = useState(false);
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  // const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const gridPattern = [
     "lg:col-span-3 col-span-4 row-span-2 lg:row-span-3",
@@ -27,22 +28,35 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
     "lg:col-span-2 col-span-3 row-span-3",
   ];
 
-  const handleOpenModal = (index: number) => {
-    setSelectedImageIndex(index);
+  // const handleOpenModal = (index: number) => {
+  //   setSelectedImageIndex(index);
+  //   setShowModal(true);
+  // };
+
+  // const handleCloseModal = () => {
+  //   setShowModal(false);
+  //   setSelectedImageIndex(null);
+  // };
+
+  // const handleNextImage = () => {
+  //   setSelectedImageIndex((prevIndex) => (prevIndex !== null && prevIndex < images.length - 1 ? prevIndex + 1 : 0));
+  // };
+
+  // const handlePrevImage = () => {
+  //   setSelectedImageIndex((prevIndex) => (prevIndex !== null && prevIndex > 0 ? prevIndex - 1 : images.length - 1));
+  // };
+
+  
+  const [selectedImage, setSelectedImage] = useState("");
+  const [imageArray, setImageArray] = useState<string[]>([]);
+
+  const handleModal = (
+    image: string,
+    imageArray: string[],
+  ) => {
     setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setSelectedImageIndex(null);
-  };
-
-  const handleNextImage = () => {
-    setSelectedImageIndex((prevIndex) => (prevIndex !== null && prevIndex < images.length - 1 ? prevIndex + 1 : 0));
-  };
-
-  const handlePrevImage = () => {
-    setSelectedImageIndex((prevIndex) => (prevIndex !== null && prevIndex > 0 ? prevIndex - 1 : images.length - 1));
+    setSelectedImage(image);
+    setImageArray([...imageArray, image]);
   };
 
   return (
@@ -64,12 +78,13 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
               key={index}
               className={`${gridPattern[index % gridPattern.length]
                 } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "lg:hover:scale-100 filter brightness-100 blur-0" : "lg:group-hover:scale-[0.99] lg:group-hover:filter lg:group-hover:brightness-90 lg:group-hover:blur-sm"}`}
-              onClick={() => handleOpenModal(index)}
+              // onClick={() => handleOpenModal(index)}
+              onClick={() => handleModal(image.src, images.map((image) => image.src))}
               onMouseEnter={() => setIsHovered(index)}
               onMouseLeave={() => setIsHovered(null)}
             >
               <Image src={image.src} alt={image.alt} className="w-full object-cover" fill />
-              <div className="absolute inset-0 z-10 w-full h-full bg-gradient-to-b from-white/10 to-black/10">
+              <div className="absolute inset-0 z-10 w-full h-full bg-gradient-to-b from-white/20 to-black/40 to-95%">
                 <Heading
                   level={3}
                   className="text-white text-center text-[0.75rem] capitalize lg:text-base w-full absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -95,7 +110,7 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
           </span>
         </p>
         {/* Modal */}
-        {showModal && selectedImageIndex !== null && (
+        {/* {showModal && selectedImageIndex !== null && (
           <div className="fixed top-0 left-0 w-full h-screen bg-black/90 z-50 flex items-center justify-center">
             <button onClick={handleCloseModal} className="z-10 absolute top-2 right-2 p-2">
               <CloseIcon />
@@ -111,8 +126,17 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
               <button onClick={handleNextImage} className="bg-quaternary p-2 rounded-full absolute right-5 text-2xl text-white"> <NextBtnIcon /></button>
             </div>
           </div>
-        )}
+        )} */}
       </div>
+      {showModal && (
+        <FullScreenImageViewPopUP
+          setShowModal={setShowModal}
+          src={selectedImage}
+          showModal={showModal}
+          imageArray={imageArray}
+          title={title}
+        />
+      )}
     </SectionWithContainer>
   );
 };
