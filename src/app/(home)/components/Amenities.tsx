@@ -105,11 +105,13 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
                     alt={items[currentIndex]?.title}
                     fill
                     className="object-cover"
+                    priority
+                    loading="eager"
                   />
                 </div>
               </div>
               {/* Rotating Icons */}
-              {items.map((item, index) => (
+              {items?.map((item, index) => (
                 <div
                   key={index}
                   className={`lg:w-16 w-11 border-2 border-white aspect-square absolute ${iconPositions[index]}  flex items-center justify-center rounded-full transition-all duration-700 ease-linear`}

@@ -10,18 +10,18 @@ const WhoWeAre = () => {
 
     "And yes, we’re a pet-friendly hotel! Bring your four-legged friends along - they’ll love the view just as much as you do",
 
-    "Here, your story becomes our story. Book directly with us and experience a seamless escape to nature's best-kept secret"
+    "Here, your story becomes our story. Book directly with us and experience a seamless escape to nature's best-kept secret",
   ];
   return (
     <SectionWithContainer sectionClassName="bg-primary">
       <div className="flex flex-col items-center justify-center lg:gap-14 ">
-
         <div className="flex flex-col gap-1 justify-center">
           <p className="text-white text-center">ORA LAKEVIEW HOTEL</p>
-          <h1 className="text-secondary heading2 font-montaga  capitalize text-center">&quot;A View Like No Other&quot;</h1>
+          <h1 className="text-secondary heading2 font-montaga  capitalize text-center">
+            &quot;A View Like No Other&quot;
+          </h1>
           <div className="flex justify-center">
             <div className="w-[1px] h-8 bg-white/50 text-center" />
-
           </div>
           <p className="text-center text-white">In the Heart of Switzerland</p>
         </div>
@@ -32,14 +32,16 @@ const WhoWeAre = () => {
           </span>
           <div className="w-full h-[1px] bg-white/50" />
         </div>
-        {description.map((item, index) => (
-          <Paragraph
-            key={index}
-            className="text-white text-center description tracking-wider mb-2"
-          >
-            {item}
-          </Paragraph>
-        ))}
+        <div className="">
+          {description.map((item, index) => (
+            <Paragraph
+              key={index}
+              className="text-white text-center description tracking-wider mb-2"
+            >
+              {item}
+            </Paragraph>
+          ))}
+        </div>
       </div>
     </SectionWithContainer>
   );

@@ -12,14 +12,19 @@ import {
   contactImages,
   galleryImages,
   homeImages,
+  newImageLinks,
   roomImages,
 } from "./links";
 export const homePageData = {
   bannerData: {
     title: "Whispers of Brienz at the Best Lakeview Hotel",
-    description: "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
+    description:
+      "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
     // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
-    images: [homeImages + "/Img1.png", "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/" + "banner (1).jpg",],
+    images: [
+      "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/banner+(1).jpg",
+      newImageLinks+"Facade/4E1A7684.webp"
+    ],
   },
   galleryData: {
     title: "Gallery",
@@ -62,7 +67,6 @@ export const homePageData = {
     subDescription:
       "Choose from a range of beautifully designed rooms and suites, each offering comfort, modern amenities, and breathtaking views of Lake Brienz",
     images: [
-
       {
         src: homeImages + "/rooms/img3.png",
         alt: "Majestic lakeview king",
@@ -295,20 +299,35 @@ export const homePageData = {
   },
   guestreviews: {
     title: "guest reviews",
-    description:
-      "Don’t Take Our Word for It—Hear What Our Guests Have to Say!",
+    description: "Don’t Take Our Word for It—Hear What Our Guests Have to Say!",
     items: [
       {
         title: "Exceptional Service and Comfort!",
-        description: `"We spent a week at Lakeview Hotel and were thoroughly impressed by the quality of service and comfort. The rooms are spacious, clean, and equipped with everything we needed. The entertainment zone was a fun addition for our family. A fantastic base for exploring Interlaken!" — Emily R.`,
+        description: `Our stay at this hotel was nothing short of fantastic! The staff was incredibly welcoming and accommodating. The room was spacious and spotlessly clean. We loved the convenient location, which made it easy to explore the city.`,
       },
       {
         title: "A Hidden Gem!",
-        description: `“I can't recommend Lakeview Hotel enough! The views of Lake Brienz are absolutely breathtaking, especially from the balcony of our room. The staff were incredibly welcoming and went above and beyond to make our stay memorable. The breakfast was delicious, and the location is perfect for exploring the surrounding area. We will definitely be back!" — Sarah M.`,
+        description: `Amazing view and super convenient to reach. Very welcoming staff. It’s easily reachable from Interlaken OST station and train station is right behind the hotel. We enjoyed our stay with our toddler and enjoyed amazing views. Must stay`,
       },
       {
         title: "Perfect Romantic Getaway!",
-        description: `"My partner and I chose Lakeview Hotel for our anniversary, and it exceeded all expectations. The serene atmosphere, combined with stunning mountain views, made for a perfect romantic escape. We loved having breakfast on our private terrace. Highly recommend for couples looking to unwind!" — James T.`,
+        description: `Excellent location and beautiful view. Loved the room and hospitality. Wish you come here again. The climate here is soothing and refreshing. My wife wanted to stay here for long just to enjoy the view`,
+      },
+      {
+        title: "Perfect Romantic Getaway!",
+        description: `A boutique hotel with, an excellent view, and very good staff. multi-lingual reception staff (German, Italian, French, Spanish, English and Romanian) a very good continental breakfast ( yes it is not the usual 5-star hotel buffet) but they delivered what they promised on the web.`,
+      },
+      {
+        title: "Perfect Romantic Getaway!",
+        description: `This hotel is in a great location with an amazing view to Lake Thun. The rooms are decent and comfortable enough. Also, Tushar who works at the front desk took care of my family and I & provided us with all what we need during our stay.`,
+      },
+      {
+        title: "Perfect Romantic Getaway!",
+        description: `This was an amazing hotel with a beautiful view of the lake and a 2 minute walk to the train station. Balcony room with lake view was BEAUTIFUL! 10/10 recommend staying here. The man at the reception was so friendly and helpful`,
+      },
+      {
+        title: "Perfect Romantic Getaway!",
+        description: `Amazing place to stay. Very beautiful view in morning and evening time. Train station just 2-3min by walk (Niederried station) and ferry-boat station available. We stay here 3days and enjoyed alot. Everything is very easy to reached`,
       },
     ],
   },
@@ -319,58 +338,47 @@ export const homePageData = {
       {
         id: 1,
         title: "What time is check-in and check-out?",
-        content: `
-                Check-in from 14:00 PM; check-out by 10:00 AM – we’ll be waiting with a smile!
-                `,
+        content: `Check-in from 14:00 PM; check-out by 10:00 AM – we’ll be waiting with a smile!`,
       },
       {
         id: 2,
         title: "Are pets allowed at ORA Lake View?",
-        content: `
-               Furry friends are welcome! Just let us know before your arrival
-                `,
+        content: `Furry friends are welcome! Just let us know before your arrival`,
       },
       {
         id: 3,
         title: "How far is the hotel from Interlaken?",
-        content: `
-                Only 7 km – close enough for adventure, far enough for tranquility
-                `,
+        content: `Only 7 km – close enough for adventure, far enough for tranquility `,
       },
       {
         id: 4,
         title: "Do rooms include lake or mountain views?",
-        content: `
-                Yes, all our rooms feature picturesque views of Lake Brienz except Alpine retreat they have partial lakeview and/or the Swiss Alps
-                `,
+        content: `Yes, all our rooms feature picturesque views of Lake Brienz except Alpine retreat they have partial lakeview and/or the Swiss Alps`,
       },
       {
         id: 5,
         title: "Is there public transport nearby?",
-        content: `
-                Yes, regular buses and trains connect you to Interlaken and beyond, just steps from the hotel
-                `,
+        content: ` Yes, regular buses and trains connect you to Interlaken and beyond, just steps from the hotel `,
       },
       {
         id: 6,
         title: "What’s the best way to reach ORA Lake View?",
-        content: `
-                Whether you’re arriving by car, train, or boat, we’re easy to find. And did we mention the journey itself is half the charm
-                `,
+        content: `Whether you’re arriving by car, train, or boat, we’re easy to find. And did we mention the journey itself is half the charm`,
       },
       {
         id: 7,
         title: "Can I plan a romantic getaway at ORA Lake View?",
-        content: `
-                Oh, absolutely! Picture private balconies, candlelit dinners, and views that scream romance. Let us help you create those unforgettable moments
-                `,
+        content: `Oh, absolutely! Picture private balconies, candlelit dinners, and views that scream romance. Let us help you create those unforgettable moments `,
       },
       {
         id: 8,
         title: "Can I cook my meals in the common kitchen?",
-        content: `
-                Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby
-                `,
+        content: `Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby`,
+      },
+      {
+        id: 9,
+        title: "How far is Interlaken from your hotel? ",
+        content: `Interlaken is just 7 km away—only 5–8 minutes by train or bus; with Dorf Bus Station (20m, 🚶1 min) and Niederried Train Station (170m, 🚶2–3 mins) right near the hotel, getting around is effortless.`,
       },
     ],
   },
@@ -382,7 +390,8 @@ export const aboutPageData = {
     description:
       "Experience Swiss charm, lake views, and modern elegance— with every dawn and dusk",
     src: homeImages + "/gallery/img1.webp",
-    videoSrc: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/videoplayback.mkv",
+    videoSrc:
+      "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/videoplayback.mkv",
   },
   section2: {
     title: "Know Your Hotel",
@@ -458,11 +467,15 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej2.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "mej2.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej3.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "mej3.jpg",
           alt: "dsdsd",
         },
         {
@@ -470,7 +483,9 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "bath.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "bath.jpg",
           alt: "dsdsd",
         },
 
@@ -487,7 +502,9 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "mej4.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "mej4.jpg",
           alt: "dsdsd",
         },
       ],
@@ -524,23 +541,28 @@ export const roomsPageData = {
         // },
 
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "queen1.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "queen1.jpg",
           alt: "dsdsd",
         },
 
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "queen.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "queen.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "queen2.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "queen2.jpg",
           alt: "dsdsd",
         },
         {
           src: roomCardNew + "23.png",
           alt: "dsdsd",
         },
-
       ],
       list: [
         "Free wifi",
@@ -599,7 +621,9 @@ export const roomsPageData = {
         },
 
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "std.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "std.jpg",
           alt: "dsdsd",
         },
         // {
@@ -610,7 +634,6 @@ export const roomsPageData = {
           src: roomCardNew + "4.png",
           alt: "dsdsd",
         },
-
       ],
       list: [
         "free wifi",
@@ -636,7 +659,9 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "sig.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "sig.jpg",
           alt: "dsdsd",
         },
         {
@@ -644,7 +669,9 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" + "bathSig.jpg",
+          src:
+            "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
+            "bathSig.jpg",
           alt: "dsdsd",
         },
         // {
@@ -693,7 +720,6 @@ export const roomsPageData = {
         },
       ],
       list: [
-
         "Free wifi",
         "Balcony with panoramic",
         "lake views",
@@ -743,9 +769,6 @@ export const roomsPageData = {
         "flat-screen TV",
       ],
     },
-
-
-
   ],
 };
 

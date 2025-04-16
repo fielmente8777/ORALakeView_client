@@ -20,11 +20,11 @@ export default function Home() {
       <RoomsSilder {...homePageData.roomsData} />
       <div id="amenities" />
       <Amenities {...homePageData.amenitiesData} />
+      <Connectivity {...homePageData.connectivity} />
       <div id="nearby" />
       <NearbyAttractions {...homePageData.nearbyattractions} />
       <DoAtHotel {...homePageData.DoAtHotel} />
       <GuestReviews {...homePageData.guestreviews} />
-      <Connectivity {...homePageData.connectivity} />
       <Faq {...homePageData.faq} />
     </main>
   );

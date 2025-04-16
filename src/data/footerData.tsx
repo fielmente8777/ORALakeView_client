@@ -57,8 +57,8 @@ export const footerLinks: IFooter[] = [
     links: [
       { id: 1, name: "Instagram", href: "/", target: "_blank" },
       { id: 2, name: "Facebook", href: "/", target: "_blank" },
-      { id: 3, name: "Twitter", href: "/", target: "_blank" },
-      { id: 4, name: "Pinterest", href: "/", target: "_blank" },
+      // { id: 3, name: "Twitter", href: "/", target: "_blank" },
+      // { id: 4, name: "Pinterest", href: "/", target: "_blank" },
     ],
   },
 ];

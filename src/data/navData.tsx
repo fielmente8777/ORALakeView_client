@@ -37,13 +37,14 @@ export const navButtons = [
     id: 1,
     name: "summer",
     icon: <SummerIcon />,
-    class: "banner-next"
+    class: "banner-prev"
+    
   },
   {
     id: 2,
     name: "winter",
     icon: <WinterIcon />,
-    class: "banner-prev"
+    class: "banner-next"
   },
 ];
 

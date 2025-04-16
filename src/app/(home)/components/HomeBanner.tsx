@@ -60,7 +60,7 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
             />
           )}
         </SliderSwip>
-        <div className="absolute top-0 left-0 z-10 w-full h-full pb-4 bg-black/50">
+        <div className="absolute top-0 left-0 z-10 w-full h-full pb-4 bg-black/20">
           <div className="lg:mt-32 mt-20 h-4/5">
             <Container className="h-full">
               <div className="flex flex-col items-center justify-between w-full h-full">
@@ -88,7 +88,7 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
                 <div className="flex flex-col items-center max-md:mt-1 justify-center gap-6">
                   <Heading
                     level={1}
-                    className="heading2 font-montaga text-center text-white capitalize"
+                    className="heading2 font-montaga text-center text-white capitalize sr-only"
                   >
                     {title}
                   </Heading>
