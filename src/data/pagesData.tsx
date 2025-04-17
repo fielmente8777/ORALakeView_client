@@ -258,6 +258,7 @@ export const homePageData = {
         images: [
           newImageLinks + "Swimming+pool/img1.webp",
           newImageLinks + "Swimming+pool/img2.webp",
+          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/45.webp"
           // homeImages + "/doathotels/IMG9.png",
           // homeImages + "/doathotels/IMG10.png",
           // homeImages + "/doathotels/IMG11.png",
