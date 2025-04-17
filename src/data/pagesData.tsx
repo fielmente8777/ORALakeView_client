@@ -144,14 +144,14 @@ export const homePageData = {
         src: homeImages + "/amenities/IM2.png",
         color: "#E0E7E9",
       },
-      {
-        icon: homeImages + "/amenities/SmileyWink.png",
-        title: "Entertainment Lounge",
-        description:
-          "Relax, recharge, and enjoy. Whether you’re into games, books, or just good conversations under the glow of Swiss hospitality",
-        src: homeImages + "/gallery/img2.webp",
-        color: "#E7CBCE",
-      },
+      // {
+      //   icon: homeImages + "/amenities/SmileyWink.png",
+      //   title: "Entertainment Lounge",
+      //   description:
+      //     "Relax, recharge, and enjoy. Whether you’re into games, books, or just good conversations under the glow of Swiss hospitality",
+      //   src: homeImages + "/gallery/img2.webp",
+      //   color: "#E7CBCE",
+      // },
       {
         icon: homeImages + "/amenities/ChefHat.png",
         title: "Common Kitchen",

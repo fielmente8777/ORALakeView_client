@@ -67,7 +67,7 @@ const ThumbsCardsSlider = ({ images, index }) => {
           className="!max-w-sm !ml-0"
         >
           {images?.map((image, index) => (
-            <SwiperSlide key={index} className="relative aspect-[4/2.5] border w-50">
+            <SwiperSlide key={index} className="relative aspect-[4/2.5] h-[5rem] border w-50">
               <Image
                 src={image.src}
                 alt={image.alt}

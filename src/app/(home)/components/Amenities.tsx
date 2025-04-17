@@ -21,7 +21,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
     "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-linear scale-100",
     "top-[70%] lg:left-4 left-3 -translate-x-1/2 -translate-y-1/2 scale-[0.8] transition-all duration-700 ease-linear",
     "lg:top-[85%] top-[88%] lg:left-[4rem] left-[3rem] -translate-x-1/2 -translate-y-1/2 scale-[0.7] transition-all duration-700 ease-linear",
-    "lg:top-[95%] top-[98%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6] transition-all duration-700 ease-linear",
+    // "lg:top-[95%] top-[98%] left-[4rem] translate-x-1/2 -translate-y-1/2 scale-[0.6] transition-all duration-700 ease-linear",
     "lg:top-[6%] top-[0.74rem] left-[4.2rem] lg:right-[22.5rem]  translate-x-1/2 -translate-y-1/2 scale-[0.6] transition-all duration-700 ease-linear",
     "top-[15%] lg:right-[26rem] left-0 translate-x-1/2 -translate-y-1/2 scale-[0.7] transition-all duration-700 ease-linear",
     "lg:top-[30%] top-[30.5%] lg:-left-[3rem] -left-[2rem] translate-x-1/2 -translate-y-1/2 scale-[0.8] transition-all duration-700 ease-linear",
