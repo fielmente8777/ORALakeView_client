@@ -7,7 +7,7 @@ import { ThumbsCardsSlider } from "./cards";
 interface TwoColGridCardProps {
   title: string;
   description?: string;
-  price: string;
+  // price: string;
   list?: string[];
   images: {
     src: string | StaticImageData;
@@ -20,7 +20,7 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
   title,
   description,
   list,
-  price,
+  // price,
   images,
   index = 0,
 }) => {
