@@ -53,10 +53,10 @@ const TwoColGridCard: React.FC<TwoColGridCardProps> = ({
               </Paragraph>
             )}
 
-            <Paragraph className="description1 !text-primary">
+            {/* <Paragraph className="description1 !text-primary">
               <span className="sr-only">room price</span>
               {price}
-            </Paragraph>
+            </Paragraph> */}
 
             <Button
               href="https://direct-book.com/properties/lakeviewhotelrestaurant?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=CHF&checkInDate=2025-01-31&checkOutDate=2025-02-01&trackPage=yes"
