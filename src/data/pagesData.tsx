@@ -35,7 +35,7 @@ export const homePageData = {
         alt: "terrace",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rest2.jpg",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Bar+lounge/4E1A8056+copy.webp",
         alt: "lounge",
       },
       {
@@ -55,7 +55,7 @@ export const homePageData = {
         alt: "balcony",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Apartment+public+area/Kitchen-upstairs-lounge/UNADJUSTEDNONRAW_thumb_20b.webp",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/4E1A7844.webp",
         alt: "bedroom",
       },
     ],
