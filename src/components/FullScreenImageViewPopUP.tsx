@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  CloseIcon,
-  NextBtnIcon,
-  PrevBtnIcon,
-} from "@/icons/icons";
+import { CloseIcon, NextBtnIcon, PrevBtnIcon } from "@/icons/icons";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { Heading } from "./TextAndInputComponents";
@@ -126,23 +122,29 @@ const FullScreenImageViewPopUP: React.FC<FullScreenImageViewPopUPProps> = ({
               onClick={toggleFullscreen}
             >
               <span className="p-2 text-2xl bg-tertiary/70 w-max rounded-md">
-                {isFullscreen ? <BsFullscreen /> : <BsFullscreenExit />}
+                {isFullscreen ? <BsFullscreenExit /> : <BsFullscreen />}
               </span>
             </button>
           </div>
 
-          <div className={`absolute bottom-0 w-fit h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2 ${imageArray.length > 3 ? "max-md:hidden" : "block"}`}>
+          <div
+            className={`absolute bottom-0 w-fit h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2 ${imageArray.length > 3 ? "max-md:hidden" : "block"}`}
+          >
             {uniqueImageArray.map((image, index) => (
               <button
                 key={index}
-                className={`w-16 h-1 cursor-pointer ${index === currentImageIndex ? "bg-white" : "bg-tertiary"
-                  }`}
+                className={`w-16 h-1 cursor-pointer ${
+                  index === currentImageIndex ? "bg-white" : "bg-tertiary"
+                }`}
                 onClick={() => setCurrentImageIndex(index)}
               ></button>
             ))}
           </div>
           <div className="absolute -bottom-12 w-fit  h-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-2">
-            <Heading level={3} className="text-quaternary heading3 font-montaga ">
+            <Heading
+              level={3}
+              className="text-quaternary heading3 font-montaga "
+            >
               {title}
             </Heading>
           </div>
