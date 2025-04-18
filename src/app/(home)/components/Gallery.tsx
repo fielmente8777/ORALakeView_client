@@ -14,7 +14,7 @@ interface GalleryProps {
 }
 
 const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
-  const [isHovered, setIsHovered] = useState<null | number>(null);
+  // const [isHovered, setIsHovered] = useState<null | number>(null);
   const [showModal, setShowModal] = useState(false);
   // const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
@@ -77,11 +77,11 @@ const Gallery: React.FC<GalleryProps> = ({ title, description, images }) => {
             <div
               key={index}
               className={`${gridPattern[index % gridPattern.length]
-                } relative w-full aspect-auto rounded-sm cursor-pointer  transition-all duration-500 ease-in-out  ${isHovered === index ? "lg:hover:scale-100 filter brightness-100 blur-0" : "lg:group-hover:scale-[0.99] lg:group-hover:filter lg:group-hover:brightness-90 lg:group-hover:blur-sm"}`}
-              // onClick={() => handleOpenModal(index)}
+                } relative w-full aspect-auto rounded-sm cursor-pointer `}
+                  // transition-all duration-500 ease-in-out  ${isHovered === index ? "lg:hover:scale-100 filter brightness-100 blur-0" : "lg:group-hover:scale-[0.99] lg:group-hover:filter lg:group-hover:brightness-90 lg:group-hover:blur-sm"}`}
               onClick={() => handleModal(image.src, images.map((image) => image.src))}
-              onMouseEnter={() => setIsHovered(index)}
-              onMouseLeave={() => setIsHovered(null)}
+              // onMouseEnter={() => setIsHovered(index)}
+              // onMouseLeave={() => setIsHovered(null)}
             >
               <Image src={image.src} alt={image.alt} className="w-full object-cover" fill />
               <div className="absolute inset-0 z-10 w-full h-full bg-gradient-to-b from-white/20 to-black/40 to-95%">
