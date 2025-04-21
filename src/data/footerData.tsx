@@ -46,8 +46,8 @@ export const footerLinks: IFooter[] = [
     title: "Quick Links",
     links: [
       { id: 1, name: "Rooms & Suites", href: "/rooms/" },
-      { id: 2, name: "Amenities", href: "#amenities" },
-      { id: 3, name: "Activities Nearby", href: "#nearby" },
+      { id: 2, name: "Amenities", href: "/" },
+      { id: 3, name: "Activities Nearby", href: "/" },
       { id: 4, name: "contact us", href: "/contact-us/" },
     ],
   },
@@ -55,7 +55,7 @@ export const footerLinks: IFooter[] = [
     id: 3,
     title: "Connect with us",
     links: [
-      { id: 1, name: "Instagram", href: "/", target: "_blank" },
+      { id: 1, name: "Instagram", href: "https://www.instagram.com/ora_lakeview?igsh=MTNvdWZjNjVja2dsNQ==", target: "_blank" },
       { id: 2, name: "Facebook", href: "/", target: "_blank" },
       // { id: 3, name: "Twitter", href: "/", target: "_blank" },
       // { id: 4, name: "Pinterest", href: "/", target: "_blank" },

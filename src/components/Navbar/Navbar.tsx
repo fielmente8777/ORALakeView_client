@@ -106,7 +106,8 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
           <div className="flex items-center gap-4">
-            {navButtons.map((button) => (
+
+            {pathname === "/" && navButtons.map((button) => (
               <button
                 key={button.id}
                 className={`uppercase lg:flex hidden ${button.class}  disabled:border-opacity-100 items-center transition-all duration-500 ease-linear gap-2 border border-opacity-0  ${navbar || pathname !== "/" ? " disabled:border-primary" : "disabled:border-white "} border-transparent lg:px-4 p-1 lg:py-2`}

@@ -4,13 +4,7 @@ import { MountainIcon } from "@/icons/icons";
 
 const WhoWeAre = () => {
   const description = [
-    "Imagine waking up to the soft shimmer of Lake Brienz, where every glance out your window reveals nature at its finest. At ORA Lakeview Hotel, the breathtaking views of the Swiss Alps and pristine lake set the stage for unforgettable memories",
-
-    "Perfectly located just 2 minutes from the train station, 1 minute from the bus stop, and 5 minutes from the ferry, we offer unmatched convenience to explore the wonders of the region. And with free parking and no extra fees, we’ve made sure your stay is as effortless as it is beautiful",
-
-    "And yes, we’re a pet-friendly hotel! Bring your four-legged friends along - they’ll love the view just as much as you do",
-
-    "Here, your story becomes our story. Book directly with us and experience a seamless escape to nature's best-kept secret",
+    "Imagine waking up to the soft shimmer of Lake Brienz, where every glance out your window reveals nature at its finest. At ORA Lakeview Hotel, the breathtaking views of the Swiss Alps and pristine lake set the stage for unforgettable memories Perfectly located just 2 minutes from the train station, 1 minute from the bus stop, and 5 minutes from the ferry, we offer unmatched convenience to explore the wonders of the region. And with free parking and no extra fees, we’ve made sure your stay is as effortless as it is beautiful, And yes, we’re a pet-friendly hotel! Bring your four-legged friends along - they’ll love the view just as much as you do Here, your story becomes our story. Book directly with us and experience a seamless escape to nature's best-kept secret",
   ];
   return (
     <SectionWithContainer sectionClassName="bg-primary">
@@ -32,11 +26,11 @@ const WhoWeAre = () => {
           </span>
           <div className="w-full h-[1px] bg-white/50" />
         </div>
-        <div className="">
+        <div className="max-w-[1024px] mx-auto">
           {description.map((item, index) => (
             <Paragraph
               key={index}
-              className="text-white text-center description tracking-wider mb-2"
+              className="text-white  text-center description tracking-wider mb-2"
             >
               {item}
             </Paragraph>
