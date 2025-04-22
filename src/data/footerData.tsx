@@ -46,8 +46,8 @@ export const footerLinks: IFooter[] = [
     title: "Quick Links",
     links: [
       { id: 1, name: "Rooms & Suites", href: "/rooms/" },
-      { id: 2, name: "Amenities", href: "/" },
-      { id: 3, name: "Activities Nearby", href: "/" },
+      { id: 2, name: "Amenities", href: "/#amenities" },
+      { id: 3, name: "Activities Nearby", href: "/#nearby" },
       { id: 4, name: "contact us", href: "/contact-us/" },
     ],
   },
