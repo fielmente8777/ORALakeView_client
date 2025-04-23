@@ -56,7 +56,7 @@ export const footerLinks: IFooter[] = [
     title: "Connect with us",
     links: [
       { id: 1, name: "Instagram", href: "https://www.instagram.com/ora_lakeview?igsh=MTNvdWZjNjVja2dsNQ==", target: "_blank" },
-      { id: 2, name: "Facebook", href: "/", target: "_blank" },
+      { id: 2, name: "Facebook", href: "https://www.facebook.com/profile.php?id=61574775855831", target: "_blank" },
       // { id: 3, name: "Twitter", href: "/", target: "_blank" },
       // { id: 4, name: "Pinterest", href: "/", target: "_blank" },
     ],

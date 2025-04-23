@@ -1017,7 +1017,21 @@ export const ZoomOutIcon = () => {
   );
 };
 
-
+export const BigArrowIcon = ({ ...props }) => (
+  <svg
+    width={53}
+    height={8}
+    viewBox="0 0 53 8"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M52.354 4.353a.5.5 0 000-.708L49.172.463a.5.5 0 10-.707.708l2.828 2.828-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.499h52v-1H0v1z"
+      fill="currentColor"
+    />
+  </svg>
+);
 export const CloseIcon = () => {
   return (
     <svg
