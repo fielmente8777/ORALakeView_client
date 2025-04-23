@@ -1,4 +1,5 @@
 import { Button, Heading, Paragraph, SectionWithContainer } from "@/components";
+import Link from "next/link";
 
 interface BannerProps {
   title: string;
@@ -18,15 +19,19 @@ const Banner: React.FC<BannerProps> = ({ title, description, link }) => {
           {description}
         </Paragraph>
         <div className="grid grid-cols-2 items-center justify-center gap-4 mt=8">
-          <Button
+          <Link
             href={link[0].href}
-            label={link[0].label}
+            target="_blank"
+            rel="noopener noreferrer"
             className="capitalize border-quaternary bg-quaternary 
-           border py-3 px-6 max-md:text-[0.75rem]"
-          />
+           border py-3 px-6 max-md:text-[0.75rem] text-white  text-base  flex items-center justify-center description1 rounded-sm font-medium hover:bg-primary/80 hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out"
+          >
+            {link[0].label}
+          </Link>
           <Button
             href={link[1].href}
             label={link[1].label}
+            newTabe={true}
             className="capitalize border-quaternary hover:bg-quaternary 
            border py-3 px-6 max-md:text-[0.75rem]"
           />

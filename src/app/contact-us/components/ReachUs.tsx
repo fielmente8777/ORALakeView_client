@@ -11,6 +11,7 @@ interface Props {
     address: string;
     icon: React.ReactNode;
     src: string;
+    newTab?: boolean;
   }[];
 }
 
@@ -38,6 +39,7 @@ const ReachUs: React.FC<Props> = ({ title, description, items, src }) => {
                   </Heading>
                   <Link
                     href={item.src}
+                    target={item.newTab?"_blank" : "_self"}
                     className="description1 max-w-[15rem] hover:text-[#FFCD42] transition-all duration-300 ease-in-out [text-decoration:whitch]  !text-[#848484]"
                   >
                     {item.address}

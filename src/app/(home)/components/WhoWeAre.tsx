@@ -43,7 +43,7 @@ const WhoWeAre = () => {
             </Paragraph>
           ))}
         </div>
-        <Link href={bookingUrl} className="flex md:text-lg text-sm items-center justify-center gap-2 mt-5 border-y py-3 text-white border-secondary uppercase hover:text-secondary hover:border-white transition-all ease-in-out px-px">Book directly with us <BigArrowIcon/></Link>
+        <Link href={bookingUrl} target="_blank" className="flex md:text-lg text-sm items-center justify-center gap-2 mt-5 border-y py-3 text-white border-secondary uppercase hover:text-secondary hover:border-white transition-all ease-in-out px-px">Book directly with us <BigArrowIcon/></Link>
       </div>
     </SectionWithContainer>
   );

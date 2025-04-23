@@ -48,7 +48,8 @@ const Connectivity: React.FC<IConnectivity> = ({
             ))}
 
             <Link
-              href="/contact-us"
+              href="https://maps.app.goo.gl/5oDm6kXuR8tCxzvY6"
+              target="_blank"
               className="text-primary font-normal capitalize mt-2 group hover:scale-x-105 transition-all duration-300 ease-in-out border-primary/60 border-b-2 w-fit description1 flex items-center gap-2"
             >
               Get directions{" "}

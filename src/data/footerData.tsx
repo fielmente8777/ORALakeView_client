@@ -35,7 +35,7 @@ export const footerLinks: IFooter[] = [
       {
         id: 3,
         name: "Lakeview Hotel, Hauptstrasse 32 3853 Niederried bei Interlaken Switzerland",
-        href: "#",
+        href: "https://maps.app.goo.gl/5oDm6kXuR8tCxzvY6",
         target: "_blank",
         icon: <Location />,
       },

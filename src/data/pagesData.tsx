@@ -146,7 +146,7 @@ export const homePageData = {
         title: "Free WiFi",
         description:
           "Stay as connected as you want. Our high-speed WiFi ensures you can stay in touch with what matters, while you’re living your best Swiss life",
-        src: homeImages + "/amenities/IM2.png",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/medium.webp",
         color: "#E0E7E9",
       },
       // {
@@ -933,11 +933,11 @@ export const contactPageData = {
     link: [
       {
         label: "call us",
-        href: "#",
+        href: "tel:+41441234567",
       },
       {
         label: "Send a message",
-        href: "#",
+        href: "https://wa.me/+41441234567?text=Hello%2C+I+would+like+to+inquire+about+room+availability+and+rates.",
       },
     ],
   },
@@ -950,7 +950,8 @@ export const contactPageData = {
         icon: <Location />,
         address: "Hotel Lakeview, Lake Brienz Promenade, Switzerland",
         title: "Address",
-        src: "#",
+        src: "https://maps.app.goo.gl/5oDm6kXuR8tCxzvY6",
+        newTab: true,
       },
       {
         icon: <PhoneIcon />,
