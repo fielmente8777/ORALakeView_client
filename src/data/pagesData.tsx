@@ -460,7 +460,7 @@ export const aboutPageData = {
   },
 };
 
-const roomCardNew = roomImages + "/card/Img";
+// const roomCardNew = roomImages + "/card/Img";
 export const roomsPageData = {
   bannerData: {
     title: "Find Your Ideal Retreat",
