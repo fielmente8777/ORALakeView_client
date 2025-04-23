@@ -37,8 +37,7 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
       setIconPositions(
         items.map((_, index) => positions[index % positions.length])
       );
-    }
-    if (currentIndex < items.length - 1) {
+    } else {
       const newPositions = [...iconPositions];
       newPositions.unshift(newPositions.pop()!); // Rotate positions forward
       setIconPositions(newPositions);
@@ -49,9 +48,9 @@ const Amenities: React.FC<IAmenities> = ({ title, description, items }) => {
   const handlePrev = () => {
     if (currentIndex === 0) {
       setCurrentIndex(items.length - 1); // Reset to last item
-      setIconPositions(
-        items.map((_, index) => positions[index % positions.length])
-      );
+      const newPositions = [...iconPositions];
+      newPositions.push(newPositions.shift()!); // Rotate positions backward
+      setIconPositions(newPositions);
     }
     if (currentIndex > 0) {
       const newPositions = [...iconPositions];
