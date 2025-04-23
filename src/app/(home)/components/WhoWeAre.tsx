@@ -28,7 +28,7 @@ const WhoWeAre = () => {
           </span>
           <div className="w-full h-[1px] bg-white/50" />
         </div>
-        <h3 className="text-center text-white md:text-3xl text-xl font-bold max-w-[1050px] mx-auto font-montaga">{description1}</h3>
+        <h3 className="text-center text-white md:text-3xl text-xl  max-w-[1050px] mx-auto font-montaga">{description1}</h3>
 
         <div className="flex justify-center">
           <div className="w-[1px] md:h-[96px] h-[64px] bg-[#FFCD42] text-center" />
@@ -43,7 +43,7 @@ const WhoWeAre = () => {
             </Paragraph>
           ))}
         </div>
-        <Link href={bookingUrl} className="flex items-center justify-center gap-2 mt-5 border-y py-3 text-white border-secondary uppercase hover:text-secondary hover:border-white transition-all ease-in-out px-px">Book directly with us <BigArrowIcon/></Link>
+        <Link href={bookingUrl} className="flex md:text-lg text-sm items-center justify-center gap-2 mt-5 border-y py-3 text-white border-secondary uppercase hover:text-secondary hover:border-white transition-all ease-in-out px-px">Book directly with us <BigArrowIcon/></Link>
       </div>
     </SectionWithContainer>
   );
