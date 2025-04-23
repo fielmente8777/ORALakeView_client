@@ -538,6 +538,10 @@ export const roomsPageData = {
         //   src: roomCardNew + "20.png",
         //   alt: "dsdsd",
         // },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/7STD4064.webp",
+          alt: "dsdsd",
+        },
 
         {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/4E1A7919.webp",
@@ -548,10 +552,7 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
 
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/7STD4064.webp",
-          alt: "dsdsd",
-        },
+       
         {
           src:
             "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
@@ -587,7 +588,10 @@ export const roomsPageData = {
         "For those who seek peace, privacy, and unmatched mountain beauty, the Alpine Retreat is the ideal choice. After a day of hiking or exploring Interlaken, return to your sanctuary to relax in comfort and style",
       price: "$200/Day",
       images: [
-
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/Majestic+Room+2.webp",
+          alt: "dsdsd",
+        },
         {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7101+copy.webp",
           alt: "dsdsd",
@@ -602,10 +606,7 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
 
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/Majestic+Room+2.webp",
-          alt: "dsdsd",
-        },
+       
         {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7893.webp",
           alt: "dsdsd",
@@ -673,10 +674,10 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
 
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8153.webp",
-          alt: "dsdsd",
-        },
+        // {
+        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8153.webp",
+        //   alt: "dsdsd",
+        // },
         {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8160.webp",
           alt: "dsdsd",
