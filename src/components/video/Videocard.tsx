@@ -5,7 +5,7 @@ interface VideocardProps {
   src: string;
   href: string;
   label: string;
-  thumbnail: string;
+  thumbnail?: string;
 }
 
 const Videocard: React.FC<VideocardProps> = ({

@@ -8,7 +8,6 @@ import {
 const Banner = ({
   title,
   description,
-  src,
   videoSrc
 }: {
   title: string;
@@ -27,7 +26,9 @@ const Banner = ({
         </Paragraph>
       </div>
       <div className="mt-8">
-        <Videocard src={videoSrc} label={title} thumbnail={src} href="" />
+        <Videocard src={videoSrc} label={title} 
+        // thumbnail={"https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Designer.webp"} 
+        href="" />
       </div>
     </SectionWithContainer>
   );
