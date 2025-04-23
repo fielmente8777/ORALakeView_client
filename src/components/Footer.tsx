@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Heading, Input, Paragraph } from "./TextAndInputComponents";
+import { Heading, Paragraph } from "./TextAndInputComponents";
 import Image from "next/image";
 import { footerLinks, footerLink2 } from "../data/footerData";
 import { useState } from "react";
@@ -34,6 +34,30 @@ const Footer = () => {
     },
   ];
 
+  const host = "https://eazotel.eazotel.com/api/dashboard/editnewsletter";
+
+  const handleNewsletter = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = {
+      Domain: "oralakeview",
+      email: email,
+    };
+    try {
+      await fetch(host, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.log(error);
+    }
+
+    setEmail("");
+    setUserName("");
+  };
+
   return (
     <footer className="bg-primary max-w-[1600px] max-sm:pb-16 mx-auto w-full">
       <div className="w-full grid lg:grid-cols-7 md:grid-cols-2 grid-cols-1 items-center gap-8">
@@ -55,17 +79,19 @@ const Footer = () => {
                   <br /> insider news and more !
                 </Heading>
                 <form
-                  action=""
                   className="w-full mt-4 flex max-sm:flex-col items-center justify-center gap-4 "
+                  onSubmit={handleNewsletter}
                 >
                   {form.map((item) => (
                     <div
                       key={item.id}
                       className="w-full flex items-center gap-2"
                     >
-                      <Input
-                        {...item}
-                        arial-label={item.name}
+                      <input
+                        type={item.type}
+                        placeholder={item.placeholder}
+                        value={item.value}
+                        onChange={item.onChange}
                         className="w-full bg-transparent placeholder:uppercase border-b text-start border-white outline-none py-2 description1 px-1 text-white placeholder:text-white"
                       />
                     </div>

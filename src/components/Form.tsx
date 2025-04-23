@@ -2,11 +2,11 @@
 
 import axios from "axios";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { countries } from "@/data/countryCode";
 
 const Form = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -52,7 +52,7 @@ const Form = () => {
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
           // Domain: 'abhijeet',
-          Domain: "sumitTest", // Replace with your actual domain value
+          Domain: "oralakeview", // Replace with your actual domain value
           email: userEmail,
           Name: userName,
           Contact: `${countryCode} ${userPhone}`, // Combine country code and phone number
@@ -73,7 +73,7 @@ const Form = () => {
         setUserPhone("");
         setCountryCode("+91"); // Reset country code
         setFormRes(false);
-        router.push("/thank-you/");
+        alert("Your message has been sent successfully!");
       } else {
         setFormRes(false);
         alert("Something went wrong!");
