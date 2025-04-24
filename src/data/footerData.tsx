@@ -27,8 +27,8 @@ export const footerLinks: IFooter[] = [
       },
       {
         id: 2,
-        name: "+41 33 123 4567",
-        href: "tel:+41 33 123 4567",
+        name: "+41 77 973 1981",
+        href: "tel:+41779731981",
         target: "_self",
         icon: <PhoneIcon />,
       },
@@ -48,7 +48,7 @@ export const footerLinks: IFooter[] = [
       { id: 1, name: "Rooms & Suites", href: "/rooms/" },
       { id: 2, name: "Amenities", href: "/#amenities" },
       { id: 3, name: "Activities Nearby", href: "/#nearby" },
-      { id: 4, name: "contact us", href: "/contact-us/" },
+      { id: 3, name: "connectivity ", href: "/#connectivity" },
     ],
   },
   {
@@ -57,6 +57,8 @@ export const footerLinks: IFooter[] = [
     links: [
       { id: 1, name: "Instagram", href: "https://www.instagram.com/ora_lakeview?igsh=MTNvdWZjNjVja2dsNQ==", target: "_blank" },
       { id: 2, name: "Facebook", href: "https://www.facebook.com/profile.php?id=61574775855831", target: "_blank" },
+      { id: 4, name: "contact us", href: "/contact-us/" },
+
       // { id: 3, name: "Twitter", href: "/", target: "_blank" },
       // { id: 4, name: "Pinterest", href: "/", target: "_blank" },
     ],

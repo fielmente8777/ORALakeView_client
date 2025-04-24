@@ -137,7 +137,7 @@ export const homePageData = {
         icon: homeImages + "/amenities/Eye.png",
         title: "Private Balcony/Terrace",
         description:
-          "Take in the views—Lake Brienz, the Swiss Alps, and a whole lot of serenity. Unwind with a book, or sip your favorite drink while nature does the rest",
+          "Take in the views Lake Brienz, the Swiss Alps, and a whole lot of serenity. Unwind with a book, or sip your favorite drink while nature does the rest",
         src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Designer.webp",
         color: "#CE905F",
       },
@@ -263,7 +263,7 @@ export const homePageData = {
         images: [
           newImageLinks + "Swimming+pool/img1.webp",
           newImageLinks + "Swimming+pool/img2.webp",
-          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/45.webp"
+          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/45.webp",
           // homeImages + "/doathotels/IMG9.png",
           // homeImages + "/doathotels/IMG10.png",
           // homeImages + "/doathotels/IMG11.png",
@@ -313,35 +313,63 @@ export const homePageData = {
   },
   guestreviews: {
     title: "guest reviews",
-    description: "Don’t Take Our Word for It—Hear What Our Guests Have to Say!",
+    description: "Don’t Take Our Word for It Hear What Our Guests Have to Say!",
     items: [
+      // {
+      //   title: "Exceptional Service and Comfort!",
+      //   description: `Our stay at this hotel was nothing short of fantastic! The staff was incredibly welcoming and accommodating. The room was spacious and spotlessly clean. We loved the convenient location, which made it easy to explore the city.`,
+      // },
+      // {
+      //   title: "A Hidden Gem!",
+      //   description: `Amazing view and super convenient to reach. Very welcoming staff. It’s easily reachable from Interlaken OST station and train station is right behind the hotel. We enjoyed our stay with our toddler and enjoyed amazing views. Must stay`,
+      // },
+      // {
+      //   title: "Perfect Romantic Getaway!",
+      //   description: `Excellent location and beautiful view. Loved the room and hospitality. Wish you come here again. The climate here is soothing and refreshing. My wife wanted to stay here for long just to enjoy the view`,
+      // },
+      // {
+      //   title: "Perfect Romantic Getaway!",
+      //   description: `A boutique hotel with, an excellent view, and very good staff. multi-lingual reception staff (German, Italian, French, Spanish, English and Romanian) a very good continental breakfast ( yes it is not the usual 5-star hotel buffet) but they delivered what they promised on the web.`,
+      // },
+      // {
+      //   title: "Perfect Romantic Getaway!",
+      //   description: `This hotel is in a great location with an amazing view to Lake Thun. The rooms are decent and comfortable enough. Also, Tushar who works at the front desk took care of my family and I & provided us with all what we need during our stay.`,
+      // },
+      // {
+      //   title: "Perfect Romantic Getaway!",
+      //   description: `This was an amazing hotel with a beautiful view of the lake and a 2 minute walk to the train station. Balcony room with lake view was BEAUTIFUL! 10/10 recommend staying here. The man at the reception was so friendly and helpful`,
+      // },
+      // {
+      //   title: "Perfect Romantic Getaway!",
+      //   description: `Amazing place to stay. Very beautiful view in morning and evening time. Train station just 2-3min by walk (Niederried station) and ferry-boat station available. We stay here 3days and enjoyed alot. Everything is very easy to reached`,
+      // },
       {
-        title: "Exceptional Service and Comfort!",
-        description: `Our stay at this hotel was nothing short of fantastic! The staff was incredibly welcoming and accommodating. The room was spacious and spotlessly clean. We loved the convenient location, which made it easy to explore the city.`,
-      },
-      {
-        title: "A Hidden Gem!",
-        description: `Amazing view and super convenient to reach. Very welcoming staff. It’s easily reachable from Interlaken OST station and train station is right behind the hotel. We enjoyed our stay with our toddler and enjoyed amazing views. Must stay`,
+        title: "Perfect Romantic Getaway!",
+        description: `The hospitality, staff there specially renitha is so sweet and kind. The view from our balcony was amazing, waking up to that great view was so good.`,
       },
       {
         title: "Perfect Romantic Getaway!",
-        description: `Excellent location and beautiful view. Loved the room and hospitality. Wish you come here again. The climate here is soothing and refreshing. My wife wanted to stay here for long just to enjoy the view`,
+        description: `Amazing view of the lake surrounded by mountains. The staff were very friendly, kind and helpful, which made our visit more enjoyable. We received a train ticket from the place (the train station is in ~1min walking distance) to Interlaken, making it easy to get there.`,
       },
       {
         title: "Perfect Romantic Getaway!",
-        description: `A boutique hotel with, an excellent view, and very good staff. multi-lingual reception staff (German, Italian, French, Spanish, English and Romanian) a very good continental breakfast ( yes it is not the usual 5-star hotel buffet) but they delivered what they promised on the web.`,
+        description: `Excellent views for the lake and mountain. Accessible to train. Staff were very helpful and friendly specially Reneta. Thank you very much for your excellent service.`,
       },
       {
         title: "Perfect Romantic Getaway!",
-        description: `This hotel is in a great location with an amazing view to Lake Thun. The rooms are decent and comfortable enough. Also, Tushar who works at the front desk took care of my family and I & provided us with all what we need during our stay.`,
+        description: `Location is perfect with amazing vieq of the lake and mountain. Friendly staff ( Renita ) who is very helpful and welcoming . Rooms are clean with comfortable beds. Size of the room is suitable`,
       },
       {
         title: "Perfect Romantic Getaway!",
-        description: `This was an amazing hotel with a beautiful view of the lake and a 2 minute walk to the train station. Balcony room with lake view was BEAUTIFUL! 10/10 recommend staying here. The man at the reception was so friendly and helpful`,
+        description: `Location wise it is amazing! Nice relax and chill place and great view on the lake. Around 5miniutes of driving and youre in Interlaken city centre. Special thanks to Reneta, she was very welcoming and helpful!`,
       },
       {
         title: "Perfect Romantic Getaway!",
-        description: `Amazing place to stay. Very beautiful view in morning and evening time. Train station just 2-3min by walk (Niederried station) and ferry-boat station available. We stay here 3days and enjoyed alot. Everything is very easy to reached`,
+        description: `The view from the room balcony is splendid Staff is great and attentive to your needs. Parking is conveniently great at no cost. There is a train station nearby, from where you can easily reach Interlaken, Brienz and other attractions.`,
+      },
+      {
+        title: "Perfect Romantic Getaway!",
+        description: `Views from our room were amazing! Staff very friendly and served a lovely breakfast. Room very clean and beds comfortable. Was able to leave our luggage after checkout too. Would definitely stay again!`,
       },
     ],
   },
@@ -392,7 +420,7 @@ export const homePageData = {
       {
         id: 9,
         title: "How far is Interlaken from your hotel? ",
-        content: `Interlaken is just 7 km away—only 5–8 minutes by train or bus; with Dorf Bus Station (20m, 🚶1 min) and Niederried Train Station (170m, 🚶2–3 mins) right near the hotel, getting around is effortless.`,
+        content: `Interlaken is just 7 km away only 5 – 8 minutes by train or bus; with Dorf Bus Station (20m, 🚶1 min) and Niederried Train Station (170m, 🚶2–3 mins) right near the hotel, getting around is effortless.`,
       },
     ],
   },
@@ -402,7 +430,7 @@ export const aboutPageData = {
   bannerData: {
     title: "Timeless Swiss Charm, Lakeside Dreams",
     description:
-      "Experience Swiss charm, lake views, and modern elegance— with every dawn and dusk",
+      "Experience Swiss charm, lake views, and modern elegance with every dawn and dusk",
     src: homeImages + "/gallery/img1.webp",
     videoSrc:
       "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/videoplayback.mkv",
@@ -410,7 +438,7 @@ export const aboutPageData = {
   section2: {
     title: "Know Your Hotel",
     description:
-      "Almost half a century ago, inspired by the shimmering Lake Brienz and cradled by the majestic Swiss Alps, a Swiss couple envisioned a haven that mirrored their deep love for the land and its timeless beauty. ORA Lake View became their labor of love—The couple, whose hearts are firmly anchored in Swiss tradition, brought their love for their native country into every area of the hotel, providing visitors with a genuine experience of Swiss friendliness and warmth. Today, their legacy endures in every corner of the hotel, where history embraces the present, and guests are welcomed like cherished friends into a tale of romance, heritage, and elegance",
+      "Almost half a century ago, inspired by the shimmering Lake Brienz and cradled by the majestic Swiss Alps, a Swiss couple envisioned a haven that mirrored their deep love for the land and its timeless beauty. ORA Lake View became their labor of love The couple, whose hearts are firmly anchored in Swiss tradition, brought their love for their native country into every area of the hotel, providing visitors with a genuine experience of Swiss friendliness and warmth. Today, their legacy endures in every corner of the hotel, where history embraces the present, and guests are welcomed like cherished friends into a tale of romance, heritage, and elegance",
     src: aboutImages + "/IMAGE2.png",
   },
   ourJourney: {
@@ -420,7 +448,7 @@ export const aboutPageData = {
         id: 1,
         title: "The Beginning of Something Special",
         description:
-          "By the peaceful shores of Interlaken, a hidden gem was born in 1974. From the moment the first guests arrived, the property offered more than just a stay - it offered a feeling. A feeling of calm, of being connected to nature, and of escaping to a place where the beauty of the Swiss Alps and the tranquil lake were always just outside your window",
+          "By the peaceful shores of Interlaken, a hidden gem was born in 1974. From the moment the first guests arrived, the property offered more than just a stay it offered a feeling. A feeling of calm, of being connected to nature, and of escaping to a place where the beauty of the Swiss Alps and the tranquil lake were always just outside your window",
         year: "1974",
         src: aboutImages + "/IMAGE3.png",
       },
@@ -428,7 +456,7 @@ export const aboutPageData = {
         id: 2,
         title: "A Heartfelt Transformation",
         description:
-          "In 1988, a renovation breathed new life into the hotel, blending modern comfort with the stunning surroundings. This wasn’t just about upgrading a building - it was about deepening the connection between the space and the landscape. Guests now found even more ways to relax, reflect, and indulge in the breathtaking views, making every stay unforgettable",
+          "In 1988, a renovation breathed new life into the hotel, blending modern comfort with the stunning surroundings. This wasn’t just about upgrading a building it was about deepening the connection between the space and the landscape. Guests now found even more ways to relax, reflect, and indulge in the breathtaking views, making every stay unforgettable",
         year: "1988",
         src: homeImages + "/gallery/img4.webp",
       },
@@ -436,7 +464,7 @@ export const aboutPageData = {
         id: 3,
         title: "A Vision Realized",
         description:
-          "When new owners took the reins in 2015, they infused the hotel with a new energy - one that honored its roots while embracing the needs of the modern traveler. The aim was simple: to create not just a hotel, but a sanctuary. Here, the spirit of Interlaken - raw, beautiful, and tranquil - was brought into every corner of the experience, creating a place where guests felt at home and at peace",
+          "When new owners took the reins in 2015, they infused the hotel with a new energy one that honored its roots while embracing the needs of the modern traveler. The aim was simple: to create not just a hotel, but a sanctuary. Here, the spirit of Interlaken raw, beautiful, and tranquil was brought into every corner of the experience, creating a place where guests felt at home and at peace",
         year: "2015",
         src: newImageLinks + "Facade/4E1A7684.webp",
       },
@@ -444,7 +472,7 @@ export const aboutPageData = {
         id: 4,
         title: "A Rebirth of Elegance",
         description:
-          "In 2019, the hotel underwent a complete reimagining. The addition of a spacious terrace, luxurious living areas, and three (Four )new apartment rooms elevated the experience to new heights. It became a place to truly live the moment, savor the lake views, and enjoy the perfect blend of nature and luxury. It was no longer just a hotel - it was an experience, carefully crafted for those seeking something extraordinary",
+          "In 2019, the hotel underwent a complete reimagining. The addition of a spacious terrace, luxurious living areas, and three (Four )new apartment rooms elevated the experience to new heights. It became a place to truly live the moment, savor the lake views, and enjoy the perfect blend of nature and luxury. It was no longer just a hotel it was an experience, carefully crafted for those seeking something extraordinary",
         year: "2019",
         src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Apartment+public+area/Terrace+Deck/4E1A7555.webp",
       },
@@ -484,26 +512,26 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.webp",
+          alt: "dsdsd",
+        },
+        {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im2.jpg",
           alt: "dsdsd",
         },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Majestic+Lakeview+King/Img1.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Majestic+Lakeview+King/7STD4054.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "2.png",
-        //   alt: "dsdsd",
-        // },
+        
         // {
         //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Majestic+Lakeview+King/7STD4055.webp",
         //   alt: "dsdsd",
         // },
-
 
         // {
         //   src:
@@ -559,6 +587,18 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.webp",
+          alt: "dsdsd",
+        },
+        {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i1.jpg",
           alt: "dsdsd",
         },
@@ -580,7 +620,6 @@ export const roomsPageData = {
         //   alt: "dsdsd",
         // },
 
-       
         // {
         //   src:
         //     "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
@@ -629,12 +668,18 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
 
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/7STD4079.webp",
-        //   alt: "dsdsd",
-        // },
-
-       
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.webp",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.webp",
+          alt: "dsdsd",
+        },
         {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7893.webp",
           alt: "dsdsd",
@@ -643,7 +688,6 @@ export const roomsPageData = {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A6643+copy.webp",
           alt: "dsdsd",
         },
-
       ],
       list: [
         "Balcony with stunning alpine views",
@@ -660,7 +704,6 @@ export const roomsPageData = {
         "Sleek and stylish, the Lakeview Studio room offers the ideal balance between contemporary design and Swiss natural beauty. Perfect for solo travelers or couples looking for a simple yet luxurious stay",
       price: "$200/Day",
       images: [
-
         {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/LS1.jpg",
           alt: "dsdsd",
@@ -673,10 +716,10 @@ export const roomsPageData = {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/LS4.jpg",
           alt: "dsdsd",
         },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Studio/LS1.webp",
-        //   alt: "dsdsd",
-        // },
+        {
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/enhanced_image.webp",
+          alt: "dsdsd",
+        },
         // {
         //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Studio/LS2.webp",
         //   alt: "dsdsd",
@@ -832,7 +875,6 @@ export const roomsPageData = {
         "The Classic Lakeview room invites you to experience the timeless beauty of Lake Brienz in a cozy, stylish setting. Designed for those who appreciate the finer things in life, this room is a peaceful haven to recharge",
       price: "$200/Day",
       images: [
-
         // {
         //   src: roomCardNew + "13.png",
         //   alt: "dsdsd",
@@ -879,20 +921,16 @@ export const galleryPageData = {
   },
   galleryData: [
     {
-      title: "Bar Lounge",
+      title: "Rooms",
       images: [
-        // galleryImages + "/slider/img2.webp",
-        newImageLinks + "Bar+lounge/4E1A8037+copy.webp",
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Bar+lounge/4E1A8056+copy.webp",
-        newImageLinks + "Bar+lounge/4E1A8042+copy.webp",
+        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im1.jpg",
+        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i2.jpg",
+        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7844.webp",
       ],
     },
     {
       title: "Facade",
       images: [
-        // aboutImages + "/img2.webp",
-        // "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/FAC.jpg",
-        // "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/banner+(1).jpg",
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Facade/4E1A7704.webp",
         newImageLinks + "Facade/4E1A7707+copy.webp",
         newImageLinks + "Facade/4E1A7710.webp",
@@ -904,22 +942,14 @@ export const galleryPageData = {
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Reception/4E1A8069+copy.webp",
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Reception/4E1A8219.webp",
         galleryImages + "/slider/img6.webp",
-        // galleryImages + "/slider/img5.webp",
-        // // galleryImages + "/slider/img4.webp",
-        // galleryImages + "/slider/174704837.jpg",
       ],
     },
     {
-      title: "Restaurant",
+      title: "Bar & Restaurant",
       images: [
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/4E1A6574.webp",
         "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/res1.webp",
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/4E1A7965.webp",
-        // galleryImages + "/slider/res.jpg",
-        // galleryImages + "/slider/res1.jpg",
-        // // galleryImages + "/slider/img9.webp",
-        // // galleryImages + "/slider/img8.webp",
-        // galleryImages + "/slider/img7.webp",
+        newImageLinks + "Bar+lounge/4E1A8042+copy.webp",
       ],
     },
   ],
@@ -933,11 +963,11 @@ export const contactPageData = {
     link: [
       {
         label: "call us",
-        href: "tel:+41441234567",
+        href: "tel:+ +41779731981",
       },
       {
         label: "Send a message",
-        href: "https://wa.me/+41441234567?text=Hello%2C+I+would+like+to+inquire+about+room+availability+and+rates.",
+        href: "https://wa.me/+41779731981?text=Hello%2C+I+would+like+to+inquire+about+room+availability+and+rates.",
       },
     ],
   },

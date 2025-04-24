@@ -161,7 +161,7 @@ const Footer = () => {
               ))}
             </ul>
             <Paragraph className="text-white text-sm text-center">
-              © {currentYear} Hotel Ora Lakeside. All Rights Reserved.
+              © {currentYear} Hotel Ora Lake View . All Rights Reserved.
             </Paragraph>
           </div>
         </div>
