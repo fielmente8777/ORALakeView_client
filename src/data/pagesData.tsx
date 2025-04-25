@@ -13,7 +13,6 @@ import {
   galleryImages,
   homeImages,
   newImageLinks,
-  roomImages,
 } from "./links";
 export const homePageData = {
   bannerData: {
@@ -494,7 +493,7 @@ export const roomsPageData = {
     title: "Find Your Ideal Retreat",
     description:
       "Surrounded by warm wooden accents, soft, ambient lighting, and the serene beauty of the Swiss Alps, evenings at Hotel Lakeview offer the perfect atmosphere for relaxation, comfort, and unforgettable memories",
-    src: roomImages + "/img1.webp",
+    src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/img1.png",
   },
   roomcard: [
     {
@@ -512,15 +511,15 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.jpg",
           alt: "dsdsd",
         },
         {
@@ -587,15 +586,15 @@ export const roomsPageData = {
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.jpg",
           alt: "dsdsd",
         },
         {
@@ -669,15 +668,15 @@ export const roomsPageData = {
         },
 
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.webp",
+          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.jpg",
           alt: "dsdsd",
         },
         {

@@ -1,5 +1,60 @@
 import { Heading, Paragraph, SectionWithContainer } from "@/components";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ORA Lakeview Hotel | Privacy Policy & Data Protection",
+  description:
+    "Your privacy matters. Read how ORA Lakeview Hotel collects, uses, and protects your personal data, in line with Swiss and international data protection regulations.",
+  keywords:"",
+  alternates: {
+    canonical: "www.oralakeview.com/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  authors: [{ name: "oralakeview", url: "www.oralakeview.com/privacy-policy" }],
+  openGraph: {
+    title: "ORA Lakeview Hotel | Privacy Policy & Data Protection",
+    description:
+      "Your privacy matters. Read how ORA Lakeview Hotel collects, uses, and protects your personal data, in line with Swiss and international data protection regulations.",
+    url: "www.oralakeview.com/privacy-policy",
+    siteName: "oralakeview",
+    locale: "en_IN",
+    type: "website",
+
+    
+    images: [
+      {
+        url: "www.oralakeview.com/privacy-policy/og-image.png",
+        width: 800,
+        height: 600,
+        alt: "ORA Lakeview Hotel | Privacy Policy & Data Protection",
+      },
+      {
+        url: "www.oralakeview.com/privacy-policy/og-image.png",
+        width: 900,
+        height: 800,
+        alt: "ORA Lakeview Hotel | Privacy Policy & Data Protection",
+      },
+      {
+        url: "www.oralakeview.com/privacy-policy/og-image.png",
+        width: 1080,
+        height: 1080,
+        alt: "ORA Lakeview Hotel | Privacy Policy & Data Protection",
+      },
+    ],
+  },
+};
+
 const page = () => {
     return (
         <main className="margin">
