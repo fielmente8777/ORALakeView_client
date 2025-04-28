@@ -984,9 +984,9 @@ export const contactPageData = {
       },
       {
         icon: <PhoneIcon />,
-        address: "+41 44 123 45 67",
+        address: "+41 77 973 1981",
         title: "Phone Number",
-        src: "tel:+41 44 123 45 67",
+        src: "tel:++41779731981",
       },
       {
         icon: <MailIcon />,
