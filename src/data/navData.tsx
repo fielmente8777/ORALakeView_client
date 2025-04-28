@@ -10,22 +10,22 @@ export const NavLink: navLinks[] = [
   {
     id: 2,
     name: "about us",
-    href: "/about-us/",
+    href: "/about-us",
   },
   {
     id: 3,
     name: "rooms",
-    href: "/rooms/",
+    href: "/rooms",
   },
   {
     id: 4,
     name: "gallery",
-    href: "/gallery/",
+    href: "/gallery",
   },
   {
     id: 5,
     name: "contact us",
-    href: "/contact-us/",
+    href: "/contact-us",
   },
 ];
 
