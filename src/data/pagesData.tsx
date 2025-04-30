@@ -21,8 +21,8 @@ export const homePageData = {
       "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
     // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
     images: [
-      "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/banner%2B(1).jpg",
       newImageLinks + "Facade/4E1A7684.webp",
+      "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/banner%2B(1).jpg",
     ],
   },
   galleryData: {
@@ -296,7 +296,7 @@ export const homePageData = {
       {
         icon: <BoatIcon />,
         address: "Niederried Ferry Terminal",
-        distance: "300 Meters, 🚶 5 mins approx",
+        distance: "300 meters, 🚶 5 mins approx",
       },
       {
         icon: <TrainIcon />,
@@ -306,7 +306,7 @@ export const homePageData = {
       {
         icon: <PlainIcon />,
         address: "Zurich Airport / Bern Airport",
-        distance: "79 M, 🚗 1 hr 46 min / 36 M, 🚗 49 mins",
+        distance: "79 miles, 🚗 1 hr 46 min / 36 miles, 🚗 49 mins",
       },
     ],
   },
@@ -386,10 +386,15 @@ export const homePageData = {
         title: "Are pets allowed at ORA Lake View?",
         content: `Furry friends are welcome! Just let us know before your arrival`,
       },
+      // {
+      //   id: 3,
+      //   title: "How far is the hotel from Interlaken?",
+      //   content: `Only 7 km – close enough for adventure, far enough for tranquility `,
+      // },
       {
         id: 3,
-        title: "How far is the hotel from Interlaken?",
-        content: `Only 7 km – close enough for adventure, far enough for tranquility `,
+        title: "How far is Interlaken from your hotel? ",
+        content: `Interlaken is just 7 km away only 5 – 8 minutes by train or bus; with Dorf Bus Station (20m, 🚶1 min) and Niederried Train Station (170m, 🚶2–3 mins) right near the hotel, getting around is effortless.`,
       },
       {
         id: 4,
@@ -416,11 +421,7 @@ export const homePageData = {
         title: "Can I cook my meals in the common kitchen?",
         content: `Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby`,
       },
-      {
-        id: 9,
-        title: "How far is Interlaken from your hotel? ",
-        content: `Interlaken is just 7 km away only 5 – 8 minutes by train or bus; with Dorf Bus Station (20m, 🚶1 min) and Niederried Train Station (170m, 🚶2–3 mins) right near the hotel, getting around is effortless.`,
-      },
+
     ],
   },
 };
@@ -526,7 +527,7 @@ export const roomsPageData = {
           src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im2.jpg",
           alt: "dsdsd",
         },
-        
+
         // {
         //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Majestic+Lakeview+King/7STD4055.webp",
         //   alt: "dsdsd",
