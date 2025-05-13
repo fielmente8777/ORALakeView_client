@@ -3,13 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 // @font-face {
 //   font-family: "NexaScript_regular";
 //   src: url(/font/nexascript_regular.ttf) format("truetype");
 // }
 
-* {
+*,
+body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
@@ -265,17 +265,17 @@
 }
 .gallery-swiper-inside {
   .swiper-pagination-bullet {
-    background-color: #FFFFFF50;
+    background-color: #ffffff50;
     width: 2rem;
     height: 0.2rem;
     border-radius: 1px;
     opacity: 1;
   }
   .swiper-pagination-bullet-active {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 
     width: 2rem;
-    height: .2rem;
+    height: 0.2rem;
   }
 }
 
