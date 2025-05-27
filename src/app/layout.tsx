@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import { Call, Footer, GreetingCard, Navbar, Whatsapp } from "@/components";
-
-
+import RenderChatBot from "@/components/chatbot/RenderChatBot";
 
 export const metadata: Metadata = {
   title: "ORA Lakeview Hotel | Scenic Swiss Alps & Lake View Stay",
   description:
     "Wake up to breathtaking lake and mountain views at ORA Lakeview Hotel in Switzerland. Just minutes from transit, pet-friendly, and with free parking—your effortless alpine escape starts here.",
-  keywords:"",
+  keywords: "",
   alternates: {
     canonical: "https://https://oralakeview.com/",
   },
@@ -33,7 +32,6 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
 
-    
     images: [
       {
         url: "https://oralakeview.com/og-image.png",
@@ -64,15 +62,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={` antialiased`}
-        suppressHydrationWarning={true}
-      >
+      <body className={` antialiased`} suppressHydrationWarning={true}>
+        <RenderChatBot />
         <Navbar />
         {children}
         <GreetingCard />
         <Footer />
-        <Whatsapp  />
+        <Whatsapp />
         <Call callNumber="+41779731981" />
       </body>
     </html>
