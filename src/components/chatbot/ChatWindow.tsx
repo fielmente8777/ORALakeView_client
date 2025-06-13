@@ -589,12 +589,13 @@ const ChatWindow = ({
             <div className="w-full flex items-center">
               {messageFlows[currentIndex]?.key === "phone" && (
                 <select
+                  className="bg-transparent outline-none"
                   onChange={(e)=>setCountryCode(e.target.value)}
                   // defaultValue={countries[0].code}
                   value={countryCode}
                 >
                   {countries.map((countryCode, idx) => (
-                    <option key={idx} value={countryCode.code}>
+                    <option key={idx} value={countryCode.code} className="bg-transparent">
                       {countryCode.code}
                     </option>
                   ))}

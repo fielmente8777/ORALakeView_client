@@ -21,7 +21,7 @@ export const homePageData = {
       "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
     // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
     images: [
-      newImageLinks + "Facade/4E1A7684.webp",
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Landing+Page/4E1A7684_1.jpg",
       "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/banner%2B(1).jpg",
     ],
   },
@@ -34,31 +34,31 @@ export const homePageData = {
       //   alt: "terrace",
       // },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Designer.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1.jpg",
         alt: "terrace",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Bar+lounge/4E1A8056+copy.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1.jpg",
         alt: "lounge",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/res1.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1.jpg",
         alt: "Restaurant",
       },
       {
-        src: homeImages + "/gallery/img4.png",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1.jpg",
         alt: "facade",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Facilities+around/4E1A7691+copy.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1-1.jpg",
         alt: "lake view",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Trio+-++Disability+access/7STD4008.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1-1-1.jpg",
         alt: "balcony",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/4E1A7844.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1-1-1-1.jpg",
         alt: "bedroom",
       },
     ],
@@ -72,32 +72,31 @@ export const homePageData = {
       "Choose from a range of beautifully designed rooms and suites, each offering comfort, modern amenities, and breathtaking views of Lake Brienz",
     images: [
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Majestic+Lakeview+King/Img1.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Img1.png",
         alt: "Majestic lakeview king",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/7STD4064.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(6)_1.jpg",
         alt: "Queen’s vista",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7889.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7889_1_1.jpg",
         alt: "Alpine retreat",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Studio/LS1.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/LS2_1.jpg",
         alt: "Lakeview studio",
       },
       {
-        src: homeImages + "/rooms/img1.png",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A7872_1.jpg",
         alt: "Signature Lake View",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Trio+-++Disability+access/4E1A8214.webp",
-        // src: homeImages + "/rooms/img6.png",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/image+(6).jpg",
         alt: "Lakeview trio",
       },
       {
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/4E1A7844.webp",
+        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/15.jpg",
         // src: homeImages + "/rooms/img2.png",
         alt: "Classic Lake View",
       },
@@ -421,7 +420,6 @@ export const homePageData = {
         title: "Can I cook my meals in the common kitchen?",
         content: `Not quite! Our kitchen is equipped for quick fixes—think reheating or prepping snacks with basic utilities and a microwave. For full meals, we recommend exploring the delightful Swiss eateries nearby`,
       },
-
     ],
   },
 };
@@ -504,60 +502,32 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im1.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Img1.png",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im3.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/7STD4054_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/image+(3).webp",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/image+(4).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im2.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/7STD4055_1.jpg",
           alt: "dsdsd",
         },
 
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Majestic+Lakeview+King/7STD4055.webp",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src:
-        //     "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
-        //     "bath.jpg",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src: roomCardNew + "3.png",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "4.png",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "5.png",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src:
-        //     "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
-        //     "mej4.jpg",
-        //   alt: "dsdsd",
-        // },
+       
+        
       ],
       list: [
         "Free wifi",
@@ -575,70 +545,30 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i2.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(6)_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i3.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image_1.jpg",
+          alt: "dsdsd",
+        },
+        //  may need to uncomment this later
+        // {
+        //   src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
+        //   alt: "dsdsd",
+        // },
+        {
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(3).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i4.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(4).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(5).jpg",
           alt: "dsdsd",
         },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.jpg",
-          alt: "dsdsd",
-        },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.jpg",
-          alt: "dsdsd",
-        },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i1.jpg",
-          alt: "dsdsd",
-        },
-        // {
-        //   src: roomCardNew + "20.png",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/7STD4064.webp",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/4E1A7919.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "22.png",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src:
-        //     "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/rooms/card/" +
-        //     "queen2.jpg",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/4E1A6643+copy.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Queens+Vista/7STD4066.webp",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src: roomCardNew + "23.png",
-        //   alt: "dsdsd",
-        // },
       ],
       list: [
         "Free wifi",
@@ -656,36 +586,36 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/Majestic+Room+2.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/Majestic+Room+2_1_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7101+copy.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7101+copy_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7889.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7889_1_1.jpg",
           alt: "dsdsd",
         },
-
+        //
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/WhatsAppImage.jpg",
-          alt: "dsdsd",
-        },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Img7.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7571.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/image+(3).webp",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A7893.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/image+(4).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Alpine+Retreat/4E1A6643+copy.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7893_1.jpg",
+          alt: "dsdsd",
+        },
+        {
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A6643+copy_1.jpg",
           alt: "dsdsd",
         },
       ],
@@ -705,35 +635,19 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/LS1.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/LS2_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/LS2.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/LS4_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/LS4.jpg",
-          alt: "dsdsd",
-        },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/enhanced_image.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/4E1A8172_1.jpg",
           alt: "dsdsd",
         },
         // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Studio/LS2.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "13.png",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Studio/LS4.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Studio/4E1A8172.webp",
+        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/enhanced_image.webp",
         //   alt: "dsdsd",
         // },
       ],
@@ -752,64 +666,33 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img2.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A7872_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img6.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/image+(2)_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img5.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A8160_1_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img3.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
+          alt: "dsdsd",
+        },
+        // {
+        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img3.jpg",
+        //   alt: "dsdsd",
+        // },
+        {
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/image+(4)_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img1.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A8163_1.jpg",
           alt: "dsdsd",
         },
-        {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img4.jpg",
-          alt: "dsdsd",
-        },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img7.jpg",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A7872.webp",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8153.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8160.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8182.webp",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/Img5.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Signature+Lakeview/4E1A8163.webp",
-        //   alt: "dsdsd",
-        // },
-
-        // {
-        //   src: roomCardNew + "19.png",
-        //   alt: "dsdsd",
-        // },
       ],
       list: [
         "free wifi",
@@ -827,37 +710,18 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Trio+-++Disability+access/ii3.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/image+(6).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Trio+-++Disability+access/ii1.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/1-1-1-1-1-1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Trio+-++Disability+access/ii2.jpg",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/7STD4003.jpg",
           alt: "dsdsd",
         },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Trio+-++Disability+access/4E1A8214.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Trio+-++Disability+access/7STD4008.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Lakeview+Trio+-++Disability+access/7STD4003.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "9.png",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: roomCardNew + "10.png",
-        //   alt: "dsdsd",
-        // },
+        
       ],
       list: [
         "Free wifi",
@@ -875,28 +739,18 @@ export const roomsPageData = {
         "The Classic Lakeview room invites you to experience the timeless beauty of Lake Brienz in a cozy, stylish setting. Designed for those who appreciate the finer things in life, this room is a peaceful haven to recharge",
       price: "$200/Day",
       images: [
-        // {
-        //   src: roomCardNew + "13.png",
-        //   alt: "dsdsd",
-        // },
+        
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/Img6.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/15.jpg",
           alt: "dsdsd",
         },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/4E1A7840.webp",
-        //   alt: "dsdsd",
-        // },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/4E1A7844.webp",
-        //   alt: "dsdsd",
-        // },
+       
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/4E1A7844.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/image.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Classic+Double+Lakeview/174704654.webp",
+          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/image+(1).jpeg",
           alt: "dsdsd",
         },
       ],
