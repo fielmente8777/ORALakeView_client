@@ -101,7 +101,6 @@ const ChatWindow = ({
       month: "2-digit",
       day: "2-digit",
     });
-    console.log(value);
     const [day, month, year] = value.split("/");
 
     if (!value) return;
@@ -109,7 +108,9 @@ const ChatWindow = ({
     const currentFlow = messageFlows[currentIndex];
     const key = currentFlow.key || `q${currentIndex}`;
     const answer = `${day}-${month}-${year}`;
+
     console.log(answer);
+    
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
@@ -614,6 +615,7 @@ const ChatWindow = ({
                       selected={startDate}
                       onChange={(date) => handleDateChange(date as Date | null)}
                       showMonthDropdown
+                      dateFormat={"dd-MM-yyyy"}
                       showIcon
                     />
                   </div>
