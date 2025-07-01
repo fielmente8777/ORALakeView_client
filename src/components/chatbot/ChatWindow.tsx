@@ -95,17 +95,21 @@ const ChatWindow = ({
   const handleChange = (e: ChangeEvent<HTMLInputElement>) =>
     setInput(e.target.value);
 
-  const handleDateChange = (dateValue: null | Date) => {
-    const value = new Date(dateValue || "").toLocaleDateString();
+ const handleDateChange = (dateValue: null | Date) => {
+    const value = new Date(dateValue || "").toLocaleDateString("en-GB", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
     console.log(value);
-    const [month, day, year] = value.split("/");
+    const [day, month, year] = value.split("/");
 
     if (!value) return;
 
     const currentFlow = messageFlows[currentIndex];
     const key = currentFlow.key || `q${currentIndex}`;
     const answer = `${day}-${month}-${year}`;
-
+    console.log(answer);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
@@ -178,7 +182,6 @@ const ChatWindow = ({
       }
     }, 1000);
   };
-
   // handleReset
   // const onReset = () => {
   //   setChat([
