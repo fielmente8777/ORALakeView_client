@@ -59,15 +59,12 @@ export const footerLinks: IFooter[] = [
       { id: 2, name: "Facebook", href: "https://www.facebook.com/profile.php?id=61574775855831", target: "_blank" },
       { id: 4, name: "contact us", href: "/contact-us/" },
 
-      // { id: 3, name: "Twitter", href: "/", target: "_blank" },
-      // { id: 4, name: "Pinterest", href: "/", target: "_blank" },
     ],
   },
 ];
 
 export const footerLink2 = [
   { id: 1, name: "Privacy Policy", href: "/privacy-policy/" },
-  // { id: 2, name: "Terms & Conditions", href: "/terms-and-conditions/" },
   { id: 2, name: "Cancellation & Refund Policy", href: "/cancellation-&-refund-policy/" },
 ];
 

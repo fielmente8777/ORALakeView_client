@@ -7,58 +7,48 @@ import {
   PhoneIcon,
   Location,
 } from "../icons/icons";
-import {
-  aboutImages,
-  contactImages,
-  galleryImages,
-  homeImages,
-  newImageLinks,
-} from "./links";
+
 export const homePageData = {
   bannerData: {
     title: "Whispers of Brienz at the Best Lakeview Hotel",
     description:
       "A slice of Swiss heaven crafted for dreamers, romantics, and adventure seekers alike",
-    // images: [homeImages + "/Img1.png", homeImages + "/gallery/img4.webp"],
     images: [
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Landing+Page/4E1A7684_1.jpg",
-      "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/banner%2B(1).jpg",
+      "/Landing Page/4E1A7684_1.jpg",
+      "/banner+(1).jpg",
     ],
   },
+
   galleryData: {
     title: "Gallery",
     description: "Every frame, a postcard-worthy view",
     images: [
-      // {
-      //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Apartment+public+area/Terrace+Deck/7STD2778.webp",
-      //   alt: "terrace",
-      // },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1.jpg",
+        src: "/Homepage Gallery/1.jpg",
         alt: "terrace",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1.jpg",
+        src: "/Homepage Gallery/1-1.jpg",
         alt: "lounge",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1.jpg",
+        src: "/Homepage Gallery/1-1-1.jpg",
         alt: "Restaurant",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1.jpg",
+        src: "/Homepage Gallery/1-1-1-1.jpg",
         alt: "facade",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1-1.jpg",
+        src: "/Homepage Gallery/1-1-1-1-1.jpg",
         alt: "lake view",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1-1-1.jpg",
+        src: "/Homepage Gallery/1-1-1-1-1-1.jpg",
         alt: "balcony",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Homepage+Gallery/1-1-1-1-1-1-1.jpg",
+        src: "/Homepage Gallery/1-1-1-1-1-1-1.jpg",
         alt: "bedroom",
       },
     ],
@@ -72,32 +62,31 @@ export const homePageData = {
       "Choose from a range of beautifully designed rooms and suites, each offering comfort, modern amenities, and breathtaking views of Lake Brienz",
     images: [
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Img1.png",
+        src: "/Majestic Lakeview King/Img1.png",
         alt: "Majestic lakeview king",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(6)_1.jpg",
+        src: "/Queens Vista-40 sq metres/image (6)_1.jpg",
         alt: "Queen’s vista",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7889_1_1.jpg",
+        src: "/Alpine Retreat/4E1A7889_1_1.jpg",
         alt: "Alpine retreat",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/LS2_1.jpg",
+        src: "/Lakeview Studio-22 sq metres/LS2_1.jpg",
         alt: "Lakeview studio",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A7872_1.jpg",
+        src: "/Signature Lakeview/4E1A7872_1.jpg",
         alt: "Signature Lake View",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/image+(6).jpg",
+        src: "/Lakeview Trio-28 sq metres/image (6).jpg",
         alt: "Lakeview trio",
       },
       {
-        src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/15.jpg",
-        // src: homeImages + "/rooms/img2.png",
+        src: "/Classic Lakeview-22 sq metres/15.jpg",
         alt: "Classic Lake View",
       },
     ],
@@ -107,60 +96,51 @@ export const homePageData = {
     description: "Thoughtful touches, endless delight",
     items: [
       {
-        icon: homeImages + "/amenities/CarProfile.png",
+        icon: "/home/amenities/CarProfile.png",
         title: "Free Parking Without Reservation",
         description:
           "Arrive stress-free with spacious front and back parking areas, designed to accommodate every guest with ease and comfort.",
-        // src: aboutImages + "/img2.webp",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Facade/WhatsApp+Image+2025-03-26+at+20.56.16+(1).webp",
+        src: "/Facade/WhatsApp Image 2025-03-26 at 20.56.16 (1).webp",
         color: "#FAE3AF",
       },
       {
-        icon: homeImages + "/amenities/PicnicTable.png",
+        icon: "/home/amenities/PicnicTable.png",
         title: "Breakfast",
         description:
           "Start your day the right way. Our continental breakfast buffet is packed with fresh, locally-sourced flavors to fuel your adventures ahead",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/im1.webp",
+        src: "/Restaurant/im1.webp",
         color: "#D8D6D7",
       },
       {
-        icon: homeImages + "/amenities/SmileyWink.png",
+        icon: "/home/amenities/SmileyWink.png",
         title: "Entertainment Lounge",
         description:
           "Relax, recharge, and enjoy. Whether you’re into games, books, or just good conversations under the glow of Swiss hospitality",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Bar+lounge/4E1A8037+copy.webp",
+        src: "/Bar lounge/4E1A8037 copy.webp",
         color: "#E7CBCE",
       },
       {
-        icon: homeImages + "/amenities/Eye.png",
+        icon: "/home/amenities/Eye.png",
         title: "Private Balcony/Terrace",
         description:
           "Take in the views Lake Brienz, the Swiss Alps, and a whole lot of serenity. Unwind with a book, or sip your favorite drink while nature does the rest",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Designer.webp",
+        src: "/Designer.webp",
         color: "#CE905F",
       },
       {
-        icon: homeImages + "/amenities/WifiHigh.png",
+        icon: "/home/amenities/WifiHigh.png",
         title: "Free WiFi",
         description:
           "Stay as connected as you want. Our high-speed WiFi ensures you can stay in touch with what matters, while you’re living your best Swiss life",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/medium.webp",
+        src: "/medium.webp",
         color: "#E0E7E9",
       },
-      // {
-      //   icon: homeImages + "/amenities/SmileyWink.png",
-      //   title: "Entertainment Lounge",
-      //   description:
-      //     "Relax, recharge, and enjoy. Whether you’re into games, books, or just good conversations under the glow of Swiss hospitality",
-      //   src: homeImages + "/gallery/img2.webp",
-      //   color: "#E7CBCE",
-      // },
       {
-        icon: homeImages + "/amenities/ChefHat.png",
+        icon: "/home/amenities/ChefHat.png",
         title: "Common Kitchen",
         description:
           "Feel at home with our fully-equipped common kitchen. Whether you’re cooking up a storm or just storing snacks, it’s your space to enjoy",
-        src: homeImages + "/amenities/IM3.png",
+        src: "/home/amenities/IM3.png",
         color: "#B9BDA7",
       },
     ],
@@ -171,49 +151,49 @@ export const homePageData = {
 
     images: [
       {
-        src: homeImages + "/nearby/IMG1.png",
+        src: "/home/nearby/IMG1.png",
         alt: "Jangfrau",
         des: "An alpine journey to towering peaks",
         description:
           "Jungfrau, renowned for its towering peaks and stunning vistas, features scenic train rides, hiking trails, and snow adventures. Ideal for explorers and nature lovers, it’s a must-visit alpine destination",
       },
       {
-        src: homeImages + "/nearby/IMG2.png",
+        src: "/home/nearby/IMG2.png",
         alt: "Harder Kulm",
         des: "The roof of Interlaken with panoramic views.",
         description:
           "a short ride from Interlaken, offers sweeping views of Lake Thun, Lake Brienz, and the mountains from its 1,322-meter height. The glass-floored platform and on-site restaurant make it a memorable spot.",
       },
       {
-        src: homeImages + "/nearby/IMG3.png",
+        src: "/home/nearby/IMG3.png",
         alt: "Lake Thun",
         des: "Tranquility on turquoise waters",
         description:
           "Lake Thun, known for its clear waters and mountain views, offers boat cruises, charming villages, and historic lakeside castles. Ideal for picnics, swimming, or relaxing, it's a perfect spot for families and couples.",
       },
       {
-        src: homeImages + "/nearby/IMG4.png",
+        src: "/home/nearby/IMG4.png",
         alt: "Schynige Platte",
         des: "A floral paradise above the clouds",
         description:
           "Schynige Platte, accessible by cogwheel train, is known for its scenic hiking trails, alpine flora, and panoramic views of the Eiger, Mönch, and Jungfrau. It’s a perfect retreat for nature lovers and adventure seekers alike.",
       },
       {
-        src: homeImages + "/nearby/IMG5.png",
+        src: "/home/nearby/IMG5.png",
         alt: "St. Beatus Caves",
         des: "Whispers of legends in limestone chambers",
         description:
           "The St. Beatus Caves near Lake Thun feature limestone formations and legends of St. Beatus. Guided tours along well-kept paths reveal their geological history and natural beauty.",
       },
       {
-        src: homeImages + "/nearby/IMG6.png",
+        src: "/home/nearby/IMG6.png",
         alt: "Giessbach Falls",
         des: "Cascading beauty amidst lush forests",
         description:
           "Giessbach Falls, near Lake Brienz, cascades over 500 meters through lush forests. Scenic trails offer beautiful views, and the nearby historic Giessbach Hotel adds to its charm, making it ideal for a day in nature.",
       },
       {
-        src: homeImages + "/nearby/IMG7.png",
+        src: "/home/nearby/IMG7.png",
         alt: "Hohematte Park",
         des: "A vibrant green canvas in Interlaken’s heart",
         description:
@@ -230,13 +210,10 @@ export const homePageData = {
         description:
           "Take a leisurely 3-4 km stroll around the pristine lake, where every step offers breathtaking views of the water and the majestic Alps. Perfect for unwinding or capturing the beauty of nature, this walk immerses you in tranquility",
         images: [
-          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Lakeside+Serenity/Jpg/IMG-+new.webp",
-          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Lakeside+Serenity/Jpg/IMG-1%2C2.webp",
-          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Lakeside+Serenity/PSD/IMG-3.webp",
-          homeImages + "/doathotels/IMG1.png",
-          // homeImages + "/doathotels/IMG2.png",
-          // homeImages + "/doathotels/IMG3.png",
-          // homeImages + "/doathotels/IMG4.png",
+          "/Lakeside Serenity/Jpg/IMG- new.webp",
+          "/Lakeside Serenity/Jpg/IMG-1,2.webp",
+          "/Lakeside Serenity/PSD/IMG-3.webp",
+          "/home/doathotels/IMG1.png",
         ],
       },
       {
@@ -244,14 +221,10 @@ export const homePageData = {
         description:
           "Enjoy unparalleled views of the charming village of Iseltwald right from your balcony. Famous for its appearance in the Korean drama Crash Landing on You, this scenic spot blends natural beauty with cinematic magic",
         images: [
-          newImageLinks + "Iseltwalt/I2.webp",
-          newImageLinks + "Iseltwalt/I3.webp",
-          newImageLinks + "Iseltwalt/I4.webp",
-          newImageLinks + "Iseltwalt/I5.webp",
-          // homeImages + "/doathotels/IMG5.png",
-          // homeImages + "/doathotels/IMG6.png",
-          // homeImages + "/doathotels/IMG7.png",
-          // homeImages + "/doathotels/IMG8.png",
+          "/Iseltwalt/I2.webp",
+          "/Iseltwalt/I3.webp",
+          "/Iseltwalt/I4.webp",
+          "/Iseltwalt/I5.webp",
         ],
       },
       {
@@ -259,13 +232,9 @@ export const homePageData = {
         description:
           "Dive into relaxation at the swimming spot just below the hotel, open during the season. Whether you're taking a refreshing dip or lounging by the water, it's a perfect way to enjoy the lake",
         images: [
-          newImageLinks + "Swimming+pool/img1.webp",
-          newImageLinks + "Swimming+pool/img2.webp",
-          "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/45.webp",
-          // homeImages + "/doathotels/IMG9.png",
-          // homeImages + "/doathotels/IMG10.png",
-          // homeImages + "/doathotels/IMG11.png",
-          // homeImages + "/doathotels/IMG12.png",
+          "/Swimming pool/img1.webp",
+          "/Swimming pool/img2.webp",
+          "/45.webp",
         ],
       },
       {
@@ -273,10 +242,10 @@ export const homePageData = {
         description:
           "A nearby children’s park ensures younger guests have their share of fun. Equipped with swings, slides, and a safe play area, it’s an ideal spot for families to create joyful memories together",
         images: [
-          homeImages + "/doathotels/IMG13.png",
-          homeImages + "/doathotels/img14.webp",
-          homeImages + "/doathotels/IMG15.png",
-          homeImages + "/doathotels/IMG16.png",
+          "/home/doathotels/IMG13.png",
+          "/home/doathotels/img14.webp",
+          "/home/doathotels/IMG15.webp",
+          "/home/doathotels/IMG16.png",
         ],
       },
     ],
@@ -285,7 +254,7 @@ export const homePageData = {
     title: "At the Heart of Connectivity",
     description:
       "Perfectly located for effortless exploration and unforgettable experiences",
-    src: homeImages + "/img3.webp",
+    src:  "/home/img3.webp",
     items: [
       {
         icon: <BusIcon />,
@@ -313,34 +282,6 @@ export const homePageData = {
     title: "guest reviews",
     description: "Don’t Take Our Word for It Hear What Our Guests Have to Say!",
     items: [
-      // {
-      //   title: "Exceptional Service and Comfort!",
-      //   description: `Our stay at this hotel was nothing short of fantastic! The staff was incredibly welcoming and accommodating. The room was spacious and spotlessly clean. We loved the convenient location, which made it easy to explore the city.`,
-      // },
-      // {
-      //   title: "A Hidden Gem!",
-      //   description: `Amazing view and super convenient to reach. Very welcoming staff. It’s easily reachable from Interlaken OST station and train station is right behind the hotel. We enjoyed our stay with our toddler and enjoyed amazing views. Must stay`,
-      // },
-      // {
-      //   title: "Perfect Romantic Getaway!",
-      //   description: `Excellent location and beautiful view. Loved the room and hospitality. Wish you come here again. The climate here is soothing and refreshing. My wife wanted to stay here for long just to enjoy the view`,
-      // },
-      // {
-      //   title: "Perfect Romantic Getaway!",
-      //   description: `A boutique hotel with, an excellent view, and very good staff. multi-lingual reception staff (German, Italian, French, Spanish, English and Romanian) a very good continental breakfast ( yes it is not the usual 5-star hotel buffet) but they delivered what they promised on the web.`,
-      // },
-      // {
-      //   title: "Perfect Romantic Getaway!",
-      //   description: `This hotel is in a great location with an amazing view to Lake Thun. The rooms are decent and comfortable enough. Also, Tushar who works at the front desk took care of my family and I & provided us with all what we need during our stay.`,
-      // },
-      // {
-      //   title: "Perfect Romantic Getaway!",
-      //   description: `This was an amazing hotel with a beautiful view of the lake and a 2 minute walk to the train station. Balcony room with lake view was BEAUTIFUL! 10/10 recommend staying here. The man at the reception was so friendly and helpful`,
-      // },
-      // {
-      //   title: "Perfect Romantic Getaway!",
-      //   description: `Amazing place to stay. Very beautiful view in morning and evening time. Train station just 2-3min by walk (Niederried station) and ferry-boat station available. We stay here 3days and enjoyed alot. Everything is very easy to reached`,
-      // },
       {
         title: "Perfect Romantic Getaway!",
         description: `The hospitality, staff there specially renitha is so sweet and kind. The view from our balcony was amazing, waking up to that great view was so good.`,
@@ -429,15 +370,15 @@ export const aboutPageData = {
     title: "Timeless Swiss Charm, Lakeside Dreams",
     description:
       "Experience Swiss charm, lake views, and modern elegance with every dawn and dusk",
-    src: homeImages + "/gallery/img1.webp",
+    src:  "/home/gallery/img1.webp",
     videoSrc:
-      "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/ora-lake-view/home/videoplayback.mkv",
+      "/home/videoplayback.mkv",
   },
   section2: {
     title: "Know Your Hotel",
     description:
       "Almost half a century ago, inspired by the shimmering Lake Brienz and cradled by the majestic Swiss Alps, a Swiss couple envisioned a haven that mirrored their deep love for the land and its timeless beauty. ORA Lake View became their labor of love The couple, whose hearts are firmly anchored in Swiss tradition, brought their love for their native country into every area of the hotel, providing visitors with a genuine experience of Swiss friendliness and warmth. Today, their legacy endures in every corner of the hotel, where history embraces the present, and guests are welcomed like cherished friends into a tale of romance, heritage, and elegance",
-    src: aboutImages + "/IMAGE2.png",
+    src:  "/about/IMAGE2.png",
   },
   ourJourney: {
     title: "Our Journey",
@@ -448,7 +389,7 @@ export const aboutPageData = {
         description:
           "By the peaceful shores of Interlaken, a hidden gem was born in 1974. From the moment the first guests arrived, the property offered more than just a stay it offered a feeling. A feeling of calm, of being connected to nature, and of escaping to a place where the beauty of the Swiss Alps and the tranquil lake were always just outside your window",
         year: "1974",
-        src: aboutImages + "/IMAGE3.png",
+        src: "/about/IMAGE3.png",
       },
       {
         id: 2,
@@ -456,7 +397,7 @@ export const aboutPageData = {
         description:
           "In 1988, a renovation breathed new life into the hotel, blending modern comfort with the stunning surroundings. This wasn’t just about upgrading a building it was about deepening the connection between the space and the landscape. Guests now found even more ways to relax, reflect, and indulge in the breathtaking views, making every stay unforgettable",
         year: "1988",
-        src: homeImages + "/gallery/img4.webp",
+        src:   "/home/gallery/img4.webp",
       },
       {
         id: 3,
@@ -464,7 +405,7 @@ export const aboutPageData = {
         description:
           "When new owners took the reins in 2015, they infused the hotel with a new energy one that honored its roots while embracing the needs of the modern traveler. The aim was simple: to create not just a hotel, but a sanctuary. Here, the spirit of Interlaken raw, beautiful, and tranquil was brought into every corner of the experience, creating a place where guests felt at home and at peace",
         year: "2015",
-        src: newImageLinks + "Facade/4E1A7684.webp",
+        src:   "/Facade/4E1A7684.webp",
       },
       {
         id: 4,
@@ -472,16 +413,8 @@ export const aboutPageData = {
         description:
           "In 2019, the hotel underwent a complete reimagining. The addition of a spacious terrace, luxurious living areas, and three (Four )new apartment rooms elevated the experience to new heights. It became a place to truly live the moment, savor the lake views, and enjoy the perfect blend of nature and luxury. It was no longer just a hotel it was an experience, carefully crafted for those seeking something extraordinary",
         year: "2019",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Rooms/Apartment+public+area/Terrace+Deck/4E1A7555.webp",
+        src: "/Rooms/Apartment public area/Terrace Deck/4E1A7555.webp",
       },
-      // {
-      //   id: 5,
-      //   title: "Award-Winning Excellence",
-      //   description:
-      //     "Recognized as one of the top boutique hotels in Switzerland, Hotel Lakeview earned accolades for its outstanding service, prime location, and unforgettable guest experiences.",
-      //   year: "2024",
-      //   src: aboutImages + "/IMAGE5.png",
-      // },
     ],
   },
 };
@@ -492,7 +425,7 @@ export const roomsPageData = {
     title: "Find Your Ideal Retreat",
     description:
       "Surrounded by warm wooden accents, soft, ambient lighting, and the serene beauty of the Swiss Alps, evenings at Hotel Lakeview offer the perfect atmosphere for relaxation, comfort, and unforgettable memories",
-    src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/img1.png",
+    src: "/img1.png",
   },
   roomcard: [
     {
@@ -502,28 +435,28 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Img1.png",
-          alt: "dsdsd",
+          src: "/Majestic Lakeview King/Img1.png",
+          alt: "Majestic Lakeview King ",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/7STD4054_1.jpg",
-          alt: "dsdsd",
+          src: "/Majestic Lakeview King/7STD4054_1.jpg",
+          alt: "Majestic Lakeview King ",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
-          alt: "dsdsd",
+          src: "/Majestic Lakeview King/Room.jpg",
+          alt: "Majestic Lakeview King ",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/image+(3).webp",
-          alt: "dsdsd",
+          src: "/Majestic Lakeview King/image (3).webp",
+          alt: "Majestic Lakeview King ",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/image+(4).jpg",
-          alt: "dsdsd",
+          src: "/Majestic Lakeview King/image (4).jpg",
+          alt: "Majestic Lakeview King ",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/7STD4055_1.jpg",
-          alt: "dsdsd",
+          src: "/Majestic Lakeview King/7STD4055_1.jpg",
+          alt: "Majestic Lakeview King ",
         },
 
        
@@ -545,28 +478,23 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(6)_1.jpg",
+          src: "/Queens Vista-40 sq metres/image (6)_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image_1.jpg",
-          alt: "dsdsd",
-        },
-        //  may need to uncomment this later
-        // {
-        //   src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
-        //   alt: "dsdsd",
-        // },
-        {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(3).jpg",
+          src: "/Queens Vista-40 sq metres/image_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(4).jpg",
+          src: "/Queens Vista-40 sq metres/image (3).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Queens+Vista-40+sq+metres/image+(5).jpg",
+          src: "/Queens Vista-40 sq metres/image (4).jpg",
+          alt: "dsdsd",
+        },
+        {
+          src: "/Queens Vista-40 sq metres/image (5).jpg",
           alt: "dsdsd",
         },
       ],
@@ -586,36 +514,36 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/Majestic+Room+2_1_1.jpg",
+          src: "/Alpine Retreat/Majestic Room 2_1_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7101+copy_1.jpg",
+          src: "/Alpine Retreat/4E1A7101 copy_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7889_1_1.jpg",
+          src: "/Alpine Retreat/4E1A7889_1_1.jpg",
           alt: "dsdsd",
         },
         //
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
+          src: "/Majestic Lakeview King/Room.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/image+(3).webp",
+          src: "/Alpine Retreat/image (3).webp",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/image+(4).jpg",
+          src: "/Alpine Retreat/image (4).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A7893_1.jpg",
+          src: "/Alpine Retreat/4E1A7893_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Alpine+Retreat/4E1A6643+copy_1.jpg",
+          src: "/Alpine Retreat/4E1A6643 copy_1.jpg",
           alt: "dsdsd",
         },
       ],
@@ -635,21 +563,17 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/LS2_1.jpg",
+          src: "/Lakeview Studio-22 sq metres/LS2_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/LS4_1.jpg",
+          src: "/Lakeview Studio-22 sq metres/LS4_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Studio-22+sq+metres/4E1A8172_1.jpg",
+          src: "/Lakeview Studio-22 sq metres/4E1A8172_1.jpg",
           alt: "dsdsd",
         },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Lakeview+Studio/enhanced_image.webp",
-        //   alt: "dsdsd",
-        // },
       ],
       list: [
         "free wifi",
@@ -666,31 +590,27 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A7872_1.jpg",
+          src: "/Signature Lakeview/4E1A7872_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/image+(2)_1.jpg",
+          src: "/Signature Lakeview/image (2)_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A8160_1_1.jpg",
+          src: "/Signature Lakeview/4E1A8160_1_1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Majestic+Lakeview+King/Room.jpg",
-          alt: "dsdsd",
-        },
-        // {
-        //   src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Signature+Lakeview/Img3.jpg",
-        //   alt: "dsdsd",
-        // },
-        {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/image+(4)_1.jpg",
+          src: "/Majestic Lakeview King/Room.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Signature+Lakeview/4E1A8163_1.jpg",
+          src: "/Signature Lakeview/image (4)_1.jpg",
+          alt: "dsdsd",
+        },
+        {
+          src: "/Signature Lakeview/4E1A8163_1.jpg",
           alt: "dsdsd",
         },
       ],
@@ -710,15 +630,15 @@ export const roomsPageData = {
       price: "$200/Day",
       images: [
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/image+(6).jpg",
+          src: "/Lakeview Trio-28 sq metres/image (6).jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/1-1-1-1-1-1.jpg",
+          src: "/Lakeview Trio-28 sq metres/1-1-1-1-1-1.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Lakeview+Trio-28+sq+metres/7STD4003.jpg",
+          src: "/Lakeview Trio-28 sq metres/7STD4003.jpg",
           alt: "dsdsd",
         },
         
@@ -741,16 +661,16 @@ export const roomsPageData = {
       images: [
         
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/15.jpg",
+          src: "/Classic Lakeview-22 sq metres/15.jpg",
           alt: "dsdsd",
         },
        
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/image.jpg",
+          src: "/Classic Lakeview-22 sq metres/image.jpg",
           alt: "dsdsd",
         },
         {
-          src: "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/ora-lake-view/Classic+Lakeview-22+sq+metres/image+(1).jpeg",
+          src: "/Classic Lakeview-22 sq metres/image (1).jpeg",
           alt: "dsdsd",
         },
       ],
@@ -771,39 +691,39 @@ export const galleryPageData = {
     title: "No need to photoshop your way out of life!",
     description:
       "Let every image transport you to a world of elegance, where nature’s beauty and comfort meet in perfect harmony",
-    src: galleryImages + "/img1.webp",
+    src: "/gallery/img1.webp",
   },
   galleryData: [
     {
       title: "Rooms",
       images: [
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Majestic+Lakeview+King/Im1.jpg",
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/rooms2/Queens+Vista/i2.jpg",
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/4E1A7844.webp",
+        "/rooms2/Majestic Lakeview King/Im1.jpg",
+        "/rooms2/Queens Vista/i2.jpg",
+        "/4E1A7844.webp",
       ],
     },
     {
       title: "Facade",
       images: [
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Facade/4E1A7704.webp",
-        newImageLinks + "Facade/4E1A7707+copy.webp",
-        newImageLinks + "Facade/4E1A7710.webp",
+        "/Facade/4E1A7704.webp",
+        "/Facade/4E1A7707 copy.webp",
+        "/Facade/4E1A7710.webp",
       ],
     },
     {
       title: "Reception",
       images: [
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Reception/4E1A8069+copy.webp",
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Reception/4E1A8219.webp",
-        galleryImages + "/slider/img6.webp",
+        "/Reception/4E1A8069.webp",
+        "/Reception/4E1A8219.webp",
+        "/gallery/slider/img6.webp",
       ],
     },
     {
       title: "Bar & Restaurant",
       images: [
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/4E1A6574.webp",
-        "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/Images-ORA-Lakeview-Finalised/Restaurant/res1.webp",
-        newImageLinks + "Bar+lounge/4E1A8042+copy.webp",
+        "/Restaurant/4E1A6574.webp",
+        "/Restaurant/res1.webp",
+        "/Bar lounge/4E1A8042 copy.webp",
       ],
     },
   ],
@@ -828,7 +748,7 @@ export const contactPageData = {
   reachUsDate: {
     title: "Reach us anytime",
     description: "Fill out the form below, and we’ll get back to you shortly.",
-    src: contactImages + "/img1.webp",
+    src:  "/contact/img1.webp",
     items: [
       {
         icon: <Location />,

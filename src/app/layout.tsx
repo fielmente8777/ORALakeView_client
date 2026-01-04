@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import { Call, Footer, GreetingCard, Navbar, Whatsapp } from "@/components";
-import RenderChatBot from "@/components/chatbot/RenderChatBot";
 
 export const metadata: Metadata = {
   title: "ORA Lakeview Hotel | Scenic Swiss Alps & Lake View Stay",
@@ -63,7 +62,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` antialiased`} suppressHydrationWarning={true}>
-        <RenderChatBot />
         <Navbar />
         {children}
         <GreetingCard />

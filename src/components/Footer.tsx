@@ -4,7 +4,6 @@ import { Heading, Paragraph } from "./TextAndInputComponents";
 import Image from "next/image";
 import { footerLinks, footerLink2 } from "../data/footerData";
 import { useState } from "react";
-import { homeImages } from "@/data/links";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -64,7 +63,7 @@ const Footer = () => {
         <div className="lg:col-span-4 w-full">
           <div className="w-full relative lg:aspect-[4/2.8] aspect-[4/5]">
             <Image
-              src={homeImages + "/Img2.png"}
+              src={"/home/Img2.png"}
               alt="alt"
               fill
               className="object-cover object-right-bottom scale-x-[-1]"
